@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Weather: Codable {
+    
+}
+
+extension Weather {
+    static var sampleData = Weather()
+}
