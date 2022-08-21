@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class ContentViewModel: ObservableObject {
     @Published private(set) var weather: Weather?
@@ -17,5 +18,11 @@ class ContentViewModel: ObservableObject {
     
     init(service: WeatherService) {
         self.service = service
+    }
+    
+    // MARK:- Service
+    
+    func getWeather(longitude: CLLocationDegrees, latitude: CLLocationDegrees) async {
+        print("Getting weather...")
     }
 }
