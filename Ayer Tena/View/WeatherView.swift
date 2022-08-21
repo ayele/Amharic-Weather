@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct WeatherView: View {
+    var weather: Weather
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Weather View").font(.largeTitle)
     }
 }
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView()
+        WeatherView(weather: Weather.sampleData)
     }
 }
