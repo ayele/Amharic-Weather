@@ -14,7 +14,8 @@ struct Weather: Codable {
     let hourly: [CurrentWeather]
     let daily: [DailyWeather]
     
-    struct CurrentWeather: Codable {
+    struct CurrentWeather: Codable, Identifiable {
+        let id = UUID()
         let time: Date
         let temperature: Double
         let condition: [Condition]
