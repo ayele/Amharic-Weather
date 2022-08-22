@@ -14,10 +14,11 @@ struct WeatherView: View {
         ScrollView(showsIndicators: false) {
             VStack {
                 VStack(spacing: -5) {
-                    Text("Monona").font(.largeTitle)
-                    Text("90").font(.system(size: 90))
+                    Text("Middleton").font(.largeTitle)
+                    Text("\(weather.current.temperature.roundDouble())")
+                        .font(.system(size: 90))
                     VStack(spacing: 5) {
-                        Text("Sunny").font(.title3)
+                        Text("\(weather.current.condition[0].description)").font(.title3)
                         HStack {
                             Text("H:80°").font(.title3)
                             Text("L:58°").font(.title3)
@@ -26,6 +27,7 @@ struct WeatherView: View {
                 }
                 .padding()
                 
+                // Hourly
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
                         ForEach(0..<8, id: \.self) { index in
@@ -39,6 +41,7 @@ struct WeatherView: View {
                 }
                 .padding()
                 
+                // Daily
                 VStack(spacing: 20) {
                     ForEach(0..<8) { index in
                         VStack {
