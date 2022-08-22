@@ -11,7 +11,54 @@ struct WeatherView: View {
     var weather: Weather
     
     var body: some View {
-        Text("Weather View").font(.largeTitle)
+        ScrollView(showsIndicators: false) {
+            VStack {
+                VStack(spacing: -5) {
+                    Text("Monona").font(.largeTitle)
+                    Text("90").font(.system(size: 90))
+                    VStack(spacing: 5) {
+                        Text("Sunny").font(.title3)
+                        HStack {
+                            Text("H:80°").font(.title3)
+                            Text("L:58°").font(.title3)
+                        }
+                    }
+                }
+                .padding()
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        ForEach(0..<8, id: \.self) { index in
+                            VStack(spacing: 15) {
+                                Text("Now")
+                                Image(systemName: "sun.max.fill")
+                                Text("77°")
+                            }
+                        }
+                    }
+                }
+                .padding()
+                
+                VStack(spacing: 20) {
+                    ForEach(0..<8) { index in
+                        VStack {
+                            HStack {
+                                Text("Monday")
+                                Spacer()
+                                Image(systemName: "cloud")
+                                Spacer()
+                                Text("55°")
+                                Text("-")
+                                Text("80°")
+                            }
+                            Divider()
+                        }
+                    }
+                }
+                .padding()
+            }
+            .padding()
+        }
     }
 }
 
