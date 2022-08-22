@@ -18,6 +18,7 @@
 		3A857AFB28B2B5F400F343FE /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AFA28B2B5F400F343FE /* WeatherService.swift */; };
 		3A857B0228B2C2BE00F343FE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0128B2C2BE00F343FE /* ContentViewModel.swift */; };
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
+		3AC8C62428B4310A00E38843 /* Data+Pretty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62328B4310A00E38843 /* Data+Pretty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3A857AFA28B2B5F400F343FE /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		3A857B0128B2C2BE00F343FE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		3A857B0328B2C87D00F343FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3AC8C62328B4310A00E38843 /* Data+Pretty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Pretty.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3A857AFE28B2B64000F343FE /* ViewModel */,
 				3A857AFD28B2B62900F343FE /* Location */,
 				3A857AFC28B2B61700F343FE /* Service */,
+				3AC8C62528B4312B00E38843 /* Extensions */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
 				3A857AE128B140E500F343FE /* Preview Content */,
 			);
@@ -126,6 +129,14 @@
 				3A857B0128B2C2BE00F343FE /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3AC8C62528B4312B00E38843 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AC8C62328B4310A00E38843 /* Data+Pretty.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A857B0228B2C2BE00F343FE /* ContentViewModel.swift in Sources */,
+				3AC8C62428B4310A00E38843 /* Data+Pretty.swift in Sources */,
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,

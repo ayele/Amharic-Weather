@@ -22,6 +22,7 @@ class WeatherService {
         
         let statusCode = (response as? HTTPURLResponse)?.statusCode
         print("GET status code: \(statusCode ?? 000)")
+        print(data.prettyPrintedJSONString ?? "")
 
         guard statusCode == 200 else {
             fatalError("Error fetching weather data")
