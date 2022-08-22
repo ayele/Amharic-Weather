@@ -8,6 +8,7 @@
 import Foundation
 import CoreLocation
 
+@MainActor
 class ContentViewModel: ObservableObject {
     @Published private(set) var weather: Weather?
     @Published private(set) var isLoading = false
@@ -23,6 +24,15 @@ class ContentViewModel: ObservableObject {
     // MARK:- Service
     
     func getWeather(longitude: CLLocationDegrees, latitude: CLLocationDegrees) async {
-        print("Getting weather...")
+        isLoading = true
+        
+        do {
+            weather = try await service.getWeather(latitude: latitude, longitude: longitude)
+            print("We have weather data!!")
+        } catch {
+            print("Error getting weather")
+        }
+        
+        isLoading = false
     }
 }
