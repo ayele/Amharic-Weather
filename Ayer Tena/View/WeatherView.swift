@@ -30,11 +30,11 @@ struct WeatherView: View {
                 // Hourly
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        ForEach(0..<8, id: \.self) { index in
+                        ForEach(weather.hourly) { hourly in
                             VStack(spacing: 15) {
-                                Text("Now")
+                                Text("\(hourly.time.formattedHour())")
                                 Image(systemName: "sun.max.fill")
-                                Text("77°")
+                                Text("\(hourly.temperature.roundDouble())°")
                             }
                         }
                     }
@@ -43,16 +43,16 @@ struct WeatherView: View {
                 
                 // Daily
                 VStack(spacing: 20) {
-                    ForEach(0..<8) { index in
+                    ForEach(weather.daily) { daily in
                         VStack {
                             HStack {
-                                Text("Monday")
+                                Text("\(daily.time.formattedDay())")
                                 Spacer()
                                 Image(systemName: "cloud")
                                 Spacer()
-                                Text("55°")
+                                Text("\(daily.temperature.low.roundDouble())°")
                                 Text("-")
-                                Text("80°")
+                                Text("\(daily.temperature.high.roundDouble())°")
                             }
                             Divider()
                         }
