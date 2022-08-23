@@ -28,37 +28,41 @@ struct WeatherView: View {
                 .padding()
                 
                 // Hourly
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        ForEach(weather.hourly) { hourly in
-                            VStack(spacing: 15) {
-                                Text("\(hourly.time.formattedHour())")
-                                Image(systemName: "sun.max.fill")
-                                Text("\(hourly.temperature.roundDouble())°")
-                            }
-                        }
-                    }
-                }
-                .padding()
-                
-                // Daily
                 VStack(spacing: 20) {
-                    ForEach(weather.daily) { daily in
-                        VStack {
-                            HStack {
-                                Text("\(daily.time.formattedDay())")
-                                Spacer()
-                                Image(systemName: "cloud")
-                                Spacer()
-                                Text("\(daily.temperature.low.roundDouble())°")
-                                Text("-")
-                                Text("\(daily.temperature.high.roundDouble())°")
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 20) {
+                            ForEach(weather.hourly) { hourly in
+                                VStack(spacing: 15) {
+                                    Text("\(hourly.time.formattedHour())")
+                                    Image(systemName: "sun.max.fill")
+                                    Text("\(hourly.temperature.roundDouble())°")
+                                }
                             }
-                            Divider()
                         }
                     }
+                    .padding()
+                    .overlay { RoundedRectangle(cornerRadius: 15).stroke(.gray, lineWidth: 1) }
+                    
+                    // Daily
+                    VStack(spacing: 15) {
+                        ForEach(weather.daily) { daily in
+                            VStack {
+                                HStack {
+                                    Text("\(daily.time.formattedDay())")
+                                    Spacer()
+                                    Image(systemName: "cloud")
+                                    Spacer()
+                                    Text("\(daily.temperature.low.roundDouble())°")
+                                    Text("-")
+                                    Text("\(daily.temperature.high.roundDouble())°")
+                                }
+                                Divider()
+                            }
+                        }
+                    }
+                    .padding()
+                    .overlay { RoundedRectangle(cornerRadius: 15).stroke(.gray, lineWidth: 1) }
                 }
-                .padding()
             }
             .padding()
         }
