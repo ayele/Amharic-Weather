@@ -87,8 +87,14 @@ struct DailyView: View {
                         Image(systemName: "\(daily.condition[0].icon.imageName)")
                             .font(.title3)
                         Spacer()
-                        Text("\(daily.temperature.low.roundDouble())° - \(daily.temperature.high.roundDouble())°")
-                            .frame(width: 100, alignment: .trailing)
+                        HStack {
+                            Text("\(daily.temperature.low.roundDouble())°")
+                                .foregroundColor(.secondary)
+                            Image(systemName: "minus")
+                                .foregroundColor(.secondary)
+                            Text("\(daily.temperature.high.roundDouble())°")
+                        }
+                        .frame(width: 100, alignment: .trailing)
                     }
                     Divider()
                 }
