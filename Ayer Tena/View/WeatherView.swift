@@ -43,8 +43,18 @@ struct CurrentView: View {
             VStack(spacing: 5) {
                 Text("\(weather.current.condition[0].description)").font(.title3)
                 HStack {
-                    Text("H:80°").font(.title3)
-                    Text("L:58°").font(.title3)
+                    HStack(spacing: 1) {
+                        Image(systemName: "chevron.up")
+                            .foregroundColor(.secondary)
+                        Text("\(weather.daily.first?.temperature.high.roundDouble() ?? "-")°")
+                            .font(.title3)
+                    }
+                    HStack(spacing: 1) {
+                        Image(systemName: "chevron.down")
+                            .foregroundColor(.secondary)
+                        Text("\(weather.daily.first?.temperature.low.roundDouble() ?? "-")°")
+                            .font(.title3)
+                    }
                 }
             }
         }
