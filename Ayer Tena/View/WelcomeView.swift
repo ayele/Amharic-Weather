@@ -25,7 +25,7 @@ struct WelcomeView: View {
             .padding()
             
             LocationButton(.shareCurrentLocation) {
-                locationManager.requestLocation()
+                locationManager.requestAuthorization()
             }
             .cornerRadius(30)
             .symbolVariant(.fill)

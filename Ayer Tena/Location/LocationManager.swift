@@ -19,23 +19,27 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.delegate = self
     }
     
-    func requestLocation() {
-        isLoading = true
+    func requestAuthorization() {
         manager.requestWhenInUseAuthorization()
+    }
+    
+    private func requestLocation() {
+        isLoading = true
+        manager.requestLocation()
     }
     
     // MARK:- Location manager delegate
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        print("locationManagerDidChangeAuthorization")
+        print("Location manager did change authorization")
 
         switch manager.authorizationStatus {
           case .restricted, .denied:
             print("Authrization restricted or denied")
              break
           case .authorizedWhenInUse:
-            print("Authrized when in use")
-            manager.requestLocation()
+            print("When in use authorized. Requesting location...")
+            requestLocation()
              break
           case .authorizedAlways:
              break
