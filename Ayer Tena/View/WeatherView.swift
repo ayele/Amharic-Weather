@@ -100,12 +100,15 @@ struct DailyView: View {
                         Spacer()
                         HStack {
                             Text("\(daily.temperature.low.roundDouble())°")
+                                .font(.title3)
                                 .foregroundColor(.secondary)
-                            Image(systemName: "minus")
+                            Capsule()
+                                .frame(width: 90, height: 6)
                                 .foregroundColor(.secondary)
                             Text("\(daily.temperature.high.roundDouble())°")
+                                .font(.title3)
                         }
-                        .frame(width: 100, alignment: .trailing)
+                        .frame(width: 200, alignment: .trailing)
                     }
                     Divider()
                 }
