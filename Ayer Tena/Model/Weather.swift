@@ -75,6 +75,7 @@ struct Weather: Codable {
 extension Weather {
     static var sampleData = Weather(longitude: -89.32,
                                     latitude: 43.05,
+                                    city: City(name: "Middleton"),
                                     current: CurrentWeather(time: Date(),
                                                             temperature: 80,
                                                             condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
