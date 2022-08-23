@@ -19,6 +19,25 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
         dateFormatter.locale = Locale(identifier: "en_US")
-        return dateFormatter.string(from: self)
+        let day = dateFormatter.string(from: self)
+        
+        switch day {
+        case "Monday":
+            return "ሰኞ"
+        case "Tuesday":
+            return "ማክሰኞ"
+        case "Wednesday":
+            return "ረቡዕ"
+        case "Thursday":
+            return "ኀሙስ"
+        case "Friday":
+            return "ዐርብ"
+        case "Saturday":
+            return "ቅዳሜ"
+        case "Sunday":
+            return "እሁድ"
+        default:
+            return "ዛሬ"
+        }
     }
 }
