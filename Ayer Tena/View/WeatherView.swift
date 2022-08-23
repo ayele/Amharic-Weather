@@ -25,7 +25,7 @@ struct WeatherView: View {
                         }
                     }
                 }
-                .padding()
+                .padding(50)
                 
                 // Hourly
                 VStack(spacing: 20) {
@@ -34,7 +34,7 @@ struct WeatherView: View {
                             ForEach(weather.hourly) { hourly in
                                 VStack(spacing: 15) {
                                     Text("\(hourly.time.formattedHour())")
-                                    Image(systemName: "sun.max.fill")
+                                    Image(systemName: "\(hourly.condition[0].icon.imageName)")
                                     Text("\(hourly.temperature.roundDouble())°")
                                 }
                             }
@@ -49,12 +49,12 @@ struct WeatherView: View {
                             VStack {
                                 HStack {
                                     Text("\(daily.time.formattedDay())")
+                                        .frame(width: 100, alignment: .leading)
                                     Spacer()
-                                    Image(systemName: "cloud")
+                                    Image(systemName: "\(daily.condition[0].icon.imageName)")
                                     Spacer()
-                                    Text("\(daily.temperature.low.roundDouble())°")
-                                    Text("-")
-                                    Text("\(daily.temperature.high.roundDouble())°")
+                                    Text("\(daily.temperature.low.roundDouble())° - \(daily.temperature.high.roundDouble())°")
+                                        .frame(width: 100, alignment: .trailing)
                                 }
                                 Divider()
                             }

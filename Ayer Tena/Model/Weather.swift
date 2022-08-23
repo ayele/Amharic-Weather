@@ -53,10 +53,12 @@ struct Weather: Codable {
     struct Condition: Codable {
         let code: Int
         let description: String
+        let icon: Icon
         
         enum CodingKeys: String, CodingKey {
             case code = "id"
             case description = "main"
+            case icon
         }
     }
     
@@ -74,52 +76,52 @@ extension Weather {
                                     latitude: 43.05,
                                     current: CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                     hourly: [CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                              CurrentWeather(time: Date(),
                                                             temperature: 80,
-                                                            condition: [Condition(code: 800, description: "Clear")])
+                                                            condition: [Condition(code: 800, description: "Clear", icon: .rain)])
                                             ],
                                     daily: [DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)]),
                                             DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")])
+                                                         condition: [Condition(code: 800, description: "Clear", icon: .rain)])
                                            ])
 }
