@@ -27,7 +27,8 @@ struct Weather: Codable {
         }
     }
     
-    struct DailyWeather: Codable {
+    struct DailyWeather: Codable, Identifiable {
+        let id = UUID()
         let time: Date
         let temperature: Temperature
         let condition: [Condition]
@@ -75,6 +76,15 @@ extension Weather {
                                                             temperature: 80,
                                                             condition: [Condition(code: 800, description: "Clear")]),
                                     hourly: [CurrentWeather(time: Date(),
+                                                            temperature: 80,
+                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                             CurrentWeather(time: Date(),
+                                                            temperature: 80,
+                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                             CurrentWeather(time: Date(),
+                                                            temperature: 80,
+                                                            condition: [Condition(code: 800, description: "Clear")]),
+                                             CurrentWeather(time: Date(),
                                                             temperature: 80,
                                                             condition: [Condition(code: 800, description: "Clear")]),
                                              CurrentWeather(time: Date(),
