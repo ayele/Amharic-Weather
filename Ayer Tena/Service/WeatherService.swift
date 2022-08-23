@@ -28,7 +28,10 @@ class WeatherService {
             fatalError("Error fetching weather data")
         }
         
-        return try JSONDecoder().decode(Weather.self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        
+        return try decoder.decode(Weather.self, from: data)
     }
     
     func getCity(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> [City] {

@@ -60,7 +60,7 @@ struct HourlyView: View {
                 // We only need 24 hrs of hourly
                 ForEach(weather.hourly) { hourly in
                     VStack(spacing: 15) {
-                        Text("\(hourly.time.formattedHour())")
+                        Text("\(hourly.time.hourOfDay())")
                         Image(systemName: "\(hourly.condition[0].icon.imageName)")
                             .font(.title3)
                         Text("\(hourly.temperature.roundDouble())°")
@@ -81,7 +81,7 @@ struct DailyView: View {
             ForEach(weather.daily) { daily in
                 VStack {
                     HStack {
-                        Text("\(daily.time.formattedDay())")
+                        Text("\(daily.time.dayOfWeek())")
                             .frame(width: 100, alignment: .leading)
                         Spacer()
                         Image(systemName: "\(daily.condition[0].icon.imageName)")
