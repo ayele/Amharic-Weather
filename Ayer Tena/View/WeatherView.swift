@@ -56,12 +56,13 @@ struct HourlyView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 20) {
+            HStack(spacing: 25) {
                 // We only need 24 hrs of hourly
                 ForEach(weather.hourly) { hourly in
                     VStack(spacing: 15) {
                         Text("\(hourly.time.formattedHour())")
                         Image(systemName: "\(hourly.condition[0].icon.imageName)")
+                            .font(.title3)
                         Text("\(hourly.temperature.roundDouble())°")
                     }
                 }
@@ -84,6 +85,7 @@ struct DailyView: View {
                             .frame(width: 100, alignment: .leading)
                         Spacer()
                         Image(systemName: "\(daily.condition[0].icon.imageName)")
+                            .font(.title3)
                         Spacer()
                         Text("\(daily.temperature.low.roundDouble())° - \(daily.temperature.high.roundDouble())°")
                             .frame(width: 100, alignment: .trailing)
