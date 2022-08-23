@@ -8,9 +8,16 @@
 import Foundation
 
 extension Date {
-    func formatted() -> String {
+    func formattedHour() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "ha"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.string(from: self)
+    }
+    
+    func formattedDay() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.string(from: self)
     }
