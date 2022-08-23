@@ -99,5 +99,27 @@ extension Weather {
                                             ],
                                     daily: [DailyWeather(time: Date(),
                                                          temperature: DailyWeather.Temperature(low: 50, high: 80),
-                                                         condition: [Condition(code: 800, description: "Clear")])])
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")]),
+                                            DailyWeather(time: Date(),
+                                                         temperature: DailyWeather.Temperature(low: 50, high: 80),
+                                                         condition: [Condition(code: 800, description: "Clear")])
+                                           ])
 }
