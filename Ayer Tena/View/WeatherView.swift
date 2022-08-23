@@ -31,7 +31,8 @@ struct WeatherView: View {
                 VStack(spacing: 20) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 20) {
-                            ForEach(weather.hourly) { hourly in
+                            // We only need 24 hrs of hourly
+                            ForEach(weather.hourly[..<25]) { hourly in
                                 VStack(spacing: 15) {
                                     Text("\(hourly.time.formattedHour())")
                                     Image(systemName: "\(hourly.condition[0].icon.imageName)")
