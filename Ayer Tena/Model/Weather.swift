@@ -10,6 +10,7 @@ import Foundation
 struct Weather: Codable {
     let longitude: Double
     let latitude: Double
+    var city: City? = nil
     let current: CurrentWeather
     let hourly: [CurrentWeather]
     let daily: [DailyWeather]

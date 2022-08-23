@@ -36,7 +36,7 @@ struct CurrentView: View {
     
     var body: some View {
         VStack(spacing: -5) {
-            Text("Middleton").font(.largeTitle)
+            Text("\(weather.city?.name ?? "--")").font(.largeTitle)
             Text("\(weather.current.temperature.roundDouble())")
                 .font(.system(size: 90))
             VStack(spacing: 5) {

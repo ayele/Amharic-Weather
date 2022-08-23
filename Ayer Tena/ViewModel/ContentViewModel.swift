@@ -27,7 +27,12 @@ class ContentViewModel: ObservableObject {
         isLoading = true
         
         do {
-            weather = try await service.getWeather(latitude: latitude, longitude: longitude)
+            var weatherNoCity = try await service.getWeather(latitude: latitude, longitude: longitude)
+            let cities = try await service.getCity(latitude: latitude, longitude: longitude)
+            if let city = cities.first {
+                weatherNoCity.city = city
+            }
+            weather = weatherNoCity
             print("We have weather data!!")
         } catch {
             print("Error getting weather")
