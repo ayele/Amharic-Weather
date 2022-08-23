@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1F683C28B54FB80069F8AD /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F683B28B54FB80069F8AD /* City.swift */; };
 		3A3E05C128B45EAB001DB1D5 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E05C028B45EAB001DB1D5 /* Icon.swift */; };
 		3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */; };
 		3A857ADE28B140E300F343FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADD28B140E300F343FE /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1F683B28B54FB80069F8AD /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		3A3E05C028B45EAB001DB1D5 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayer_TenaApp.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				3A857AF428B2B32300F343FE /* Weather.swift */,
 				3A3E05C028B45EAB001DB1D5 /* Icon.swift */,
+				3A1F683B28B54FB80069F8AD /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,
 				3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */,
+				3A1F683C28B54FB80069F8AD /* City.swift in Sources */,
 				3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
 				3A857AF528B2B32300F343FE /* Weather.swift in Sources */,
