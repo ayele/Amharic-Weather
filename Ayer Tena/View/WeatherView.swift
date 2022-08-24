@@ -10,7 +10,8 @@ import CoreLocation
 
 struct WeatherView: View {
     @ObservedObject var weatherVM: WeatherViewModel
-    
+    @Environment(\.scenePhase) private var scenePhase
+
     var body: some View {
         Group {
             if let weather = weatherVM.weather {
@@ -36,6 +37,13 @@ struct WeatherView: View {
         .onAppear {
             Task {
                 await weatherVM.getWeather()
+            }
+        }
+        .onChange(of: scenePhase) { phase in
+            if phase == .active {
+                Task {
+                    await weatherVM.getWeather()
+                }
             }
         }
     }
