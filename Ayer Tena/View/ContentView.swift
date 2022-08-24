@@ -14,14 +14,8 @@ struct ContentView: View {
     var body: some View {
         Group {
             if let location = locationManager.location {
-                if let weather = contentVM.weather {
-                    WeatherView(weather: weather)
-                } else {
-                    LoadingView()
-                        .task {
-                            await contentVM.getWeather(longitude: location.longitude, latitude: location.latitude)
-                        }
-                }
+                WeatherView(weatherVM: WeatherViewModel(location: location, service: WeatherService()))
+                
             } else {
                 if locationManager.isLoading {
                     LoadingView()
