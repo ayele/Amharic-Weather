@@ -40,23 +40,7 @@ struct CurrentView: View {
             Text("\(weather.current.temperature.roundDouble())°")
                 .font(.system(size: 90))
                 .padding(.leading, 30) // offsets the ° symbol
-            VStack(spacing: 5) {
-                Text("\(weather.current.condition[0].description)").font(.title3)
-                HStack {
-                    HStack(spacing: 1) {
-                        Image(systemName: "chevron.up")
-                            .foregroundColor(.secondary)
-                        Text("\(weather.daily.first?.temperature.high.roundDouble() ?? "-")°")
-                            .font(.title3)
-                    }
-                    HStack(spacing: 1) {
-                        Image(systemName: "chevron.down")
-                            .foregroundColor(.secondary)
-                        Text("\(weather.daily.first?.temperature.low.roundDouble() ?? "-")°")
-                            .font(.title3)
-                    }
-                }
-            }
+            Text("\(weather.current.condition[0].description)").font(.title3)
         }
         .padding(50)
     }
