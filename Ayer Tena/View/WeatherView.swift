@@ -6,28 +6,54 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct WeatherView: View {
-    var weather: Weather
-    
+    @ObservedObject var weatherVM: WeatherViewModel
+    @Environment(\.scenePhase) private var scenePhase
+
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
-                CurrentView(weather: weather)
-                
-                VStack(spacing: 15) {
-                    HourlyView(weather: weather)
-                    DailyView(weather: weather)
+        Group {
+            if let weather = weatherVM.weather {
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        CurrentView(weather: weather)
+                        
+                        VStack(spacing: 15) {
+                            HourlyView(weather: weather)
+                            DailyView(weather: weather)
+                        }
+                    }
+                    .padding()
+                }
+            } else {
+                if weatherVM.isLoading {
+                    LoadingView()
+                } else {
+                    Text("Weather not available")
                 }
             }
-            .padding()
+        }
+        .onAppear {
+            Task {
+                await weatherVM.getWeather()
+            }
+        }
+        .onChange(of: scenePhase) { phase in
+            if phase == .active {
+                Task {
+                    await weatherVM.getWeather()
+                }
+            }
         }
     }
 }
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(weather: Weather.sampleData)
+        WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
+                                                service: WeatherService(),
+                                                weather: Weather.sampleData))
     }
 }
 
