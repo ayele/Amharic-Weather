@@ -9,6 +9,10 @@ import Foundation
 
 extension Date {
     func hourOfDay() -> String {
+        if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .hour) {
+            return "አሁን"
+        }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "ha"
         dateFormatter.locale = Locale(identifier: "en_US")
@@ -16,6 +20,10 @@ extension Date {
     }
     
     func dayOfWeek() -> String {
+        if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .day) {
+            return "ዛሬ"
+        }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
         dateFormatter.locale = Locale(identifier: "en_US")
