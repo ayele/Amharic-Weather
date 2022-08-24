@@ -13,13 +13,10 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack {
-            VStack(spacing: 20) {
-                Text("Welcome to Ayer Tena")
-                    .bold()
-                    .font(Font.custom("Roboto-Bold", size: 28, relativeTo: .title))
-                Text("Please share your current location to get the weather in your area")
-                    .padding()
-                    .font(Font.custom("Roboto-Regular", size: 17))
+            VStack(spacing: 10) {
+                Text("እንኳን ደህና መጡ")
+                    .font(.largeTitle)
+                Text("ለአከባቢዎ አየር ሁኔታ እባኮን ሎኬሽኖን ሼር ያርጉ")
             }
             .multilineTextAlignment(.center)
             .padding()
@@ -39,6 +36,8 @@ struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WelcomeView()
+            WelcomeView()
+                .preferredColorScheme(.dark)
         }
     }
 }
