@@ -42,8 +42,10 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             requestLocation()
              break
           case .authorizedAlways:
+            print("Always authorized.")
              break
           case .notDetermined:
+            print("Authorization status not determined.")
              break
         @unknown default:
             break
