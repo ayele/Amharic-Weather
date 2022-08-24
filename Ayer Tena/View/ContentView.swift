@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var locationManager = LocationManager()
-    @StateObject var contentVM = ContentViewModel(service: WeatherService())
 
     var body: some View {
         Group {
