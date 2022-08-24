@@ -15,7 +15,7 @@ struct WeatherView: View {
             VStack {
                 CurrentView(weather: weather)
                 
-                VStack(spacing: 20) {
+                VStack(spacing: 15) {
                     HourlyView(weather: weather)
                     DailyView(weather: weather)
                 }
@@ -42,7 +42,7 @@ struct CurrentView: View {
                 .padding(.leading, 30) // offsets the ° symbol
             Text("\(weather.current.condition[0].description)").font(.title3)
         }
-        .padding(50)
+        .padding(40)
     }
 }
 
