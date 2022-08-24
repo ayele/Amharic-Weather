@@ -13,7 +13,7 @@ extension String {
         case "Thunderstorm":
             return "ነጎድጓድ"
         case "Drizzle":
-            return "አፍስሱ"
+            return "ነጠብጣብ"
         case "Rain":
             return "ዝናብ"
         case "Snow":
