@@ -10,6 +10,7 @@
 		3A1F683C28B54FB80069F8AD /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F683B28B54FB80069F8AD /* City.swift */; };
 		3A1F683F28B689C00069F8AD /* String+Amharic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F683E28B689C00069F8AD /* String+Amharic.swift */; };
 		3A1F684128B69E1E0069F8AD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684028B69E1D0069F8AD /* NetworkError.swift */; };
+		3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */; };
 		3A3E05C128B45EAB001DB1D5 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E05C028B45EAB001DB1D5 /* Icon.swift */; };
 		3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */; };
 		3A857ADE28B140E300F343FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADD28B140E300F343FE /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 		3A1F683B28B54FB80069F8AD /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		3A1F683E28B689C00069F8AD /* String+Amharic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Amharic.swift"; sourceTree = "<group>"; };
 		3A1F684028B69E1D0069F8AD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3A3E05C028B45EAB001DB1D5 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayer_TenaApp.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3A857B0128B2C2BE00F343FE /* ContentViewModel.swift */,
+				3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				3A1F683C28B54FB80069F8AD /* City.swift in Sources */,
 				3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
+				3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */,
 				3A857AF528B2B32300F343FE /* Weather.swift in Sources */,
 				3A3E05C128B45EAB001DB1D5 /* Icon.swift in Sources */,
 				3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */,
