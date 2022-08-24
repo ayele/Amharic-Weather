@@ -36,11 +36,13 @@ struct CurrentView: View {
     
     var body: some View {
         VStack(spacing: -5) {
-            Text("\(weather.city?.name ?? "--")").font(.largeTitle)
+            Text("\(weather.city?.name ?? "--")")
+                .font(.largeTitle)
             Text("\(weather.current.temperature.roundDouble())°")
                 .font(.system(size: 90))
                 .padding(.leading, 30) // offsets the ° symbol
-            Text("\(weather.current.condition[0].description)").font(.title3)
+            Text("\(weather.current.condition[0].description.inAmharic())")
+                .font(.title3)
         }
         .padding(40)
     }
