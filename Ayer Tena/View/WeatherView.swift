@@ -56,10 +56,18 @@ struct HourlyView: View {
             HStack(spacing: 25) {
                 // We only need 24 hrs of data
                 ForEach(weather.hourly.prefix(24)) { hourly in
-                    VStack(spacing: 15) {
+                    VStack(spacing: 0) {
                         Text("\(hourly.time.hourOfDay())")
-                        Image(systemName: "\(hourly.condition[0].icon.imageName)")
-                            .font(.title3)
+                        VStack {
+                            Image(systemName: "\(hourly.condition[0].icon.imageName)")
+                                .font(.title3)
+                            if let cor = hourly.chanceOfRain, cor > 0 {
+                                Text("\((cor * 100).roundDouble())%")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        .frame(height: 50)
                         Text("\(hourly.temperature.roundDouble())°")
                     }
                 }
@@ -81,8 +89,15 @@ struct DailyView: View {
                         Text("\(daily.time.dayOfWeek())")
                             .frame(width: 100, alignment: .leading)
                         Spacer()
-                        Image(systemName: "\(daily.condition[0].icon.imageName)")
-                            .font(.title3)
+                        VStack {
+                            Image(systemName: "\(daily.condition[0].icon.imageName)")
+                                .font(.title3)
+                            if daily.chanceOfRain > 0 {
+                                Text("\((daily.chanceOfRain * 100).roundDouble())%")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
                         Spacer()
                         HStack {
                             Text("\(daily.temperature.low.roundDouble())°")
@@ -96,6 +111,7 @@ struct DailyView: View {
                         }
                         .frame(width: 200, alignment: .trailing)
                     }
+                    .frame(height: 35)
                     Divider()
                 }
             }
