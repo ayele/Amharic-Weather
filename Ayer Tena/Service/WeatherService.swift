@@ -15,7 +15,7 @@ class WeatherService {
         let baseURL = "https://api.openweathermap.org"
         let url = "\(baseURL)/data/3.0/onecall?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&exclude=minutely&units=imperial"
         
-        guard let url = URL(string: url) else { fatalError("Missing URL") }
+        guard let url = URL(string: url) else { throw NetworkError.missingURL }
         
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
@@ -25,7 +25,7 @@ class WeatherService {
         print(data.prettyPrintedJSONString ?? "")
 
         guard statusCode == 200 else {
-            fatalError("Error fetching weather data")
+            throw NetworkError.unknownError
         }
         
         let decoder = JSONDecoder()
@@ -39,7 +39,7 @@ class WeatherService {
         let baseURL = "https://api.openweathermap.org"
         let url = "\(baseURL)/geo/1.0/reverse?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&limit=5"
     
-        guard let url = URL(string: url) else { fatalError("Missing URL") }
+        guard let url = URL(string: url) else { throw NetworkError.missingURL }
         
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
@@ -49,7 +49,7 @@ class WeatherService {
         print(data.prettyPrintedJSONString ?? "")
 
         guard statusCode == 200 else {
-            fatalError("Error fetching weather data")
+            throw NetworkError.unknownError
         }
         
         return try JSONDecoder().decode([City].self, from: data)
