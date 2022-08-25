@@ -30,14 +30,12 @@ struct WeatherView: View {
                 if weatherVM.isLoading {
                     LoadingView()
                 } else {
-                    Text("Weather not available")
+                    Text("")
                 }
             }
         }
-        .onAppear {
-            Task {
-                await weatherVM.getWeather()
-            }
+        .task {
+            await weatherVM.getWeather()
         }
         .onChange(of: scenePhase) { phase in
             if phase == .active {
