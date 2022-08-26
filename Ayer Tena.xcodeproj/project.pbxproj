@@ -49,7 +49,6 @@
 		3AC8C62328B4310A00E38843 /* Data+Pretty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Pretty.swift"; sourceTree = "<group>"; };
 		3AC8C62628B433F200E38843 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
-		3ACA2DE428B7D9D70043825F /* Ayer-Tena-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Ayer-Tena-Info.plist"; path = "Ayer Tena/Ayer-Tena-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +89,6 @@
 				3A857AFC28B2B61700F343FE /* Service */,
 				3AC8C62528B4312B00E38843 /* Extensions */,
 				3ACA2DE328B7D7B90043825F /* Fonts */,
-				3ACA2DE428B7D9D70043825F /* Ayer-Tena-Info.plist */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
 				3A857AE128B140E500F343FE /* Preview Content */,
 			);
