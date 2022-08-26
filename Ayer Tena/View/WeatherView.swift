@@ -24,8 +24,9 @@ struct WeatherView: View {
                             DailyView(weather: weather)
                         }
                     }
-                    .padding()
+                    
                 }
+                .padding()
             } else {
                 if weatherVM.isLoading {
                     LoadingView()
@@ -114,7 +115,7 @@ struct DailyView: View {
                 VStack {
                     HStack {
                         Text("\(daily.time.dayOfWeek())")
-                            .frame(width: 100, alignment: .leading)
+                            .frame(width: 80, alignment: .leading)
                         Spacer()
                         VStack {
                             Image(systemName: "\(daily.condition[0].icon.imageName)")
