@@ -13,6 +13,11 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack {
+            Image(uiImage: UIImage(named: "logo") ?? UIImage())
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100)
+                
             VStack(spacing: 10) {
                 Text("እንኳን ደህና መጡ")
                     .font(.largeTitle)
@@ -29,6 +34,8 @@ struct WelcomeView: View {
             .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("SmokeyWhite"))
+
     }
 }
 
