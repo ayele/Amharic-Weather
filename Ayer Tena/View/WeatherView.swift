@@ -89,7 +89,7 @@ struct HourlyView: View {
                                 .font(.title3)
                             if let cor = hourly.chanceOfRain, cor > 0 {
                                 Text("\((cor * 100).roundDouble())%")
-                                    .font(Font.custom("SofiaProLight", size: 15))
+                                    .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }
                         }
@@ -121,7 +121,7 @@ struct DailyView: View {
                                 .font(.title3)
                             if daily.chanceOfRain > 0 {
                                 Text("\((daily.chanceOfRain * 100).roundDouble())%")
-                                    .font(Font.custom("SofiaProLight", size: 15))
+                                    .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }
                         }
