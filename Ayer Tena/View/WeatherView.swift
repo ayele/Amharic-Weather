@@ -27,6 +27,8 @@ struct WeatherView: View {
                     
                 }
                 .padding()
+                .background(Color("SmokeyWhite"))
+                
             } else {
                 if weatherVM.isLoading {
                     LoadingView()
@@ -50,9 +52,15 @@ struct WeatherView: View {
 
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
-                                                service: WeatherService(),
-                                                weather: Weather.sampleData))
+        Group {
+            WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
+                                                    service: WeatherService(),
+                                                    weather: Weather.sampleData))
+            WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
+                                                    service: WeatherService(),
+                                                    weather: Weather.sampleData))
+                .preferredColorScheme(.dark)
+        }
     }
 }
 
