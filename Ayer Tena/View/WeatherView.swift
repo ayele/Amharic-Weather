@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreLocation
+import WeatherKit
 
 struct WeatherView: View {
     @ObservedObject var weatherVM: WeatherViewModel
@@ -20,8 +21,8 @@ struct WeatherView: View {
                         CurrentView(weather: weather)
                         
                         VStack(spacing: 15) {
-                            HourlyView(weather: weather)
-                            DailyView(weather: weather)
+                            HourlyView(hourlyForecast: weather.hourlyForecast.forecast)
+                            DailyView(dailyForecast: weather.dailyForecast.forecast)
                         }
                     }
                     
@@ -54,11 +55,9 @@ struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
-                                                    service: WeatherService(),
-                                                    weather: Weather.sampleData))
+                                                    service: WeatherService()))
             WeatherView(weatherVM: WeatherViewModel(location: CLLocationCoordinate2D(),
-                                                    service: WeatherService(),
-                                                    weather: Weather.sampleData))
+                                                    service: WeatherService()))
                 .preferredColorScheme(.dark)
         }
     }
@@ -69,13 +68,13 @@ struct CurrentView: View {
     
     var body: some View {
         VStack(spacing: -5) {
-            Text("\(weather.city?.name ?? "--")")
+            Text("--")
                 .font(Font.custom("SofiaProLight", size: 35))
                 .padding(.bottom, 10)
-            Text("\(weather.current.temperature.roundDouble())°")
+            Text("\(weather.currentWeather.temperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
                 .font(Font.custom("SofiaProLight", size: 90))
                 .padding(.leading, 30) // offsets the ° symbol
-            Text("\(weather.current.condition[0].description.inAmharic())")
+            Text("\(weather.currentWeather.condition.description)")
                 .font(Font.custom("SofiaProLight", size: 20))
         }
         .padding(40)
@@ -83,27 +82,27 @@ struct CurrentView: View {
 }
 
 struct HourlyView: View {
-    let weather: Weather
+    let hourlyForecast: [HourWeather]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 25) {
                 // We only need 24 hrs of data
-                ForEach(weather.hourly.prefix(24)) { hourly in
+                ForEach(hourlyForecast, id: \.date) { hourWeather in
                     VStack(spacing: 0) {
-                        Text("\(hourly.time.hourOfDay())")
+                        Text("\(hourWeather.date.hourOfDay())")
                             .font(Font.custom("SofiaProLight", size: 17))
                         VStack {
-                            Image(systemName: "\(hourly.condition[0].icon.imageName)")
+                            Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
-                            if let cor = hourly.chanceOfRain, cor > 0 {
-                                Text("\((cor * 100).roundDouble())%")
+                            if hourWeather.precipitationChance > 0 {
+                                Text("\((hourWeather.precipitationChance * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }
                         }
                         .frame(height: 50)
-                        Text("\(hourly.temperature.roundDouble())°")
+                        Text("\(hourWeather.temperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
                             .font(Font.custom("SofiaProLight", size: 20))
                     }
                 }
@@ -115,34 +114,34 @@ struct HourlyView: View {
 }
 
 struct DailyView: View {
-    let weather: Weather
+    let dailyForecast: [DayWeather]
     
     var body: some View {
         VStack(spacing: 15) {
-            ForEach(weather.daily) { daily in
+            ForEach(dailyForecast, id: \.date) { dayWeather in
                 VStack {
                     HStack {
-                        Text("\(daily.time.dayOfWeek())")
+                        Text("\(dayWeather.date.dayOfWeek())")
                             .frame(width: 80, alignment: .leading)
                         Spacer()
                         VStack {
-                            Image(systemName: "\(daily.condition[0].icon.imageName)")
+                            Image(systemName: dayWeather.symbolName)
                                 .font(.title3)
-                            if daily.chanceOfRain > 0 {
-                                Text("\((daily.chanceOfRain * 100).roundDouble())%")
+                            if dayWeather.precipitationChance > 0 {
+                                Text("\((dayWeather.precipitationChance * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }
                         }
                         Spacer()
                         HStack {
-                            Text("\(daily.temperature.low.roundDouble())°")
+                            Text("\(dayWeather.lowTemperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
                                 .font(Font.custom("SofiaProLight", size: 20))
                                 .foregroundColor(.secondary)
                             Capsule()
                                 .frame(width: 90, height: 6)
                                 .foregroundColor(.secondary)
-                            Text("\(daily.temperature.high.roundDouble())°")
+                            Text("\(dayWeather.highTemperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
                                 .font(Font.custom("SofiaProLight", size: 20))
                         }
                         .frame(width: 200, alignment: .trailing)

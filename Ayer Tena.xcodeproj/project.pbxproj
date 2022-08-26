@@ -19,9 +19,7 @@
 		3A857AE328B140E500F343FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A857AE228B140E500F343FE /* Preview Assets.xcassets */; };
 		3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF028B2B1FF00F343FE /* WelcomeView.swift */; };
 		3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF228B2B26D00F343FE /* WeatherView.swift */; };
-		3A857AF528B2B32300F343FE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF428B2B32300F343FE /* Weather.swift */; };
 		3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF828B2B5E500F343FE /* LocationManager.swift */; };
-		3A857AFB28B2B5F400F343FE /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AFA28B2B5F400F343FE /* WeatherService.swift */; };
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
 		3AC8C62428B4310A00E38843 /* Data+Pretty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62328B4310A00E38843 /* Data+Pretty.swift */; };
 		3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62628B433F200E38843 /* Double+Round.swift */; };
@@ -34,6 +32,7 @@
 		3A1F684028B69E1D0069F8AD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3A3E05C028B45EAB001DB1D5 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		3A53881228B96A5D00D9A5B5 /* Ayer Tena.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ayer Tena.entitlements"; sourceTree = "<group>"; };
 		3A7F87AB28B80A1800972043 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
 		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayer_TenaApp.swift; sourceTree = "<group>"; };
@@ -42,9 +41,7 @@
 		3A857AE228B140E500F343FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A857AF028B2B1FF00F343FE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3A857AF228B2B26D00F343FE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
-		3A857AF428B2B32300F343FE /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		3A857AF828B2B5E500F343FE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		3A857AFA28B2B5F400F343FE /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		3A857B0328B2C87D00F343FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AC8C62328B4310A00E38843 /* Data+Pretty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Pretty.swift"; sourceTree = "<group>"; };
 		3AC8C62628B433F200E38843 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
@@ -89,6 +86,7 @@
 				3A857AFC28B2B61700F343FE /* Service */,
 				3AC8C62528B4312B00E38843 /* Extensions */,
 				3ACA2DE328B7D7B90043825F /* Fonts */,
+				3A53881228B96A5D00D9A5B5 /* Ayer Tena.entitlements */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
 				3A857AE128B140E500F343FE /* Preview Content */,
 			);
@@ -106,7 +104,6 @@
 		3A857AF628B2B33200F343FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A857AF428B2B32300F343FE /* Weather.swift */,
 				3A3E05C028B45EAB001DB1D5 /* Icon.swift */,
 				3A1F683B28B54FB80069F8AD /* City.swift */,
 			);
@@ -127,7 +124,6 @@
 		3A857AFC28B2B61700F343FE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3A857AFA28B2B5F400F343FE /* WeatherService.swift */,
 				3A1F684028B69E1D0069F8AD /* NetworkError.swift */,
 			);
 			path = Service;
@@ -250,10 +246,8 @@
 				3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
 				3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */,
-				3A857AF528B2B32300F343FE /* Weather.swift in Sources */,
 				3A3E05C128B45EAB001DB1D5 /* Icon.swift in Sources */,
 				3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */,
-				3A857AFB28B2B5F400F343FE /* WeatherService.swift in Sources */,
 				3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ayer Tena/Ayer Tena.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ayer Tena/Preview Content\"";
@@ -395,6 +390,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ayer Tena/Ayer Tena.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ayer Tena/Preview Content\"";
@@ -426,6 +423,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import WeatherKit
 
 @MainActor
 class WeatherViewModel: ObservableObject {
@@ -29,13 +30,8 @@ class WeatherViewModel: ObservableObject {
         isLoading = true
         
         do {
-            var weatherNoCity = try await service.getWeather(latitude: location.latitude, longitude: location.longitude)
-            let cities = try await service.getCity(latitude: location.latitude, longitude: location.longitude)
-            if let city = cities.first {
-                weatherNoCity.city = city
-            }
-            weather = weatherNoCity
-            print("We have weather data!!")
+            weather = try await service.weather(for: CLLocation(latitude: location.latitude, longitude: location.longitude))
+//            print("We have weather: \(String(describing: weather))")
         } catch {
             print("Error getting weather")
         }
