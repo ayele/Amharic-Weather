@@ -33,11 +33,14 @@ class WeatherViewModel: ObservableObject {
         isLoading = true
         
         do {
-            weather = try await service.weather(for: CLLocation(latitude: location.latitude, longitude: location.longitude))
+            // Three network calls are being made here. Wait for all
+            // calls to complete before setting the results
+            let weatherData = try await service.weather(for: CLLocation(latitude: location.latitude, longitude: location.longitude))
             let placemark = try await CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: location.latitude, longitude: location.longitude))
-            city = placemark.first?.locality
             
             attribution = try await service.attribution
+            city = placemark.first?.locality
+            weather = weatherData
         } catch {
             print("Error getting weather")
         }
