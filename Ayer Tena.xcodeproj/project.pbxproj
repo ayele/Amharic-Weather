@@ -15,6 +15,8 @@
 		3A66B36928BA7F6200FA76DA /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36828BA7F6200FA76DA /* CurrentView.swift */; };
 		3A66B36B28BA7F7200FA76DA /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36A28BA7F7200FA76DA /* HourlyView.swift */; };
 		3A66B36D28BA7F7D00FA76DA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36C28BA7F7D00FA76DA /* DailyView.swift */; };
+		3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36E28BA98CF00FA76DA /* AttributionView.swift */; };
+		3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B37028BAA4BC00FA76DA /* SafariView.swift */; };
 		3A7F87AC28B80A1800972043 /* sofiapro-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7F87AB28B80A1800972043 /* sofiapro-light.otf */; };
 		3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */; };
 		3A857ADE28B140E300F343FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADD28B140E300F343FE /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 		3A66B36828BA7F6200FA76DA /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		3A66B36A28BA7F7200FA76DA /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 		3A66B36C28BA7F7D00FA76DA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		3A66B36E28BA98CF00FA76DA /* AttributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionView.swift; sourceTree = "<group>"; };
+		3A66B37028BAA4BC00FA76DA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		3A7F87AB28B80A1800972043 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
 		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayer_TenaApp.swift; sourceTree = "<group>"; };
@@ -125,7 +129,9 @@
 				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
 				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
 				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
+				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
 				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
+				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,11 +256,13 @@
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A1F683F28B689C00069F8AD /* String+Amharic.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
+				3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,
 				3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */,
 				3A1F683C28B54FB80069F8AD /* City.swift in Sources */,
 				3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */,
 				3A66B36B28BA7F7200FA76DA /* HourlyView.swift in Sources */,
+				3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
 				3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */,
 				3A3E05C128B45EAB001DB1D5 /* Icon.swift in Sources */,

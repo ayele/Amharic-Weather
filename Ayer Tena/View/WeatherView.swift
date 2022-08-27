@@ -12,7 +12,7 @@ import WeatherKit
 struct WeatherView: View {
     @ObservedObject var weatherVM: WeatherViewModel
     @Environment(\.scenePhase) private var scenePhase
-
+    
     // We only need 25 hours of hourly data starting
     // at the current hour
     var hourlyWeatherData: [HourWeather] {
@@ -37,8 +37,14 @@ struct WeatherView: View {
                             HourlyView(hourlyForecast: hourlyWeatherData)
                             DailyView(dailyForecast: weather.dailyForecast.forecast)
                         }
+                        
+                        if let attribution = weatherVM.attribution {
+                            AttributionView(attribution: attribution) {
+                                weatherVM.isPresentingSafariView = true
+                            }
+                                .padding(.top, 80)
+                        }
                     }
-                    
                 }
                 .padding()
                 .background(Color("SmokeyWhite"))
@@ -59,6 +65,11 @@ struct WeatherView: View {
                 Task {
                     await weatherVM.getWeather()
                 }
+            }
+        }
+        .fullScreenCover(isPresented: $weatherVM.isPresentingSafariView) {
+            if let attribution = weatherVM.attribution {
+                SafariView(url: attribution.legalPageURL)
             }
         }
     }
