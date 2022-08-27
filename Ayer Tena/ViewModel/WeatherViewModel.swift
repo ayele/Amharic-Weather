@@ -12,6 +12,7 @@ import WeatherKit
 @MainActor
 class WeatherViewModel: ObservableObject {
     @Published private(set) var weather: Weather?
+    @Published private(set) var city: String?
     @Published private(set) var isLoading = false
     @Published var isShowingAlert = false
     @Published private(set) var error: NetworkError?
@@ -31,7 +32,8 @@ class WeatherViewModel: ObservableObject {
         
         do {
             weather = try await service.weather(for: CLLocation(latitude: location.latitude, longitude: location.longitude))
-//            print("We have weather: \(String(describing: weather))")
+            let placemark = try await CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: location.latitude, longitude: location.longitude))
+            city = placemark.first?.locality
         } catch {
             print("Error getting weather")
         }

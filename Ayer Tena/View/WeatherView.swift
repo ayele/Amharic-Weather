@@ -18,7 +18,7 @@ struct WeatherView: View {
             if let weather = weatherVM.weather {
                 ScrollView(showsIndicators: false) {
                     VStack {
-                        CurrentView(weather: weather)
+                        CurrentView(weather: weather, city: weatherVM.city ?? "--")
                         
                         VStack(spacing: 15) {
                             HourlyView(hourlyForecast: weather.hourlyForecast.forecast)
@@ -65,10 +65,11 @@ struct WeatherView_Previews: PreviewProvider {
 
 struct CurrentView: View {
     let weather: Weather
+    let city: String
     
     var body: some View {
         VStack(spacing: -5) {
-            Text("--")
+            Text(city)
                 .font(Font.custom("SofiaProLight", size: 35))
                 .padding(.bottom, 10)
             Text("\(weather.currentWeather.temperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
