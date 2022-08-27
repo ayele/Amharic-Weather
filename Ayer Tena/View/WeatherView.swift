@@ -95,7 +95,7 @@ struct HourlyView: View {
                         VStack {
                             Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
-                            if hourWeather.precipitationChance > 0 {
+                            if hourWeather.precipitationChance >= 0.3 {
                                 Text("\((hourWeather.precipitationChance * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
@@ -127,7 +127,7 @@ struct DailyView: View {
                         VStack {
                             Image(systemName: dayWeather.symbolName)
                                 .font(.title3)
-                            if dayWeather.precipitationChance > 0 {
+                            if dayWeather.precipitationChance >= 0.3 {
                                 Text("\((dayWeather.precipitationChance * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
