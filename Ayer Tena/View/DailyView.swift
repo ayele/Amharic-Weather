@@ -23,7 +23,7 @@ struct DailyView: View {
                             Image(systemName: dayWeather.symbolName)
                                 .font(.title3)
                             if dayWeather.precipitationChance >= 0.3 {
-                                Text("\((dayWeather.precipitationChance * 100).roundDouble())%")
+                                Text("\(((round(dayWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }

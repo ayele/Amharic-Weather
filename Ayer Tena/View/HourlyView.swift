@@ -23,7 +23,7 @@ struct HourlyView: View {
                             Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
                             if hourWeather.precipitationChance >= 0.3 {
-                                Text("\((hourWeather.precipitationChance * 100).roundDouble())%")
+                                Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
                                     .font(Font.custom("SofiaProLight", size: 12))
                                     .foregroundColor(.secondary)
                             }
