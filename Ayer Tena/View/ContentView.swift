@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 import WeatherKit
 
 struct ContentView: View {
@@ -14,7 +15,14 @@ struct ContentView: View {
     var body: some View {
         Group {
             if let location = locationManager.location {
-                WeatherView(weatherVM: WeatherViewModel(location: location, service: WeatherService()))
+                WeatherView(
+                    weatherVM: WeatherViewModel(
+                        location: CLLocation(
+                            latitude: location.latitude,
+                            longitude: location.longitude),
+                        service: WeatherService()
+                    )
+                )
                 
             } else {
                 if locationManager.isLoading {

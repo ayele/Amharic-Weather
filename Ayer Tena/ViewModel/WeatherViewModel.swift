@@ -20,9 +20,9 @@ class WeatherViewModel: ObservableObject {
     @Published private(set) var error: NetworkError?
     
     private let service: WeatherService
-    private let location: CLLocationCoordinate2D
+    private let location: CLLocation
     
-    init(location: CLLocationCoordinate2D, service: WeatherService, weather: Weather? = nil) {
+    init(location: CLLocation, service: WeatherService, weather: Weather? = nil) {
         self.location = location
         self.service = service
         self.weather = weather
@@ -35,8 +35,8 @@ class WeatherViewModel: ObservableObject {
         do {
             // Three network calls are being made here. Wait for all
             // calls to complete before setting the results
-            let weatherData = try await service.weather(for: CLLocation(latitude: location.latitude, longitude: location.longitude))
-            let placemark = try await CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: location.latitude, longitude: location.longitude))
+            let weatherData = try await service.weather(for: location)
+            let placemark = try await CLGeocoder().reverseGeocodeLocation(location)
             
             attribution = try await service.attribution
             city = placemark.first?.locality
