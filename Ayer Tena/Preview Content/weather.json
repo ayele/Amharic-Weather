@@ -1851,5 +1851,43 @@
                 "symbolName": "sun.max"
             }
         ]
-    }
+    },
+    "weatherAlerts": [
+        {
+            "date": 1724967000,
+            "expirationDate": 1724967000,
+            "description": "Severe Thunderstorm Warning",
+            "importance": "high",
+            "metadata": {
+                "expirationDate": 1724967000,
+                "latitude": 43.054699,
+                "longitude": -89.326752,
+                "date": 1724967000
+            },
+            "region": "Dane county",
+            "severity": "severe",
+            "weatherSeverity": "severe",
+            "summary": "Severe Thunderstorm Warning",
+            "detailsURL": "https://www.weather.gov",
+            "source": "National Weather Service"
+        },
+        {
+            "date": 1724967000,
+            "expirationDate": 1724967000,
+            "description": "Flash Flood Watch",
+            "importance": "low",
+            "metadata": {
+                "expirationDate": 1724967000,
+                "latitude": 43.054699,
+                "longitude": -89.326752,
+                "date": 1724967000
+            },
+            "region": "Dane county",
+            "severity": "severe",
+            "weatherSeverity": "severe",
+            "summary": "Flash Flood Watch",
+            "detailsURL": "https://www.weather.gov",
+            "source": "National Weather Service"
+        }
+    ]
 }
