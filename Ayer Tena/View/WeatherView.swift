@@ -34,12 +34,20 @@ struct WeatherView: View {
                                     city: weatherVM.city ?? "--")
                         
                         VStack(spacing: 15) {
+                            if let alerts = weather.weatherAlerts {
+                                AlertView(alerts: alerts) {
+                                    weatherVM.url = alerts.first?.detailsURL
+                                    weatherVM.isPresentingSafariView = true
+                                }
+                            }
+                            
                             HourlyView(hourlyForecast: hourlyWeatherData)
                             DailyView(dailyForecast: weather.dailyForecast.forecast)
                         }
                         
                         if let attribution = weatherVM.attribution {
                             AttributionView(attribution: attribution) {
+                                weatherVM.url = attribution.legalPageURL
                                 weatherVM.isPresentingSafariView = true
                             }
                                 .padding(.top, 80)
@@ -68,8 +76,8 @@ struct WeatherView: View {
             }
         }
         .fullScreenCover(isPresented: $weatherVM.isPresentingSafariView) {
-            if let attribution = weatherVM.attribution {
-                SafariView(url: attribution.legalPageURL)
+            if let url = weatherVM.url {
+                SafariView(url: url)
             }
         }
     }

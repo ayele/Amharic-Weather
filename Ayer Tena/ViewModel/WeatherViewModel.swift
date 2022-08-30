@@ -19,6 +19,8 @@ class WeatherViewModel: ObservableObject {
     @Published var isShowingAlert = false
     @Published private(set) var error: NetworkError?
     
+    var url: URL?
+    
     private let service: WeatherService
     private let location: CLLocation
     

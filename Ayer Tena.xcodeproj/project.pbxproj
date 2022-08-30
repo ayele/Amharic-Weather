@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A0AB4AA28BD3AC900014F9E /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AB4A928BD3AC900014F9E /* weather.json */; };
 		3A0AB4AC28BD577600014F9E /* Weather+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */; };
+		3A0AB4AE28BD8D8E00014F9E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */; };
 		3A1F683C28B54FB80069F8AD /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F683B28B54FB80069F8AD /* City.swift */; };
 		3A1F683F28B689C00069F8AD /* String+Amharic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F683E28B689C00069F8AD /* String+Amharic.swift */; };
 		3A1F684128B69E1E0069F8AD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684028B69E1D0069F8AD /* NetworkError.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3A0AB4A928BD3AC900014F9E /* weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
 		3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather+Sample.swift"; sourceTree = "<group>"; };
+		3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		3A1F683B28B54FB80069F8AD /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		3A1F683E28B689C00069F8AD /* String+Amharic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Amharic.swift"; sourceTree = "<group>"; };
 		3A1F684028B69E1D0069F8AD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
 				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
 				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
+				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
 				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
 				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
 				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
@@ -267,6 +270,7 @@
 				3A66B36D28BA7F7D00FA76DA /* DailyView.swift in Sources */,
 				3A1F684128B69E1E0069F8AD /* NetworkError.swift in Sources */,
 				3AC8C62428B4310A00E38843 /* Data+Pretty.swift in Sources */,
+				3A0AB4AE28BD8D8E00014F9E /* AlertView.swift in Sources */,
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A1F683F28B689C00069F8AD /* String+Amharic.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
