@@ -34,7 +34,9 @@ struct WeatherView: View {
                                     city: weatherVM.city ?? "--")
                         
                         VStack(spacing: 15) {
-                            if let alerts = weather.weatherAlerts {
+                            if let alerts = weather.weatherAlerts,
+                                !alerts.isEmpty,
+                                weather.availability.alertAvailability == .available {
                                 AlertView(alerts: alerts) {
                                     weatherVM.url = alerts.first?.detailsURL
                                     weatherVM.isPresentingSafariView = true
