@@ -18,7 +18,6 @@
 		3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36E28BA98CF00FA76DA /* AttributionView.swift */; };
 		3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B37028BAA4BC00FA76DA /* SafariView.swift */; };
 		3A7EA6B028BC1AE40029F97D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EA6AF28BC1AE40029F97D /* Localizable.strings */; };
-		3A7EA6B228BC216A0029F97D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EA6B128BC216A0029F97D /* Localization.swift */; };
 		3A7F87AC28B80A1800972043 /* sofiapro-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7F87AB28B80A1800972043 /* sofiapro-light.otf */; };
 		3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */; };
 		3A857ADE28B140E300F343FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857ADD28B140E300F343FE /* ContentView.swift */; };
@@ -31,6 +30,7 @@
 		3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62628B433F200E38843 /* Double+Round.swift */; };
 		3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62828B43CD900E38843 /* Date+Formatted.swift */; };
 		3AE48BBC28BED08B00E0DD7D /* Ayer-Tena-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */; };
+		3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,6 @@
 		3A66B36E28BA98CF00FA76DA /* AttributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionView.swift; sourceTree = "<group>"; };
 		3A66B37028BAA4BC00FA76DA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		3A7EA6AF28BC1AE40029F97D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		3A7EA6B128BC216A0029F97D /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		3A7F87AB28B80A1800972043 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
 		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* Ayer_TenaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayer_TenaApp.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		3AC8C62628B433F200E38843 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ayer-Tena-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +156,7 @@
 				3AC8C62828B43CD900E38843 /* Date+Formatted.swift */,
 				3A1F683E28B689C00069F8AD /* String+Amharic.swift */,
 				3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */,
+				3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				3A7EA6AF28BC1AE40029F97D /* Localizable.strings */,
-				3A7EA6B128BC216A0029F97D /* Localization.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A1F683F28B689C00069F8AD /* String+Amharic.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
-				3A7EA6B228BC216A0029F97D /* Localization.swift in Sources */,
+				3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */,
 				3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,
 				3A857ADC28B140E300F343FE /* Ayer_TenaApp.swift in Sources */,

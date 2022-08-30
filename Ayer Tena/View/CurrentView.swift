@@ -14,7 +14,7 @@ struct CurrentView: View {
     
     var body: some View {
         VStack(spacing: -5) {
-            Text(Localization.localize(city, comment: ""))
+            Text(city.localize())
                 .font(Font.custom("SofiaProLight", size: 35))
                 .padding(.bottom, 10)
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
