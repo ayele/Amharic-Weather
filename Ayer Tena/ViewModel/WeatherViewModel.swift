@@ -17,7 +17,7 @@ class WeatherViewModel: ObservableObject {
     @Published var isPresentingSafariView = false
     @Published private(set) var isLoading = false
     @Published var isShowingAlert = false
-    @Published private(set) var error: NetworkError?
+    @Published private(set) var error: WeatherError?
     
     var url: URL?
     
