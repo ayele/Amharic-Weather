@@ -17,7 +17,7 @@ struct CurrentView: View {
             Text(Localization.localize(city, comment: ""))
                 .font(Font.custom("SofiaProLight", size: 35))
                 .padding(.bottom, 10)
-            Text("\(currentWeather.temperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
+            Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                 .font(Font.custom("SofiaProLight", size: 90))
                 .padding(.leading, 30) // offsets the ° symbol
             Text("\(currentWeather.condition.description)")
@@ -27,8 +27,12 @@ struct CurrentView: View {
     }
 }
 
-//struct CurrentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CurrentView()
-//    }
-//}
+struct CurrentView_Previews: PreviewProvider {
+    static var previews: some View {
+        CurrentView(currentWeather: Weather.sample.currentWeather, city: "Middleton")
+            .previewDisplayName("Light")
+        CurrentView(currentWeather: Weather.sample.currentWeather, city: "Middleton")
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark")
+    }
+}
