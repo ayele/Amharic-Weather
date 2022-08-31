@@ -9,14 +9,14 @@ import SwiftUI
 import WeatherKit
 
 struct DailyView: View {
-    let dailyForecast: [DayWeather]
+    let forecast: Forecast<DayWeather>
     
     var body: some View {
         VStack(spacing: 15) {
-            ForEach(dailyForecast, id: \.date) { dayWeather in
+            ForEach(forecast.forecast, id: \.date) { dayWeather in
                 VStack {
                     HStack {
-                        Text("\(dayWeather.date.dayOfWeek())")
+                        Text(dayWeather.date.dayOfWeek())
                             .frame(width: 80, alignment: .leading)
                         Spacer()
                         VStack {
@@ -30,13 +30,13 @@ struct DailyView: View {
                         }
                         Spacer()
                         HStack {
-                            Text("\(dayWeather.lowTemperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
+                            Text("\(dayWeather.lowTemperature.converted(to: .fahrenheit).value.roundDouble())°")
                                 .font(Font.custom("SofiaProLight", size: 20))
                                 .foregroundColor(.secondary)
                             Capsule()
                                 .frame(width: 90, height: 6)
                                 .foregroundColor(.secondary)
-                            Text("\(dayWeather.highTemperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
+                            Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
                                 .font(Font.custom("SofiaProLight", size: 20))
                         }
                         .frame(width: 200, alignment: .trailing)
@@ -51,8 +51,12 @@ struct DailyView: View {
     }
 }
 
-//struct DailyView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DailyView()
-//    }
-//}
+struct DailyView_Previews: PreviewProvider {
+    static var previews: some View {
+        DailyView(forecast: Weather.sample.dailyForecast)
+            .previewDisplayName("Light")
+        DailyView(forecast: Weather.sample.dailyForecast)
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark")
+    }
+}

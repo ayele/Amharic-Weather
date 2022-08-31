@@ -32,7 +32,7 @@ struct WeatherView: View {
                             }
                             
                             HourlyView(forecast: weather.hourlyForecast)
-                            DailyView(dailyForecast: weather.dailyForecast.forecast)
+                            DailyView(forecast: weather.dailyForecast)
                         }
                         
                         if let attribution = weatherVM.attribution {
