@@ -28,7 +28,6 @@
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
 		3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62628B433F200E38843 /* Double+Round.swift */; };
 		3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62828B43CD900E38843 /* Date+Formatted.swift */; };
-		3AE48BBC28BED08B00E0DD7D /* Ayer-Tena-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */; };
 		3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */; };
 /* End PBXBuildFile section */
 
@@ -237,7 +236,6 @@
 				3A7EA6B028BC1AE40029F97D /* Localizable.strings in Resources */,
 				3A857AE028B140E500F343FE /* Assets.xcassets in Resources */,
 				3A7F87AC28B80A1800972043 /* sofiapro-light.otf in Resources */,
-				3AE48BBC28BED08B00E0DD7D /* Ayer-Tena-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
