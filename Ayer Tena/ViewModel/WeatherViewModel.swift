@@ -24,10 +24,11 @@ class WeatherViewModel: ObservableObject {
     private let service: WeatherService
     private let location: CLLocation
     
-    init(location: CLLocation, service: WeatherService, weather: Weather? = nil) {
+    init(location: CLLocation, service: WeatherService, weather: Weather? = nil, city: String? = nil) {
         self.location = location
         self.service = service
         self.weather = weather
+        self.city = city
     }
     
     // MARK:- Service
