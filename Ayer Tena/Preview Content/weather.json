@@ -1,7 +1,7 @@
 {
     "availability": {
         "alertAvailability": "available",
-        "minuteAvailability": "temporarilyUnavailable",
+        "minuteAvailability": "available",
         "airQualityAvailability": "temporarilyUnavailable"
     },
     "currentWeather": {
@@ -1878,7 +1878,7 @@
                     },
                     "category": "light"
                 },
-                "date": 676294090
+                "date": 1724967000
             },
             {
                 "precipitation": "rain",
@@ -1904,7 +1904,7 @@
                     },
                     "category": "light"
                 },
-                "date": 676294690
+                "date": 1724967060
             },
             {
                 "precipitation": "rain",
@@ -1930,7 +1930,7 @@
                     },
                     "category": "light"
                 },
-                "date": 676295290
+                "date": 1724967120
             },
             {
                 "precipitation": "rain",
@@ -1956,7 +1956,7 @@
                     },
                     "category": "light"
                 },
-                "date": 676295890
+                "date": 1724967180
             },
             {
                 "precipitation": "rain",
@@ -1982,7 +1982,7 @@
                     },
                     "category": "light"
                 },
-                "date": 676296490
+                "date": 1724967240
             },
             {
                 "precipitation": "rain",
@@ -2008,14 +2008,1444 @@
                     },
                     "category": "light"
                 },
-                "date": 676297090
+                "date": 1724967300
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967360
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967420
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967480
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967540
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967600
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967660
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967720
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967780
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967840
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967900
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724967960
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968020
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968080
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968140
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968200
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968260
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968320
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968380
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968440
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968500
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968560
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968620
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968680
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968740
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968800
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968860
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968920
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724968980
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969040
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969100
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969160
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969220
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969280
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969340
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969400
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969460
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969520
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969580
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969640
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969700
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969760
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969820
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969880
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724969940
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970000
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970060
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970120
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970180
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970240
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970300
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970360
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970420
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970480
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970540
+            },
+            {
+                "precipitation": "rain",
+                "precipitationChance": 0.30,
+                "precipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    }
+                },
+                "apparentPrecipitationIntensity": {
+                    "value": 3.94,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 0.277778
+                        },
+                        "symbol": "km/h"
+                    },
+                    "category": "light"
+                },
+                "date": 1724970600
             }
         ],
         "metadata": {
-            "expirationDate": 676294390,
+            "expirationDate": 1724967000,
             "latitude": 37.323,
             "longitude": -122.032,
-            "date": 676294090
+            "date": 1724967000
         },
         "summary": "Rain for the next hour"
     },
