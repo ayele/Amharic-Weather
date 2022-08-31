@@ -1,6 +1,6 @@
 {
     "availability": {
-        "alertAvailability": "temporarilyUnavailable",
+        "alertAvailability": "available",
         "minuteAvailability": "temporarilyUnavailable",
         "airQualityAvailability": "temporarilyUnavailable"
     },

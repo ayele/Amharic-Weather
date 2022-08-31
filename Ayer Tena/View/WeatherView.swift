@@ -25,10 +25,11 @@ struct WeatherView: View {
                             if let alerts = weather.weatherAlerts,
                                 !alerts.isEmpty,
                                 weather.availability.alertAvailability == .available {
-                                AlertView(alerts: alerts) {
-                                    weatherVM.url = alerts.first?.detailsURL
-                                    weatherVM.isPresentingSafariView = true
-                                }
+                                AlertView(alerts: alerts)
+                                    .onTapGesture {
+                                        weatherVM.url = alerts.first?.detailsURL
+                                        weatherVM.isPresentingSafariView = true
+                                    }
                             }
                             
                             HourlyView(forecast: weather.hourlyForecast)
