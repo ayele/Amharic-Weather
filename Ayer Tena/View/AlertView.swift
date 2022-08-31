@@ -44,7 +44,7 @@ struct AlertView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
+        VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top) {
                 Image(systemName: "exclamationmark.triangle.fill")
                 Text("Severe Weather")
@@ -53,7 +53,7 @@ struct AlertView: View {
             .font(.title3)
             .fontWeight(.bold)
             
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 5) {
                 Text("\(summaries). (\(sources))")
                     .font(.subheadline)
                 Text("\(sources) • \(regions)")
