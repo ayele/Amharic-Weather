@@ -13,18 +13,6 @@ struct WeatherView: View {
     @ObservedObject var weatherVM: WeatherViewModel
     @Environment(\.scenePhase) private var scenePhase
     
-    // We only need 25 hours of hourly data starting
-    // at the current hour
-    var hourlyWeatherData: [HourWeather] {
-        if let weather = weatherVM.weather {
-            return Array(weather.hourlyForecast.filter { hourlyWeather in
-                hourlyWeather.date.timeIntervalSince(Date()) >= -3600
-            }.prefix(25))
-        } else {
-            return []
-        }
-    }
-    
     var body: some View {
         Group {
             if let weather = weatherVM.weather {
@@ -43,7 +31,7 @@ struct WeatherView: View {
                                 }
                             }
                             
-                            HourlyView(hourlyForecast: hourlyWeatherData)
+                            HourlyView(forecast: weather.hourlyForecast)
                             DailyView(dailyForecast: weather.dailyForecast.forecast)
                         }
                         

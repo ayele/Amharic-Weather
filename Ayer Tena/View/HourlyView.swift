@@ -9,15 +9,22 @@ import SwiftUI
 import WeatherKit
 
 struct HourlyView: View {
-    let hourlyForecast: [HourWeather]
+    let forecast: Forecast<HourWeather>
+    
+    // We only need 25 hours of hourly data starting
+    // at the current hour
+    var hourlyWeatherData: [HourWeather] {
+        return Array(forecast.forecast.filter { hourlyWeather in
+            hourlyWeather.date.timeIntervalSince(Date()) >= -3600
+        }.prefix(25))
+    }
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 25) {
-                // We only need 24 hrs of data
-                ForEach(hourlyForecast, id: \.date) { hourWeather in
+                ForEach(hourlyWeatherData, id: \.date) { hourWeather in
                     VStack(spacing: 0) {
-                        Text("\(hourWeather.date.hourOfDay())")
+                        Text(hourWeather.date.hourOfDay())
                             .font(Font.custom("SofiaProLight", size: 17))
                         VStack {
                             Image(systemName: hourWeather.symbolName)
@@ -29,7 +36,8 @@ struct HourlyView: View {
                             }
                         }
                         .frame(height: 50)
-                        Text("\(hourWeather.temperature.converted(to: UnitTemperature.fahrenheit).value.roundDouble())°")
+                        
+                        Text("\(hourWeather.temperature.converted(to: .fahrenheit).value.roundDouble())°")
                             .font(Font.custom("SofiaProLight", size: 20))
                     }
                 }
@@ -40,8 +48,12 @@ struct HourlyView: View {
     }
 }
 
-//struct HourlyView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HourlyView()
-//    }
-//}
+struct HourlyView_Previews: PreviewProvider {
+    static var previews: some View {
+        HourlyView(forecast: Weather.sample.hourlyForecast)
+            .previewDisplayName("Light")
+        HourlyView(forecast: Weather.sample.hourlyForecast)
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark")
+    }
+}
