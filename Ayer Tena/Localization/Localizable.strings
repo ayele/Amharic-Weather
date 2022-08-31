@@ -6,7 +6,44 @@
   
 */
 
+// Weather conditions
+"Clear" = "";
+"Cloudy" = "";
+"Haze" = "";
+"Mostly Clear" = "";
+"Mostly Cloudy" = "";
+"Partly Cloudy" = "";
+"Scattered Thunderstorms" = "";
+"Breezy" = "";
+"Windy" = "";
+"Drizzle" = "";
+"Heavy Rain" = "";
+"Rain" = "";
+"Flurries" = "";
+"Heavy Snow" = "";
+"Sleet" = "";
+"Snow" = "";
+"Blizzard" = "";
+"Blowing Snow" = "";
+"Freezing Drizzle" = "";
+"Freezing Rain" = "";
+"Frigid" = "";
+"Hail" = "";
+"Hot" = "";
+"Hurricane" = "";
+"Isolated Thunderstorms" = "";
+"Tropical Storm" = "";
+"Blowing Dust" = "";
+"Foggy" = "";
+"Smoky" = "";
+"Strong Storms" = "";
+"Sun Flurries" = "";
+"Sun Showers" = "";
+"Thunderstorms" = "";
+"Wintry Mix" = "";
 
+
+// US cities
 "Aaronsburg" = "ኤረንስበርግ";
 "Abbeville" = "አቢቭል";
 "Abbot" = "አበት";

@@ -20,7 +20,7 @@ struct CurrentView: View {
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                 .font(Font.custom("SofiaProLight", size: 90))
                 .padding(.leading, 30) // offsets the ° symbol
-            Text("\(currentWeather.condition.description)")
+            Text("\(currentWeather.condition.description.localize())")
                 .font(Font.custom("SofiaProLight", size: 20))
         }
         .padding(40)
