@@ -28,6 +28,7 @@
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
 		3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62628B433F200E38843 /* Double+Round.swift */; };
 		3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62828B43CD900E38843 /* Date+Formatted.swift */; };
+		3AE48BBA28BEAC8300E0DD7D /* MinuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */; };
 		3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		3A857B0328B2C87D00F343FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AC8C62628B433F200E38843 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteView.swift; sourceTree = "<group>"; };
 		3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ayer-Tena-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 				3A857AF028B2B1FF00F343FE /* WelcomeView.swift */,
 				3A857AF228B2B26D00F343FE /* WeatherView.swift */,
 				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
+				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
 				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
 				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
 				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
@@ -262,6 +265,7 @@
 				3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */,
 				3A66B36928BA7F6200FA76DA /* CurrentView.swift in Sources */,
 				3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */,
+				3AE48BBA28BEAC8300E0DD7D /* MinuteView.swift in Sources */,
 				3A0AB4AC28BD577600014F9E /* Weather+Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

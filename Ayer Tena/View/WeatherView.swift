@@ -32,6 +32,11 @@ struct WeatherView: View {
                                     }
                             }
                             
+                            if let minuteForecast = weather.minuteForecast,
+                               weather.availability.minuteAvailability == .available {
+                                MinuteView(forecast: minuteForecast)
+                            }
+                            
                             HourlyView(forecast: weather.hourlyForecast)
                             DailyView(forecast: weather.dailyForecast)
                         }
