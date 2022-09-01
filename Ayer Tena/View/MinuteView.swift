@@ -28,12 +28,13 @@ struct MinuteView: View {
             Chart {
                 ForEach(forecast.forecast, id: \.date) { minute in
                     BarMark(
-                        x: .value("Time", minute.date),
+                        x: .value("Time", minute.date, unit: .minute),
                         y: .value("Prec", minute.precipitationChance),
                         width: 4
                     )
                 }
             }
+            .chartYAxis(.hidden)
             .frame(height: 70)
         }
         .padding()
