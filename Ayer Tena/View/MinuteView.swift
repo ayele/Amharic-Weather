@@ -35,7 +35,7 @@ struct MinuteView: View {
                 }
             }
             .chartYAxis(.hidden)
-            .frame(height: 70)
+            .frame(height: 50)
         }
         .padding()
         .overlay { RoundedRectangle(cornerRadius: 15).stroke(.gray, lineWidth: 1) }
