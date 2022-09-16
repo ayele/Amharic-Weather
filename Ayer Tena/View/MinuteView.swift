@@ -38,6 +38,9 @@ struct MinuteView: View {
                 AxisMarks(values: .stride(by: .minute, count: 10)) { date in
                     let now = forecast.forecast.first?.date
                     let thisDate = date.as(Date.self)
+                    
+                    AxisTick(length: 5)
+                    
                     if now == thisDate {
                         AxisValueLabel("Now")
                     } else {
