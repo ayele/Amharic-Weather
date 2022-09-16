@@ -34,7 +34,25 @@ struct MinuteView: View {
                     )
                 }
             }
-            .chartYAxis(.hidden)
+            .chartXAxis {
+                AxisMarks(values: .stride(by: .minute, count: 10)) { date in
+                    let now = forecast.forecast.first?.date
+                    let thisDate = date.as(Date.self)
+                    if now == thisDate {
+                        AxisValueLabel("Now")
+                    } else {
+                        if let thisDate, let now {
+                            let interval = thisDate.timeIntervalSince(now)
+                            AxisValueLabel("\((interval / 60).roundDouble())m")
+                        }
+                    }
+                }
+            }
+            .chartYAxis {
+                AxisMarks(values: .stride(by: 0.33)) {
+                    AxisGridLine(stroke: StrokeStyle(dash: [3]))
+                }
+            }
             .frame(height: 50)
         }
         .padding()
