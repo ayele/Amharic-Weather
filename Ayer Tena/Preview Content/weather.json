@@ -1856,7 +1856,7 @@
         "forecast": [
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.75,
+                "precipitationChance": 0.15,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -1882,7 +1882,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.75,
+                "precipitationChance": 0.16,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -1908,7 +1908,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.65,
+                "precipitationChance": 0.17,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -1934,7 +1934,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.55,
+                "precipitationChance": 0.18,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -1960,7 +1960,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.40,
+                "precipitationChance": 0.19,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -1986,7 +1986,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.20,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2012,7 +2012,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.21,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2038,7 +2038,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.22,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2064,7 +2064,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.23,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2090,7 +2090,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.24,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2116,7 +2116,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.25,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2142,7 +2142,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.26,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2168,7 +2168,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.27,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2194,7 +2194,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.28,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2220,7 +2220,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.29,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2272,7 +2272,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.31,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2298,7 +2298,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.32,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2324,7 +2324,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.33,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2350,7 +2350,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.34,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2376,7 +2376,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.35,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2402,7 +2402,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.36,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2428,7 +2428,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.37,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2454,7 +2454,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.38,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2480,7 +2480,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.39,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2506,7 +2506,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.40,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2532,7 +2532,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.41,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2558,7 +2558,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.42,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2584,7 +2584,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.43,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2610,7 +2610,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.44,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2636,7 +2636,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.45,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2662,7 +2662,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.44,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2688,7 +2688,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.43,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2714,7 +2714,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.42,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2740,7 +2740,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.41,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2766,7 +2766,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.40,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2792,7 +2792,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.39,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2818,7 +2818,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.38,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2844,7 +2844,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.37,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2870,7 +2870,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.36,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2896,7 +2896,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.35,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2922,7 +2922,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.34,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2948,7 +2948,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.33,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -2974,7 +2974,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.32,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3000,7 +3000,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.31,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3052,7 +3052,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.29,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3078,7 +3078,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.28,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3104,7 +3104,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.27,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3130,7 +3130,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.26,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3156,7 +3156,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.25,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3182,7 +3182,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.24,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3208,7 +3208,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.23,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3234,7 +3234,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.22,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3260,7 +3260,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.21,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3286,7 +3286,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.20,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3312,7 +3312,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.19,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3338,7 +3338,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.18,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3364,7 +3364,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.17,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3390,7 +3390,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.16,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
@@ -3416,7 +3416,7 @@
             },
             {
                 "precipitation": "rain",
-                "precipitationChance": 0.30,
+                "precipitationChance": 0.15,
                 "precipitationIntensity": {
                     "value": 3.94,
                     "unit": {
