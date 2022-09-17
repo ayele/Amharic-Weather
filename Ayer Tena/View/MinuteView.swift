@@ -32,6 +32,7 @@ struct MinuteView: View {
                         y: .value("Prec", minute.precipitationChance),
                         width: 4
                     )
+                    .foregroundStyle(Color.blue.gradient)
                 }
             }
             .chartXAxis {
