@@ -16,7 +16,7 @@ struct DailyView: View {
             ForEach(forecast.forecast, id: \.date) { dayWeather in
                 VStack {
                     HStack {
-                        Text(dayWeather.date.dayOfWeek())
+                        Text(dayWeather.date.dayOfWeek().localize())
                             .frame(width: 80, alignment: .leading)
                         Spacer()
                         VStack {

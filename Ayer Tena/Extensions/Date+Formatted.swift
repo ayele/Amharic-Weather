@@ -10,7 +10,7 @@ import Foundation
 extension Date {
     func hourOfDay() -> String {
         if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .hour) {
-            return "አሁን"
+            return "Now"
         }
         
         let dateFormatter = DateFormatter()
@@ -21,31 +21,12 @@ extension Date {
     
     func dayOfWeek() -> String {
         if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .day) {
-            return "ዛሬ"
+            return "Today"
         }
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
         dateFormatter.locale = Locale(identifier: "en_US")
-        let day = dateFormatter.string(from: self)
-        
-        switch day {
-        case "Monday":
-            return "ሰኞ"
-        case "Tuesday":
-            return "ማክሰኞ"
-        case "Wednesday":
-            return "ረቡዕ"
-        case "Thursday":
-            return "ኀሙስ"
-        case "Friday":
-            return "ዐርብ"
-        case "Saturday":
-            return "ቅዳሜ"
-        case "Sunday":
-            return "እሁድ"
-        default:
-            return "ዛሬ"
-        }
+        return dateFormatter.string(from: self)
     }
 }

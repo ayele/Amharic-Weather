@@ -6,6 +6,17 @@
   
 */
 
+// Dates
+"Now" = "አሁን";
+"Today" = "ዛሬ";
+"Monday" = "ሰኞ";
+"Tuesday" = "ማክሰኞ";
+"Wednesday" = "እሮብ";
+"Thursday" = "ሐሙስ";
+"Friday" = "አርብ";
+"Saturday" = "ቅዳሜ";
+"Sunday" = "እሁድ";
+
 // Weather conditions
 "Clear" = "የጠራ ሰማይ";
 "Cloudy" = "ደመናማ";
