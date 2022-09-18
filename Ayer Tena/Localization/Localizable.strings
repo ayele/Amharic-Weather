@@ -7,40 +7,40 @@
 */
 
 // Weather conditions
-"Clear" = "";
-"Cloudy" = "";
-"Haze" = "";
-"Mostly Clear" = "";
-"Mostly Cloudy" = "";
-"Partly Cloudy" = "";
-"Scattered Thunderstorms" = "";
-"Breezy" = "";
-"Windy" = "";
-"Drizzle" = "";
-"Heavy Rain" = "";
-"Rain" = "";
-"Flurries" = "";
-"Heavy Snow" = "";
-"Sleet" = "";
-"Snow" = "";
-"Blizzard" = "";
-"Blowing Snow" = "";
-"Freezing Drizzle" = "";
-"Freezing Rain" = "";
-"Frigid" = "";
-"Hail" = "";
-"Hot" = "";
-"Hurricane" = "";
-"Isolated Thunderstorms" = "";
-"Tropical Storm" = "";
-"Blowing Dust" = "";
-"Foggy" = "";
-"Smoky" = "";
-"Strong Storms" = "";
-"Sun Flurries" = "";
-"Sun Showers" = "";
-"Thunderstorms" = "";
-"Wintry Mix" = "";
+"Clear" = "የጠራ ሰማይ";
+"Cloudy" = "ደመናማ";
+"Haze" = "ጭጋጋማ";
+"Mostly Clear" = "በአብዛኛው የጠራ ሰማይ";
+"Mostly Cloudy" = "በአብዛኛው ደመናማ";
+"Partly Cloudy" = "ከፊል ደመናማ";
+"Scattered Thunderstorms" = "የተበታተኑ ነጎድጓዶች";
+"Breezy" = "ነፋሻማ";
+"Windy" = "ነፋሻማ";
+"Drizzle" = "ካፊያ";
+"Heavy Rain" = "ከባድ ዝናብ";
+"Rain" = "ዝናብ";
+"Flurries" = "ፍንዳታዎች";
+"Heavy Snow" = "ከባድ በረዶ";
+"Sleet" = "የበረዶ ሸርተቴ";
+"Snow" = "በረዶ";
+"Blizzard" = "አውሎ ንፋስ";
+"Blowing Snow" = "በረዶ የሚነፍስ";
+"Freezing Drizzle" = "የሚቀዘቅዝ ካፊያ";
+"Freezing Rain" = "የሚቀዘቅዝ ዝናብ";
+"Frigid" = "ፍሪጅድ";
+"Hail" = "በረዶ";
+"Hot" = "ሞቃታማ";
+"Hurricane" = "አውሎ ነፋስ";
+"Isolated Thunderstorms" = "የተለዩ ነጎድጓዶች";
+"Tropical Storm" = "ትሮፒካል አውሎ ነፋስ";
+"Blowing Dust" = "የሚነፋ አቧራ";
+"Foggy" = "ጭጋጋማ";
+"Smoky" = "ጭሳማ";
+"Strong Storms" = "ኃይለኛ አውሎ ነፋሶች";
+"Sun Flurries" = "የፀሐይ ፍለሪዎች";
+"Sun Showers" = "የፀሐይ መታጠቢያዎች";
+"Thunderstorms" = "ነጎድጓድ";
+"Wintry Mix" = "የዊንትሪ ድብልቅ";
 
 
 // US cities
@@ -3158,7 +3158,7 @@
 "Claytonville" = "";
 "Clayville" = "";
 "Cle Elum" = "";
-"Clear" = "";
+"Clear" = "ክሊር";
 "Clear Brook" = "";
 "Clear Creek" = "";
 "Clear Fork" = "";
