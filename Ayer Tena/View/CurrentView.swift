@@ -15,13 +15,11 @@ struct CurrentView: View {
     var body: some View {
         VStack(spacing: -5) {
             Text(city.localize())
-                .font(Font.custom("SofiaProLight", size: 35))
-                .padding(.bottom, 10)
+                .font(.largeTitle)
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
-                .font(Font.custom("SofiaProLight", size: 90))
+                .font(.system(size: 100))
                 .padding(.leading, 30) // offsets the ° symbol
             Text("\(currentWeather.condition.description.localize())")
-                .font(Font.custom("SofiaProLight", size: 20))
         }
         .padding(40)
     }
@@ -29,9 +27,9 @@ struct CurrentView: View {
 
 struct CurrentView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentView(currentWeather: Weather.sample.currentWeather, city: "Middleton")
+        CurrentView(currentWeather: Weather.sample.currentWeather, city: "ሚድልተን")
             .previewDisplayName("Light")
-        CurrentView(currentWeather: Weather.sample.currentWeather, city: "Middleton")
+        CurrentView(currentWeather: Weather.sample.currentWeather, city: "ሚድልተን")
             .preferredColorScheme(.dark)
             .previewDisplayName("Dark")
     }

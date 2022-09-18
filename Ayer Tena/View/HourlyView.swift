@@ -21,24 +21,25 @@ struct HourlyView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 25) {
+            HStack(spacing: 30) {
                 ForEach(hourlyWeatherData, id: \.date) { hourWeather in
                     VStack(spacing: 0) {
                         Text(hourWeather.date.hourOfDay().localize())
-                            .font(Font.custom("SofiaProLight", size: 17))
+                            .font(.system(size: 14))
                         VStack {
                             Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
                             if hourWeather.precipitationChance >= 0.3 {
                                 Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
-                                    .font(Font.custom("SofiaProLight", size: 12))
+                                    .font(.caption2)
                                     .foregroundColor(.secondary)
                             }
                         }
                         .frame(height: 50)
                         
                         Text("\(hourWeather.temperature.converted(to: .fahrenheit).value.roundDouble())°")
-                            .font(Font.custom("SofiaProLight", size: 20))
+                            .font(.system(size: 20))
+
                     }
                 }
             }

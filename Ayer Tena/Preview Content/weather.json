@@ -1247,7 +1247,7 @@
                       "symbol": "mm"
                     }
                 },
-                "precipitationChance": 0.12,
+                "precipitationChance": 0.35,
                 "snowfallAmount": {
                     "value": 0,
                     "unit": {

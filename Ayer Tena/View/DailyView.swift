@@ -24,20 +24,22 @@ struct DailyView: View {
                                 .font(.title3)
                             if dayWeather.precipitationChance >= 0.3 {
                                 Text("\(((round(dayWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
-                                    .font(Font.custom("SofiaProLight", size: 12))
+                                    .font(.caption2)
                                     .foregroundColor(.secondary)
                             }
                         }
                         Spacer()
                         HStack {
                             Text("\(dayWeather.lowTemperature.converted(to: .fahrenheit).value.roundDouble())°")
-                                .font(Font.custom("SofiaProLight", size: 20))
+                                .font(.system(size: 20))
+
                                 .foregroundColor(.secondary)
                             Capsule()
                                 .frame(width: 90, height: 6)
                                 .foregroundColor(.secondary)
                             Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
-                                .font(Font.custom("SofiaProLight", size: 20))
+                                .font(.system(size: 20))
+
                         }
                         .frame(width: 200, alignment: .trailing)
                     }
