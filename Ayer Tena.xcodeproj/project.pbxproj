@@ -76,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0FAC7028D796B6004C79A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A0FAC6E28D68374004C79A4 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3A857ACF28B140E300F343FE = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3A857ADB28B140E300F343FE /* App.swift */,
-				3A0FAC6E28D68374004C79A4 /* NetworkError.swift */,
+				3A0FAC7028D796B6004C79A4 /* Model */,
 				3A857AF728B2B33F00F343FE /* View */,
 				3A857AFE28B2B64000F343FE /* ViewModel */,
 				3A857AFD28B2B62900F343FE /* Location */,
