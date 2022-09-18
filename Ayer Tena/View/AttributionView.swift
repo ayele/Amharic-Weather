@@ -22,8 +22,11 @@ struct AttributionView: View {
                 image
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 20)
-            } placeholder: {}
+            } placeholder: {
+                ProgressView()
+                    .controlSize(.mini)
+            }
+            .frame(height: 20)
             
             Button {
                 onTap()
@@ -31,6 +34,7 @@ struct AttributionView: View {
                 Text("Other data sources")
             }
         }
+        .font(.footnote)
     }
 }
 
