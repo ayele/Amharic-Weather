@@ -13,8 +13,8 @@ struct DailyView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            ForEach(forecast.forecast, id: \.date) { dayWeather in
-                VStack {
+            ForEach(forecast, id: \.date) { dayWeather in
+                VStack(spacing: 15) {
                     HStack {
                         Text(dayWeather.date.dayOfWeek().localize())
                             .frame(width: 80, alignment: .leading)
@@ -43,8 +43,12 @@ struct DailyView: View {
                         }
                         .frame(width: 200, alignment: .trailing)
                     }
-                    .frame(height: 35)
-                    Divider()
+                    .frame(height: 25)
+                    
+                    if dayWeather.date != forecast.last?.date {
+                        Divider()
+                    }
+                   
                 }
             }
         }
