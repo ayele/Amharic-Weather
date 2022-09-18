@@ -47,7 +47,7 @@ class WeatherViewModel: ObservableObject {
         } catch let e as WeatherError {
             error = e
             print("Error getting weather: \(e.localizedDescription)")
-        } catch let e as NSError {
+        } catch let e {
             error = WeatherError.unknown
             print("Error getting weather: \(e.localizedDescription)")
         }
