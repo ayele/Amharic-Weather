@@ -17,7 +17,7 @@ class WeatherViewModel: ObservableObject {
     @Published var isPresentingSafariView = false
     @Published private(set) var isLoading = false
     @Published var isShowingAlert = false
-    @Published private(set) var error: WeatherError?
+    @Published private(set) var error: LocalizedError?
     
     var url: URL?
     
@@ -44,8 +44,12 @@ class WeatherViewModel: ObservableObject {
             attribution = try await service.attribution
             city = placemark.first?.locality
             weather = weatherData
-        } catch {
-            print("Error getting weather")
+        } catch let e as WeatherError {
+            error = e
+            print("Error getting weather: \(e.localizedDescription)")
+        } catch let e as NSError {
+            error = WeatherError.unknown
+            print("Error getting weather: \(e.localizedDescription)")
         }
         
         isLoading = false

@@ -57,7 +57,11 @@ struct WeatherView: View {
                 if weatherVM.isLoading {
                     LoadingView()
                 } else {
-                    Text("")
+                    if let error = weatherVM.error {
+                        ErrorView(error: error)
+                    } else {
+                        Spacer()
+                    }
                 }
             }
         }
