@@ -13,7 +13,7 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "cloud.fill")
+            Image("logo")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100)
