@@ -44,7 +44,7 @@ struct HourlyView: View {
             }
         }
         .padding()
-        .overlay { RoundedRectangle(cornerRadius: 15).stroke(.gray, lineWidth: 1) }
+        .overlay { RoundedRectangle(cornerRadius: 15).strokeBorder(.secondary, lineWidth: 1) }
     }
 }
 
