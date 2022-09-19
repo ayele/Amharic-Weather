@@ -36,8 +36,12 @@ struct DailyView: View {
 
                                 .foregroundColor(.secondary)
                             Capsule()
+                                .fill(
+                                    LinearGradient(colors: [Color("Cold"), Color("Hot")],
+                                                   startPoint: .leading,
+                                                   endPoint: .trailing)
+                                )
                                 .frame(width: 90, height: 6)
-                                .foregroundColor(.secondary)
                             Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
                                 .font(.system(size: 20))
 
@@ -60,10 +64,13 @@ struct DailyView: View {
 
 struct DailyView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyView(forecast: Weather.sample.dailyForecast)
-            .previewDisplayName("Light")
-        DailyView(forecast: Weather.sample.dailyForecast)
-            .preferredColorScheme(.dark)
-            .previewDisplayName("Dark")
+        Group {
+            DailyView(forecast: Weather.sample.dailyForecast)
+                .previewDisplayName("Light")
+            DailyView(forecast: Weather.sample.dailyForecast)
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
