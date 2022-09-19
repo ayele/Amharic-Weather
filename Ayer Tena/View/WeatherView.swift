@@ -19,6 +19,8 @@ struct WeatherView: View {
                 ScrollView(showsIndicators: false) {
                     VStack {
                         CurrentView(currentWeather: weather.currentWeather,
+                                    highTemperature: weather.dailyForecast.first?.highTemperature,
+                                    lowTemperature: weather.dailyForecast.first?.lowTemperature,
                                     city: weatherVM.city ?? "--")
                         
                         VStack(spacing: 15) {
