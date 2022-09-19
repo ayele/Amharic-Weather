@@ -29,10 +29,15 @@ struct HourlyView: View {
                         VStack {
                             Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
+                            // Only show precip. chance if >= 30%
                             if hourWeather.precipitationChance >= 0.3 {
-                                Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
-                                    .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                // Don't show precip. chance for current hour
+                                if let currentHourWeather = hourlyWeatherData.first,
+                                   hourWeather != currentHourWeather {
+                                    Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
+                                        .font(.caption2)
+                                        .foregroundColor(.secondary)
+                                }
                             }
                         }
                         .frame(height: 50)

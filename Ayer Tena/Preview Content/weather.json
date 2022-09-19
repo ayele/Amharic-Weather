@@ -1165,7 +1165,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 17.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1236,7 +1236,7 @@
                       "symbol": "m"
                     }
                 },
-                "precipitation": "mixed",
+                "precipitation": "rain",
                 "precipitationAmount": {
                     "value": 0,
                     "unit": {
@@ -1258,7 +1258,7 @@
                       "symbol": "mm"
                     }
                 },
-                "symbolName": "sun.max"
+                "symbolName": "cloud.drizzle"
             },
             {
                 "apparentTemperature": {
@@ -1283,7 +1283,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 18.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1337,7 +1337,7 @@
                     }
                 },
                 "cloudCover": 0.04,
-                "condition": "clear",
+                "condition": "drizzle",
                 "date": 1725726600,
                 "isDaylight": false,
                 "uvIndex": {
@@ -1354,7 +1354,7 @@
                       "symbol": "m"
                     }
                 },
-                "precipitation": "mixed",
+                "precipitation": "rain",
                 "precipitationAmount": {
                     "value": 0,
                     "unit": {
@@ -1365,7 +1365,7 @@
                       "symbol": "mm"
                     }
                 },
-                "precipitationChance": 0.22,
+                "precipitationChance": 0.40,
                 "snowfallAmount": {
                     "value": 0,
                     "unit": {
@@ -1376,7 +1376,7 @@
                       "symbol": "mm"
                     }
                 },
-                "symbolName": "sun.max"
+                "symbolName": "cloud.drizzle"
             },
             {
                 "apparentTemperature": {
@@ -1401,7 +1401,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 20.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1455,7 +1455,7 @@
                     }
                 },
                 "cloudCover": 0.04,
-                "condition": "clear",
+                "condition": "rain",
                 "date": 1725730200,
                 "isDaylight": false,
                 "uvIndex": {
@@ -1483,7 +1483,7 @@
                       "symbol": "mm"
                     }
                 },
-                "precipitationChance": 0,
+                "precipitationChance": 0.50,
                 "snowfallAmount": {
                     "value": 0,
                     "unit": {
@@ -1494,7 +1494,7 @@
                       "symbol": "mm"
                     }
                 },
-                "symbolName": "sun.max"
+                "symbolName": "cloud.drizzle"
             },
             {
                 "apparentTemperature": {
@@ -1519,7 +1519,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 22.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1601,7 +1601,7 @@
                       "symbol": "mm"
                     }
                 },
-                "precipitationChance": 0.12,
+                "precipitationChance": 0.22,
                 "snowfallAmount": {
                     "value": 0,
                     "unit": {
@@ -1612,7 +1612,7 @@
                       "symbol": "mm"
                     }
                 },
-                "symbolName": "sun.max"
+                "symbolName": "cloud.sun"
             },
             {
                 "apparentTemperature": {
@@ -1637,7 +1637,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 25.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1755,7 +1755,7 @@
                 },
                 "humidity": 0.83,
                 "temperature": {
-                    "value": 31.43,
+                    "value": 27.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1811,6 +1811,124 @@
                 "cloudCover": 0.04,
                 "condition": "clear",
                 "date": 1725741000,
+                "isDaylight": false,
+                "uvIndex": {
+                    "value": 0,
+                    "category": "low"
+                },
+                "visibility": {
+                    "value": 20733,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 1
+                      },
+                      "symbol": "m"
+                    }
+                },
+                "precipitation": "mixed",
+                "precipitationAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "precipitationChance": 0.12,
+                "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "symbolName": "sun.max"
+            },
+            {
+                "apparentTemperature": {
+                    "value": 31.43,
+                    "unit": {
+                        "converter": {
+                            "constant": 273.15,
+                            "coefficient": 1
+                        },
+                        "symbol": "°C"
+                    }
+                },
+                "dewPoint": {
+                    "value": 8.28,
+                    "unit": {
+                        "converter": {
+                            "constant": 273.15,
+                            "coefficient": 1
+                        },
+                        "symbol": "°C"
+                    }
+                },
+                "humidity": 0.83,
+                "temperature": {
+                    "value": 29.43,
+                    "unit": {
+                        "converter": {
+                            "constant": 273.15,
+                            "coefficient": 1
+                        },
+                        "symbol": "°C"
+                    }
+                },
+                "pressure": {
+                    "value": 1013.04,
+                    "unit": {
+                        "converter": {
+                            "constant": 0,
+                            "coefficient": 100
+                        },
+                        "symbol": "mbar"
+                    }
+                },
+                "pressureTrend": "steady",
+                "wind": {
+                    "gust": {
+                        "value": 6.21,
+                        "unit": {
+                            "converter": {
+                                "constant": 0,
+                                "coefficient": 0.277778
+                            },
+                            "symbol": "km/h"
+                        }
+                    },
+                    "speed": {
+                        "value": 3.94,
+                        "unit": {
+                            "converter": {
+                                "constant": 0,
+                                "coefficient": 0.277778
+                            },
+                            "symbol": "km/h"
+                        }
+                    },
+                    "compassDirection": "westSouthwest",
+                    "direction": {
+                        "value": 254,
+                        "unit": {
+                            "converter": {
+                                "constant": 0,
+                                "coefficient": 1
+                            },
+                            "symbol": "°"
+                        }
+                    }
+                },
+                "cloudCover": 0.04,
+                "condition": "clear",
+                "date": 1725744600,
                 "isDaylight": false,
                 "uvIndex": {
                     "value": 0,
