@@ -16,14 +16,14 @@ struct CurrentView: View {
     
     var body: some View {
         VStack(spacing: -5) {
-            Text(city.localize())
+            Text(city.localize(.city))
                 .font(.largeTitle)
             
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                 .font(.system(size: 100))
                 .padding(.leading, 30) // offsets the ° symbol
             
-            Text("\(currentWeather.condition.description.localize())")
+            Text("\(currentWeather.condition.description.localize(.condition))")
             
             HStack {
                 Text("ከ:\(highTemperature?.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))) ?? "")°")

@@ -24,7 +24,7 @@ struct HourlyView: View {
             HStack(spacing: 30) {
                 ForEach(hourlyWeatherData, id: \.date) { hourWeather in
                     VStack(spacing: 0) {
-                        Text(hourWeather.date.hourOfDay().localize())
+                        Text(hourWeather.date.hourOfDay().localize(.date))
                             .font(.system(size: 14))
                         VStack {
                             Image(systemName: hourWeather.symbolName)

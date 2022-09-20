@@ -1,0 +1,44 @@
+/* 
+  LocalizableConditions.strings
+  Ayer Tena
+
+  Created by Amanuel Ayele on 9/20/22.
+  
+*/
+
+// Weather conditions
+
+"Clear" = "የጠራ ሰማይ";
+"Cloudy" = "ደመናማ";
+"Haze" = "ጭጋጋማ";
+"Mostly Clear" = "በአብዛኛው የጠራ ሰማይ";
+"Mostly Cloudy" = "በአብዛኛው ደመናማ ነዉ";
+"Partly Cloudy" = "ትንሽ ደመና አለ";
+"Scattered Thunderstorms" = "ነጎድጓድ";
+"Breezy" = "ትንሽ ነፈስ ይላል";
+"Windy" = "ነፋሻማ";
+"Drizzle" = "ግን drizzle በአማርኛ ምንድነዉ?";
+"Heavy Rain" = "ኃይለኛ ዝናብ";
+"Rain" = "ዝናብ";
+"Flurries" = "Flurries ይላል እንግዲህ";
+"Heavy Snow" = "ብዙ ብዙ በረዶ";
+"Sleet" = "ያዳልጣል ተጠንቀቁ";
+"Snow" = "እስኖ";
+"Blizzard" = "እስኖ + ነፋስ";
+"Blowing Snow" = "በረዷማ ንፋስ";
+"Freezing Drizzle" = "የበረዶ ካፊያ";
+"Freezing Rain" = "የበረዶ ዝናብ";
+"Frigid" = "ኃይለኛ ብርድ";
+"Hail" = "በረዶ";
+"Hot" = "ሞቃታማ";
+"Hurricane" = "ኃይለኛ አውሎ ነፋስ";
+"Isolated Thunderstorms" = "ነጎድጓድ";
+"Tropical Storm" = "ትሮፒካል አውሎ ነፋስ";
+"Blowing Dust" = "አቧራ";
+"Foggy" = "ጭጋጋማ";
+"Smoky" = "ጭሳማ";
+"Strong Storms" = "ኃይለኛ አውሎ ነፋስ";
+"Sun Flurries" = "ፀሐይ እያለ በረዶ";
+"Sun Showers" = "ፀሐይ እያለ ዝናብ";
+"Thunderstorm" = "ነጎድጓድ";
+"Wintry Mix" = "በረዷማ ዝናብ";

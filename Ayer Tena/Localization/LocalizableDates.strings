@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Ayer Tena
+
+  Created by Amanuel Ayele on 8/28/22.
+  
+*/
+
+// Dates
+"Now" = "አሁን";
+"Today" = "ዛሬ";
+"Monday" = "ሰኞ";
+"Tuesday" = "ማክሰኞ";
+"Wednesday" = "እሮብ";
+"Thursday" = "ሐሙስ";
+"Friday" = "አርብ";
+"Saturday" = "ቅዳሜ";
+"Sunday" = "እሁድ";
