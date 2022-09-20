@@ -91,12 +91,12 @@ struct WeatherView_Previews: PreviewProvider {
             WeatherView(weatherVM: WeatherViewModel(location: CLLocation(),
                                                     service: WeatherService(),
                                                     weather: Weather.sample,
-                                                    city: "Middleton"))
+                                                    city: "ሚድልተን"))
                 .previewDisplayName("Light")
             WeatherView(weatherVM: WeatherViewModel(location: CLLocation(),
                                                     service: WeatherService(),
                                                     weather: Weather.sample,
-                                                    city: "Middleton"))
+                                                    city: "ሚድልተን"))
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }
