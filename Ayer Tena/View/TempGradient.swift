@@ -12,12 +12,16 @@ struct TempGradient: View {
     let high: Measurement<UnitTemperature>
     
     var body: some View {
-        Capsule()
-            .fill(
-                LinearGradient(colors: colors(forLow: low, high: high),
-                               startPoint: .leading,
-                               endPoint: .trailing)
-            )
+        ZStack {
+            Capsule()
+                .fill(
+                    LinearGradient(colors: colors(forLow: low, high: high),
+                                   startPoint: .leading,
+                                   endPoint: .trailing)
+                )
+            Capsule()
+                .strokeBorder(.secondary, lineWidth: 0.1).opacity(0.5)
+        }
     }
     
     private func colors(forLow low: Measurement<UnitTemperature>,
