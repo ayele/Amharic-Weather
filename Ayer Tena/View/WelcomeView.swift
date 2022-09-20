@@ -13,7 +13,7 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack {
-            Image("logo")
+            Image("Logo")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100)
@@ -21,21 +21,26 @@ struct WelcomeView: View {
             VStack(spacing: 10) {
                 Text("እንኳን ደህና መጡ")
                     .font(.largeTitle)
-                Text("ለአከባቢዎ አየር ሁኔታ እባኮን ሎኬሽኖን ሼር ያርጉ")
+                Text("ለአከባቢዎ አየር ሁኔታ ሎኬሽኖን ሼር ያድርጉ")
+                    .font(.callout)
             }
             .multilineTextAlignment(.center)
             .padding()
             
-            LocationButton(.shareCurrentLocation) {
+            Button {
                 locationManager.requestAuthorization()
+            } label: {
+                Label("ሼር", systemImage: "location")
+                    .frame(width: 100, height: 40)
+                    .foregroundColor(.white)
+                    .background(.blue)
+                    .cornerRadius(30)
             }
-            .cornerRadius(30)
-            .symbolVariant(.fill)
-            .foregroundColor(.white)
+            .buttonStyle(.plain)
+
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("SmokeyWhite"))
-
     }
 }
 
@@ -43,8 +48,11 @@ struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WelcomeView()
+                .previewDisplayName("Light")
             WelcomeView()
                 .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
         }
+        .previewLayout(.sizeThatFits)
     }
 }
