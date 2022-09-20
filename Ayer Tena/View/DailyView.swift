@@ -36,9 +36,9 @@ struct DailyView: View {
                                 .foregroundColor(.secondary)
                             TempGradient(low: dayWeather.lowTemperature,
                                          high: dayWeather.highTemperature)
+                                .frame(width: 90, height: 4)
                             Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
                                 .font(.system(size: 20))
-
                         }
                         .frame(width: 200, alignment: .trailing)
                     }

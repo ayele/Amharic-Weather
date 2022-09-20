@@ -18,7 +18,7 @@ struct TempGradient: View {
                                startPoint: .leading,
                                endPoint: .trailing)
             )
-            .frame(width: 90, height: 6)
+//            .frame(width: 90, height: 6)
     }
     
     private func colors(forLow low: Measurement<UnitTemperature>,
@@ -71,7 +71,16 @@ struct TempGradient: View {
 
 struct TempGradient_Previews: PreviewProvider {
     static var previews: some View {
-        TempGradient(low: Measurement(value: 2, unit: .celsius),
-                     high: Measurement(value: 42, unit: .celsius))
+        Group {
+            TempGradient(low: Measurement(value: 2, unit: .celsius),
+                         high: Measurement(value: 42, unit: .celsius))
+                .preferredColorScheme(.light)
+                .previewDisplayName("Light")
+            TempGradient(low: Measurement(value: 2, unit: .celsius),
+                         high: Measurement(value: 42, unit: .celsius))
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
