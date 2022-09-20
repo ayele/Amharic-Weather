@@ -18,14 +18,13 @@ struct TempGradient: View {
                                startPoint: .leading,
                                endPoint: .trailing)
             )
-//            .frame(width: 90, height: 6)
     }
     
     private func colors(forLow low: Measurement<UnitTemperature>,
                         high: Measurement<UnitTemperature>) -> Array<Color> {
         var colors: [Color] = []
-        let lowTemp = Int(low.converted(to: .fahrenheit).value)
-        let highTemp = Int(high.converted(to: .fahrenheit).value)
+        let lowTemp = Int(round(low.converted(to: .fahrenheit).value))
+        let highTemp = Int(round(high.converted(to: .fahrenheit).value))
         
         let (q1, _) = lowTemp.quotientAndRemainder(dividingBy: 10)
         let (q2, _) = highTemp.quotientAndRemainder(dividingBy: 10)
@@ -73,7 +72,7 @@ struct TempGradient_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TempGradient(low: Measurement(value: 2, unit: .celsius),
-                         high: Measurement(value: 42, unit: .celsius))
+                         high: Measurement(value: 41, unit: .celsius))
                 .preferredColorScheme(.light)
                 .previewDisplayName("Light")
             TempGradient(low: Measurement(value: 2, unit: .celsius),
