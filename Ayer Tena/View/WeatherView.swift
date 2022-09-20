@@ -48,7 +48,7 @@ struct WeatherView: View {
                                 weatherVM.url = attribution.legalPageURL
                                 weatherVM.isPresentingSafariView = true
                             }
-                                .padding(.top, 80)
+                                .padding()
                         }
                     }
                 }
