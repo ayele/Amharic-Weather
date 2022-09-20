@@ -29,7 +29,6 @@ struct HourlyView: View {
                         VStack {
                             Image(systemName: hourWeather.symbolName)
                                 .font(.title3)
-                                .symbolRenderingMode(.hierarchical)
                             // Only show precip. chance if >= 30%
                             if hourWeather.precipitationChance >= 0.3 {
                                 // Don't show precip. chance for current hour

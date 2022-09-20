@@ -22,7 +22,6 @@ struct DailyView: View {
                         VStack {
                             Image(systemName: dayWeather.symbolName)
                                 .font(.title3)
-                                .symbolRenderingMode(.hierarchical)
                             if dayWeather.precipitationChance >= 0.3 {
                                 Text("\(((round(dayWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
                                     .font(.caption2)
