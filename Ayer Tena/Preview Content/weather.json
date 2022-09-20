@@ -192,7 +192,7 @@
         "forecast": [
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 26.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -202,7 +202,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 14.44,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -286,7 +286,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 30.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -296,7 +296,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 16.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -380,7 +380,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 23.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -474,7 +474,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 16.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -484,7 +484,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 8.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -568,7 +568,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 17.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -578,7 +578,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 5.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -662,7 +662,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 21.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -672,7 +672,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 10.00,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -756,7 +756,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 19.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -766,7 +766,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 11.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -850,7 +850,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 15.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -860,7 +860,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 9.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -944,7 +944,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 18.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -954,7 +954,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 10.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1038,7 +1038,7 @@
             },
             {
                 "highTemperature": {
-                    "value": 31.43,
+                    "value": 19.43,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
@@ -1048,7 +1048,7 @@
                     }
                 },
                 "lowTemperature": {
-                    "value": 12.43,
+                    "value": 7.73,
                     "unit": {
                         "converter": {
                             "constant": 273.15,
