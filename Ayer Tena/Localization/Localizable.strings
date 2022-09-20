@@ -22,8 +22,8 @@
 "Cloudy" = "ደመናማ";
 "Haze" = "ጭጋጋማ";
 "Mostly Clear" = "በአብዛኛው የጠራ ሰማይ";
-"Mostly Cloudy" = "በአብዛኛው ደመናማ";
-"Partly Cloudy" = "ትንሽ ትንሽ ደመና አለ";
+"Mostly Cloudy" = "በአብዛኛው ደመናማ ነዉ";
+"Partly Cloudy" = "ትንሽ ደመና አለ";
 "Scattered Thunderstorms" = "ነጎድጓድ";
 "Breezy" = "ትንሽ ነፈስ ይላል";
 "Windy" = "ነፋሻማ";
@@ -35,13 +35,13 @@
 "Sleet" = "ያዳልጣል ተጠንቀቁ";
 "Snow" = "እስኖ";
 "Blizzard" = "እስኖ + ነፋስ";
-"Blowing Snow" = "የበረዶ ንፋስ";
+"Blowing Snow" = "በረዷማ ንፋስ";
 "Freezing Drizzle" = "የበረዶ ካፊያ";
 "Freezing Rain" = "የበረዶ ዝናብ";
 "Frigid" = "ኃይለኛ ብርድ";
 "Hail" = "በረዶ";
 "Hot" = "ሞቃታማ";
-"Hurricane" = "አውሎ ነፋስ";
+"Hurricane" = "ኃይለኛ አውሎ ነፋስ";
 "Isolated Thunderstorms" = "ነጎድጓድ";
 "Tropical Storm" = "ትሮፒካል አውሎ ነፋስ";
 "Blowing Dust" = "አቧራ";
@@ -50,7 +50,7 @@
 "Strong Storms" = "ኃይለኛ አውሎ ነፋስ";
 "Sun Flurries" = "ፀሐይ እያለ በረዶ";
 "Sun Showers" = "ፀሐይ እያለ ዝናብ";
-"Thunderstorms" = "ነጎድጓድ";
+"Thunderstorm" = "ነጎድጓድ";
 "Wintry Mix" = "በረዷማ ዝናብ";
 
 
