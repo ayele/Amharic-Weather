@@ -36,7 +36,7 @@ struct HourlyView: View {
                                    hourWeather != currentHourWeather {
                                     Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
                                         .font(.caption2)
-                                        .foregroundColor(.secondary)
+                                        .foregroundColor(.cyan)
                                 }
                             }
                         }
@@ -56,10 +56,13 @@ struct HourlyView: View {
 
 struct HourlyView_Previews: PreviewProvider {
     static var previews: some View {
-        HourlyView(forecast: Weather.sample.hourlyForecast)
-            .previewDisplayName("Light")
-        HourlyView(forecast: Weather.sample.hourlyForecast)
-            .preferredColorScheme(.dark)
-            .previewDisplayName("Dark")
+        Group {
+            HourlyView(forecast: Weather.sample.hourlyForecast)
+                .previewDisplayName("Light")
+            HourlyView(forecast: Weather.sample.hourlyForecast)
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
+        }
+        .previewLayout(.sizeThatFits)
     }
 }

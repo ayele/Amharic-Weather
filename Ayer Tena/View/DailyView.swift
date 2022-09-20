@@ -25,7 +25,7 @@ struct DailyView: View {
                             if dayWeather.precipitationChance >= 0.3 {
                                 Text("\(((round(dayWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
                                     .font(.caption2)
-                                    .foregroundColor(.secondary)
+                                    .foregroundColor(.cyan)
                             }
                         }
                         Spacer()
