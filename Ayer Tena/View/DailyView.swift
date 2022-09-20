@@ -35,13 +35,8 @@ struct DailyView: View {
                                 .font(.system(size: 20))
 
                                 .foregroundColor(.secondary)
-                            Capsule()
-                                .fill(
-                                    LinearGradient(colors: [Color("Cold"), Color("Hot")],
-                                                   startPoint: .leading,
-                                                   endPoint: .trailing)
-                                )
-                                .frame(width: 90, height: 6)
+                            TempGradient(low: dayWeather.lowTemperature,
+                                         high: dayWeather.highTemperature)
                             Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
                                 .font(.system(size: 20))
 
