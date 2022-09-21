@@ -14,14 +14,17 @@ struct CurrentView: View {
     let lowTemperature: Measurement<UnitTemperature>?
     let city: String
     
+    var belowZero: Bool {
+        currentWeather.temperature.converted(to: .fahrenheit).value < 0
+    }
+    
     var body: some View {
         VStack {
             Text(city.localize(.city))
                 .font(.largeTitle)
-            
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                 .font(.system(size: 100))
-                .padding(.leading, 30) // offsets the ° symbol
+                .offset(x: belowZero ? -5 : 15)
             
             VStack(spacing: 5) {
                 Text("\(currentWeather.condition.description.localize(.condition))")
