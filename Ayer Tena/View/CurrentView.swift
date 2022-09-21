@@ -15,7 +15,7 @@ struct CurrentView: View {
     let city: String
     
     var body: some View {
-        VStack(spacing: -5) {
+        VStack {
             Text(city.localize(.city))
                 .font(.largeTitle)
             
@@ -23,13 +23,19 @@ struct CurrentView: View {
                 .font(.system(size: 100))
                 .padding(.leading, 30) // offsets the ° symbol
             
-            Text("\(currentWeather.condition.description.localize(.condition))")
-            
-            HStack {
-                Text("ከ:\(highTemperature?.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))) ?? "")°")
-                Text("ዝ:\(lowTemperature?.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))) ?? "")°")
+            VStack(spacing: 5) {
+                Text("\(currentWeather.condition.description.localize(.condition))")
+                
+                HStack {
+                    if let highTemperature {
+                        Text("ከ:\(highTemperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
+                    }
+                    
+                    if let lowTemperature {
+                        Text("ዝ:\(lowTemperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
+                    }
+                }
             }
-            .padding(.top, 10)
         }
         .padding(40)
     }
