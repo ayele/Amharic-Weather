@@ -68,10 +68,10 @@ struct AlertView: View {
 
 struct AlertView_Previews: PreviewProvider {
     static var previews: some View {
-        AlertView(alerts: [Weather.sample.weatherAlerts![1]])
+        AlertView(alerts: [Weather.preview.weatherAlerts![1]])
             .previewDisplayName("Light")
             .previewLayout(.sizeThatFits)
-        AlertView(alerts: [Weather.sample.weatherAlerts![1]])
+        AlertView(alerts: [Weather.preview.weatherAlerts![1]])
             .preferredColorScheme(.dark)
             .previewDisplayName("Dark")
             .previewLayout(.sizeThatFits)

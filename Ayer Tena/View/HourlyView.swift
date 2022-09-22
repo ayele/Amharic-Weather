@@ -57,9 +57,9 @@ struct HourlyView: View {
 struct HourlyView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HourlyView(forecast: Weather.sample.hourlyForecast)
+            HourlyView(forecast: Weather.preview.hourlyForecast)
                 .previewDisplayName("Light")
-            HourlyView(forecast: Weather.sample.hourlyForecast)
+            HourlyView(forecast: Weather.preview.hourlyForecast)
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }

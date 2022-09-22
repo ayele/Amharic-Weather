@@ -66,10 +66,10 @@ struct MinuteView: View {
 
 struct MinuteView_Previews: PreviewProvider {
     static var previews: some View {
-        MinuteView(forecast: Weather.sample.minuteForecast!)
+        MinuteView(forecast: Weather.preview.minuteForecast!)
             .previewDisplayName("Light")
             .previewLayout(.sizeThatFits)
-        MinuteView(forecast: Weather.sample.minuteForecast!)
+        MinuteView(forecast: Weather.preview.minuteForecast!)
             .preferredColorScheme(.dark)
             .previewDisplayName("Dark")
             .previewLayout(.sizeThatFits)

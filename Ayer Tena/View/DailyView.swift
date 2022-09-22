@@ -59,9 +59,9 @@ struct DailyView: View {
 struct DailyView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DailyView(forecast: Weather.sample.dailyForecast)
+            DailyView(forecast: Weather.preview.dailyForecast)
                 .previewDisplayName("Light")
-            DailyView(forecast: Weather.sample.dailyForecast)
+            DailyView(forecast: Weather.preview.dailyForecast)
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }

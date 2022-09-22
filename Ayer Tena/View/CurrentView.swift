@@ -47,14 +47,14 @@ struct CurrentView: View {
 struct CurrentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CurrentView(currentWeather: Weather.sample.currentWeather,
-                        highTemperature: Weather.sample.dailyForecast.first!.highTemperature,
-                        lowTemperature: Weather.sample.dailyForecast.first!.lowTemperature,
+            CurrentView(currentWeather: Weather.preview.currentWeather,
+                        highTemperature: Weather.preview.dailyForecast.first!.highTemperature,
+                        lowTemperature: Weather.preview.dailyForecast.first!.lowTemperature,
                         city: "ሚድልተን")
                 .previewDisplayName("Light")
-            CurrentView(currentWeather: Weather.sample.currentWeather,
-                        highTemperature: Weather.sample.dailyForecast.first!.highTemperature,
-                        lowTemperature: Weather.sample.dailyForecast.first!.lowTemperature,
+            CurrentView(currentWeather: Weather.preview.currentWeather,
+                        highTemperature: Weather.preview.dailyForecast.first!.highTemperature,
+                        lowTemperature: Weather.preview.dailyForecast.first!.lowTemperature,
                         city: "ሚድልተን")
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")

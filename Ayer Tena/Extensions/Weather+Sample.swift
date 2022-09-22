@@ -9,8 +9,9 @@ import Foundation
 import WeatherKit
 
 extension Weather {
-    static var sample: Weather {
-        print("loading sample...")
+    static var preview: Weather {
+        print("loading preview data...")
+       
         let data: Data
 
         guard let file = Bundle.main.url(forResource: "weather", withExtension: "json")
@@ -25,8 +26,7 @@ extension Weather {
         }
         
         do {
-            let decoder = JSONDecoder()
-            return try decoder.decode(Weather.self, from: data)
+            return try JSONDecoder().decode(Weather.self, from: data)
         } catch {
             fatalError("Couldn't parse weather.json as \(Weather.self):\n\(error)")
         }
