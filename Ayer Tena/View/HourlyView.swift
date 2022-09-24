@@ -34,7 +34,7 @@ struct HourlyView: View {
                                 // Don't show precip. chance for current hour
                                 if let currentHourWeather = hourlyWeatherData.first,
                                    hourWeather != currentHourWeather {
-                                    Text("\(((round(hourWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
+                                    Text((round(hourWeather.precipitationChance * 10) / 10.0).formatted(.percent))
                                         .font(.caption2)
                                         .foregroundColor(.cyan)
                                 }
@@ -42,7 +42,7 @@ struct HourlyView: View {
                         }
                         .frame(height: 50)
                         
-                        Text("\(hourWeather.temperature.converted(to: .fahrenheit).value.roundDouble())°")
+                        Text("\(hourWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                             .font(.system(size: 20))
 
                     }

@@ -23,21 +23,21 @@ struct DailyView: View {
                             Image(systemName: dayWeather.symbolName)
                                 .font(.title3)
                             if dayWeather.precipitationChance >= 0.3 {
-                                Text("\(((round(dayWeather.precipitationChance * 10) / 10.0) * 100).roundDouble())%")
+                                Text((round(dayWeather.precipitationChance * 10) / 10.0).formatted(.percent))
                                     .font(.caption2)
                                     .foregroundColor(.cyan)
                             }
                         }
                         Spacer()
                         HStack {
-                            Text("\(dayWeather.lowTemperature.converted(to: .fahrenheit).value.roundDouble())°")
+                            Text("\(dayWeather.lowTemperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                                 .font(.system(size: 20))
 
                                 .foregroundColor(.secondary)
                             TempGradient(low: dayWeather.lowTemperature,
                                          high: dayWeather.highTemperature)
                                 .frame(width: 90, height: 4)
-                            Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.roundDouble())°")
+                            Text("\(dayWeather.highTemperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                                 .font(.system(size: 20))
                         }
                         .frame(width: 200, alignment: .trailing)
