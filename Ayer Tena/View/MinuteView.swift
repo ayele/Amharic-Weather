@@ -47,7 +47,7 @@ struct MinuteView: View {
                     } else {
                         if let thisDate, let now {
                             let interval = thisDate.timeIntervalSince(now)
-                            AxisValueLabel("\((interval / 60).roundDouble())m")
+                            AxisValueLabel("\((interval / 60).formatted(.number.precision(.fractionLength(0))))m")
                         }
                     }
                 }

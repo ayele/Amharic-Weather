@@ -30,7 +30,6 @@
 		3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF828B2B5E500F343FE /* LocationManager.swift */; };
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
 		3A939E2D28D9590800C4E41B /* TempGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A939E2C28D9590800C4E41B /* TempGradient.swift */; };
-		3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62628B433F200E38843 /* Double+Round.swift */; };
 		3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62828B43CD900E38843 /* Date+Formatted.swift */; };
 		3AE48BBA28BEAC8300E0DD7D /* MinuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */; };
 		3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */; };
@@ -62,7 +61,6 @@
 		3A857AF828B2B5E500F343FE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3A857B0328B2C87D00F343FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3A939E2C28D9590800C4E41B /* TempGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempGradient.swift; sourceTree = "<group>"; };
-		3AC8C62628B433F200E38843 /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteView.swift; sourceTree = "<group>"; };
 		3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ayer-Tena-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -170,7 +168,6 @@
 		3AC8C62528B4312B00E38843 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3AC8C62628B433F200E38843 /* Double+Round.swift */,
 				3AC8C62828B43CD900E38843 /* Date+Formatted.swift */,
 				3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */,
 				3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */,
@@ -278,7 +275,6 @@
 				3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
 				3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */,
-				3AC8C62728B433F200E38843 /* Double+Round.swift in Sources */,
 				3A66B36928BA7F6200FA76DA /* CurrentView.swift in Sources */,
 				3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */,
 				3AE48BBA28BEAC8300E0DD7D /* MinuteView.swift in Sources */,
