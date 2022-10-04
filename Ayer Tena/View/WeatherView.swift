@@ -39,7 +39,9 @@ struct WeatherView: View {
                                 MinuteView(forecast: minuteForecast)
                             }
                             
-                            HourlyView(forecast: weather.hourlyForecast)
+                            HourlyView(forecast: weather.hourlyForecast,
+                                       sunrise: weatherVM.sunrise,
+                                       sunset: weatherVM.sunset)
                             DailyView(forecast: weather.dailyForecast)
                         }
                         
