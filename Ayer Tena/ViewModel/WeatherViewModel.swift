@@ -31,6 +31,58 @@ class WeatherViewModel: ObservableObject {
         self.city = city
     }
     
+    // The date of the sunrise in the next 24 hrs
+    // There's only one sunrise in 24 hrs
+    var sunrise: Date? {
+        let now = Date()
+        let oneDayFromNow = Calendar.current.date(byAdding: .hour, value: 24, to: now)
+        
+        if let weather {
+            let todaysWeather = weather.dailyForecast.first
+            let tomorrowsWeather = weather.dailyForecast[1]
+            let todaysSunrise = todaysWeather?.sun.sunrise
+            let tomorrowsSunrise = tomorrowsWeather.sun.sunrise
+            
+            // return available sunrise between today and tomorrow
+            if let todaysSunrise, let tomorrowsSunrise, let oneDayFromNow {
+                if todaysSunrise > now && todaysSunrise < oneDayFromNow {
+                    // Today's sunrise hasn't passed yet
+                    return todaysSunrise
+                } else {
+                    // Today's sunrise has passed. return tomorrow's
+                    return tomorrowsSunrise
+                }
+            }
+        }
+        return nil
+    }
+    
+    // The date of the sunset in the next 24 hrs
+    // There's only one sunset in 24 hrs
+    var sunset: Date? {
+        let now = Date()
+        let oneDayFromNow = Calendar.current.date(byAdding: .hour, value: 24, to: now)
+        
+        if let weather {
+            let todaysWeather = weather.dailyForecast.first
+            let tomorrowsWeather = weather.dailyForecast[1]
+            let todaysSunset = todaysWeather?.sun.sunset
+            let tomorrowsSunset = tomorrowsWeather.sun.sunset
+            
+            // return available sunset between today and tomorrow
+            if let todaysSunset, let tomorrowsSunset, let oneDayFromNow {
+                if todaysSunset > now && todaysSunset < oneDayFromNow {
+                    // Today's sunset hasn't passed yet
+                    return todaysSunset
+                } else {
+                    // Today's sunset has passed. return tomorrow's
+                    return tomorrowsSunset
+                }
+            }
+        }
+        return nil
+    }
+    
     // MARK:- Service
     func getWeather() async {
         isLoading = true

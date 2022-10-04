@@ -10,6 +10,8 @@ import WeatherKit
 
 struct HourlyView: View {
     let forecast: Forecast<HourWeather>
+    let sunrise: Date?
+    let sunset: Date?
     
     // We only need 25 hours of hourly data starting
     // at the current hour
@@ -24,7 +26,7 @@ struct HourlyView: View {
             HStack(spacing: 30) {
                 ForEach(hourlyWeatherData, id: \.date) { hourWeather in
                     VStack(spacing: 0) {
-                        Text(hourWeather.date.hourOfDay().localize(.date))
+                        Text(hourWeather.date.isNow ? "Now".localize(.date) : hourWeather.date.timeOfDay)
                             .font(.system(size: 14))
                         VStack {
                             Image(systemName: hourWeather.symbolName)
@@ -44,7 +46,18 @@ struct HourlyView: View {
                         
                         Text("\(hourWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
                             .font(.system(size: 20))
-
+                    }
+                    
+                    if let sunrise {
+                        if Calendar.current.isDate(sunrise, equalTo: hourWeather.date, toGranularity: .hour) {
+                            SunEventView(date: sunrise, type: .sunrise)
+                        }
+                    }
+                    
+                    if let sunset {
+                        if Calendar.current.isDate(sunset, equalTo: hourWeather.date, toGranularity: .hour) {
+                            SunEventView(date: sunset, type: .sunset)
+                        }
                     }
                 }
             }
@@ -57,12 +70,38 @@ struct HourlyView: View {
 struct HourlyView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HourlyView(forecast: Weather.preview.hourlyForecast)
+            HourlyView(forecast: Weather.preview.hourlyForecast,
+                       sunrise: Date(),
+                       sunset: Date())
                 .previewDisplayName("Light")
-            HourlyView(forecast: Weather.preview.hourlyForecast)
+            HourlyView(forecast: Weather.preview.hourlyForecast,
+                       sunrise: Date(),
+                       sunset: Date())
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }
         .previewLayout(.sizeThatFits)
+    }
+}
+
+struct SunEventView: View {
+    enum SunEventType {
+        case sunrise
+        case sunset
+    }
+    
+    let date: Date
+    let type: SunEventType
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Text(date.exactTimeOfDay)
+                .font(.system(size: 14))
+            Image(systemName: type == .sunrise ? "sunrise" : "sunset")
+                .font(.title3)
+                .frame(height: 50)
+            Text(type == .sunrise ? "Sunrise" : "Sunset")
+                .font(.system(size: 20))
+        }
     }
 }
