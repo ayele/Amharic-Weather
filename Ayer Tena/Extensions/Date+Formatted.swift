@@ -8,22 +8,29 @@
 import Foundation
 
 extension Date {
-    func hourOfDay() -> String {
-        if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .hour) {
-            return "Now"
-        }
-        
+    var isNow: Bool {
+        Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .hour)
+    }
+    
+    var isToday: Bool {
+        Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .day)
+    }
+    
+    var timeOfDay: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "ha"
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.string(from: self)
     }
     
-    func dayOfWeek() -> String {
-        if Calendar.current.isDate(Date.now, equalTo: self, toGranularity: .day) {
-            return "Today"
-        }
-        
+    var exactTimeOfDay: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:ma"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.string(from: self)
+    }
+    
+    var dayOfWeek: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
         dateFormatter.locale = Locale(identifier: "en_US")
