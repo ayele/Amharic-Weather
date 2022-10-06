@@ -55,7 +55,6 @@ struct SettingsView_Previews: PreviewProvider {
             NavigationStack {
                 SettingsView()
                     .previewDisplayName("Light")
-                    .navigationBarTitleDisplayMode(.inline)
             }
             
             
@@ -63,7 +62,6 @@ struct SettingsView_Previews: PreviewProvider {
                 SettingsView()
                     .preferredColorScheme(.dark)
                     .previewDisplayName("Dark")
-                    .navigationBarTitleDisplayMode(.inline)
             }
         }
         .previewLayout(.sizeThatFits)
