@@ -16,7 +16,7 @@ struct SettingsView: View {
                 NavigationLink {
                     AboutView()
                 } label: {
-                    Label("About Amharic Weather", systemImage: "cloud")
+                    Label("About Amharic Weather", systemImage: "info")
                 }
                 
                 Label("Share with friends", systemImage: "square.and.arrow.up")
@@ -31,7 +31,7 @@ struct SettingsView: View {
                         settingsVM.isShowingMailView = true
                     }
                 } label: {
-                    Label("Send us feedback", systemImage: "square.and.arrow.up")
+                    Label("Send us feedback", systemImage: "text.bubble")
                 }
                 .buttonStyle(.plain)
             }
