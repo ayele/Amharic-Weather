@@ -39,7 +39,12 @@ struct SettingsView: View {
         .navigationTitle("Settings")
         .environment(\.defaultMinListRowHeight, 60)
         .sheet(isPresented: $settingsVM.isShowingMailView) {
-            MailView(isShowing: $settingsVM.isShowingMailView, result: $settingsVM.mailComposeResult)
+            MailView(
+                isShowing: $settingsVM.isShowingMailView,
+                result: $settingsVM.mailComposeResult,
+                to: ["amharicweather@gmail.com"],
+                subject: "Feedback"
+            )
         }
     }
 }

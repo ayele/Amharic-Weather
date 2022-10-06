@@ -101,7 +101,6 @@ struct WeatherView: View {
                             Button("Cancel") {
                                 weatherVM.isPresentingSettingsView = false
                             }
-                            .buttonStyle(.plain)
                         }
                     }
             }

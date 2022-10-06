@@ -11,11 +11,13 @@ import MessageUI
 struct MailView: UIViewControllerRepresentable {
     @Binding var isShowing: Bool
     @Binding var result: Result<MFMailComposeResult, Error>?
+    var to: [String]
+    var subject: String
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
-        vc.setToRecipients(["amharicweather@gmail.com"])
-        vc.setSubject("Feedback")
+        vc.setToRecipients(to)
+        vc.setSubject(subject)
         vc.mailComposeDelegate = context.coordinator
         return vc
     }
@@ -41,6 +43,7 @@ struct MailView: UIViewControllerRepresentable {
         func mailComposeController(_ controller: MFMailComposeViewController,
                                    didFinishWith result: MFMailComposeResult,
                                    error: Error?) {
+            controller.dismiss(animated: true)
             defer {
                 isShowing = false
             }
