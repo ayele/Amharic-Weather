@@ -15,6 +15,7 @@ class WeatherViewModel: ObservableObject {
     @Published private(set) var city: String?
     @Published private(set) var attribution: WeatherAttribution?
     @Published var isPresentingSafariView = false
+    @Published var isPresentingSettingsView = false 
     @Published private(set) var isLoading = false
     @Published var isShowingAlert = false
     @Published private(set) var error: LocalizedError?
