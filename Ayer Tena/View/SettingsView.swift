@@ -36,6 +36,7 @@ struct SettingsView: View {
                 .buttonStyle(.plain)
             }
         }
+        .foregroundColor(.primary)
         .navigationTitle("Settings")
         .environment(\.defaultMinListRowHeight, 55)
         .sheet(isPresented: $settingsVM.isShowingMailView) {
