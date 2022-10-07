@@ -26,7 +26,11 @@ struct SettingsView: View {
                     Label("Share with friends", systemImage: "square.and.arrow.up")
                 }
                 
-                Label("@AmharicWeather", systemImage: "bird")
+                if let url = settingsVM.twitterURL {
+                    Link(destination: url) {
+                        Label("@AmharicWeather", systemImage: "bird")
+                    }
+                }
             }
             
             Section {
