@@ -16,7 +16,7 @@ struct SettingsView: View {
                 NavigationLink {
                     AboutView()
                 } label: {
-                    Label("About Amharic Weather", systemImage: "info.circle")
+                    Label("About our app", systemImage: "info.circle")
                 }
                 
                 ShareLink(
@@ -36,7 +36,7 @@ struct SettingsView: View {
             Section {
                 if let url =  settingsVM.reviewURL {
                     Link(destination: url) {
-                        Label("Review Amharic Weather", systemImage: "star")
+                        Label("Review our app", systemImage: "star")
                     }
                 }
                 
