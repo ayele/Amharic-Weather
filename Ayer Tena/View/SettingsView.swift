@@ -34,14 +34,11 @@ struct SettingsView: View {
             }
             
             Section {
-                Button {
-                    guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id=1641938316?action=write-review")
-                    else { fatalError("Expected a valid URL") }
-                    UIApplication.shared.open(writeReviewURL, options: [:], completionHandler: nil)
-                } label: {
-                    Label("Review Amharic Weather", systemImage: "star")
+                if let url =  settingsVM.reviewURL {
+                    Link(destination: url) {
+                        Label("Review Amharic Weather", systemImage: "star")
+                    }
                 }
-                .buttonStyle(.plain)
                 
                 Button {
                     if settingsVM.canSendMail() {

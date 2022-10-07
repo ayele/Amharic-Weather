@@ -30,6 +30,10 @@ class SettingsViewModel: ObservableObject {
         return nil
     }
     
+    var reviewURL: URL? {
+        URL(string: "https://apps.apple.com/app/id=1641938316?action=write-review")
+    }
+    
     func canSendMail() -> Bool {
         MFMailComposeViewController.canSendMail()
     }
