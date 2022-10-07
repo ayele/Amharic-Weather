@@ -16,7 +16,7 @@ struct SettingsView: View {
                 NavigationLink {
                     AboutView()
                 } label: {
-                    Label("About Amharic Weather", systemImage: "info")
+                    Label("About Amharic Weather", systemImage: "info.circle")
                 }
                 
                 Label("Share with friends", systemImage: "square.and.arrow.up")
@@ -37,7 +37,7 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("Settings")
-        .environment(\.defaultMinListRowHeight, 60)
+        .environment(\.defaultMinListRowHeight, 55)
         .sheet(isPresented: $settingsVM.isShowingMailView) {
             MailView(
                 isShowing: $settingsVM.isShowingMailView,
