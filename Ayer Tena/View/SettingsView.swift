@@ -19,7 +19,13 @@ struct SettingsView: View {
                     Label("About Amharic Weather", systemImage: "info.circle")
                 }
                 
-                Label("Share with friends", systemImage: "square.and.arrow.up")
+                ShareLink(
+                    item: URL(string: "https://www.apple.com/app-store/")!,
+                    subject: Text("Amharic Weather App"),
+                    message: Text("This is the app I use to get my daily weather info IN AMHARIC.")) {
+                    Label("Share with friends", systemImage: "square.and.arrow.up")
+                }
+                
                 Label("@AmharicWeather", systemImage: "bird")
             }
             
