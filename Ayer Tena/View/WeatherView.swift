@@ -60,9 +60,11 @@ struct WeatherView: View {
                         weatherVM.isPresentingSettingsView = true
                     } label: {
                         Image(systemName: "line.3.horizontal")
-                            .font(.title)
+                            .font(.title2)
                     }
                     .buttonStyle(.plain)
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal)
                 }
                 .padding()
                 .background(Color("SmokeyWhite"))
