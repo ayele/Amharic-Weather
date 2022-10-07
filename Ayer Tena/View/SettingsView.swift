@@ -28,7 +28,7 @@ struct SettingsView: View {
                 
                 if let url = settingsVM.twitterURL {
                     Link(destination: url) {
-                        Label("@AmharicWeather", systemImage: "bird")
+                        Label("@AmharicWeather", image: "twitter")
                     }
                 }
             }
