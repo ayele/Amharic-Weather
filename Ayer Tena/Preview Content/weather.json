@@ -1,7 +1,7 @@
 {
     "availability": {
-        "alertAvailability": "available",
-        "minuteAvailability": "available",
+        "alertAvailability": "temporarilyUnavailable",
+        "minuteAvailability": "temporarilyUnavailable",
         "airQualityAvailability": "temporarilyUnavailable"
     },
     "currentWeather": {

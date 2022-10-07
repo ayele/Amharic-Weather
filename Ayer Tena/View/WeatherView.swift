@@ -16,58 +16,67 @@ struct WeatherView: View {
     var body: some View {
         Group {
             if let weather = weatherVM.weather {
-                ZStack(alignment: .topTrailing) {
-                    ScrollView(showsIndicators: false) {
-                        VStack {
-                            CurrentView(currentWeather: weather.currentWeather,
-                                        highTemperature: weather.dailyForecast.first?.highTemperature,
-                                        lowTemperature: weather.dailyForecast.first?.lowTemperature,
-                                        city: weatherVM.city ?? "--")
-                            
+                GeometryReader { geometry in
+                    ZStack(alignment: .topTrailing) {
+                        ScrollView(showsIndicators: false) {
                             VStack(spacing: 15) {
-                                if let alerts = weather.weatherAlerts,
-                                    !alerts.isEmpty,
-                                    weather.availability.alertAvailability == .available {
-                                    AlertView(alerts: alerts)
-                                        .onTapGesture {
-                                            weatherVM.url = alerts.first?.detailsURL
-                                            weatherVM.isPresentingSafariView = true
-                                        }
+                                VStack(spacing: 15) {
+                                    Spacer()
+                                    
+                                    CurrentView(currentWeather: weather.currentWeather,
+                                                highTemperature: weather.dailyForecast.first?.highTemperature,
+                                                lowTemperature: weather.dailyForecast.first?.lowTemperature,
+                                                city: weatherVM.city ?? "--")
+                                        
+                                    Spacer()
+                                    if let alerts = weather.weatherAlerts,
+                                        !alerts.isEmpty,
+                                        weather.availability.alertAvailability == .available {
+                                        AlertView(alerts: alerts)
+                                            .onTapGesture {
+                                                weatherVM.url = alerts.first?.detailsURL
+                                                weatherVM.isPresentingSafariView = true
+                                            }
+                                    }
+
+                                    if let minuteForecast = weather.minuteForecast,
+                                       weather.availability.minuteAvailability == .available {
+                                        MinuteView(forecast: minuteForecast)
+                                    }
+                                    
+                                    HourlyView(forecast: weather.hourlyForecast,
+                                               sunrise: weatherVM.sunrise,
+                                               sunset: weatherVM.sunset)
                                 }
-                                
-                                if let minuteForecast = weather.minuteForecast,
-                                   weather.availability.minuteAvailability == .available {
-                                    MinuteView(forecast: minuteForecast)
-                                }
-                                
-                                HourlyView(forecast: weather.hourlyForecast,
-                                           sunrise: weatherVM.sunrise,
-                                           sunset: weatherVM.sunset)
+                                .padding(.horizontal)
+                                .frame(width: geometry.size.width, height: geometry.size.height)
+
                                 DailyView(forecast: weather.dailyForecast)
-                            }
-                            
-                            if let attribution = weatherVM.attribution {
-                                AttributionView(attribution: attribution) {
-                                    weatherVM.url = attribution.legalPageURL
-                                    weatherVM.isPresentingSafariView = true
+                                    .padding(.horizontal)
+                                
+                                if let attribution = weatherVM.attribution {
+                                    AttributionView(attribution: attribution) {
+                                        weatherVM.url = attribution.legalPageURL
+                                        weatherVM.isPresentingSafariView = true
+                                    }
+                                        .padding()
                                 }
-                                    .padding()
                             }
                         }
+                        
+                        Button {
+                            weatherVM.isPresentingSettingsView = true
+                        } label: {
+                            Image(systemName: "line.3.horizontal")
+                                .font(.title2)
+                        }
+                        .buttonStyle(.plain)
+                        .foregroundColor(.secondary)
+                        .padding(30)
                     }
-                    
-                    Button {
-                        weatherVM.isPresentingSettingsView = true
-                    } label: {
-                        Image(systemName: "line.3.horizontal")
-                            .font(.title2)
-                    }
-                    .buttonStyle(.plain)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal)
                 }
-                .padding()
                 .background(Color("SmokeyWhite"))
+                
             } else {
                 if weatherVM.isLoading {
                     LoadingView()
@@ -127,3 +136,52 @@ struct WeatherView_Previews: PreviewProvider {
         }
     }
 }
+/*
+GeometryReader { geometry in
+    ScrollView(showsIndicators: false) {
+        VStack(spacing: 15) {
+            VStack(spacing: 15) {
+                Spacer()
+                
+                CurrentView(currentWeather: weather.currentWeather,
+                            highTemperature: weather.dailyForecast.first?.highTemperature,
+                            lowTemperature: weather.dailyForecast.first?.lowTemperature,
+                            city: weatherVM.city ?? "--")
+                    
+                Spacer()
+                if let alerts = weather.weatherAlerts,
+                    !alerts.isEmpty,
+                    weather.availability.alertAvailability == .available {
+                    AlertView(alerts: alerts)
+                        .onTapGesture {
+                            weatherVM.url = alerts.first?.detailsURL
+                            weatherVM.isPresentingSafariView = true
+                        }
+                }
+
+                if let minuteForecast = weather.minuteForecast,
+                   weather.availability.minuteAvailability == .available {
+                    MinuteView(forecast: minuteForecast)
+                }
+                
+                HourlyView(forecast: weather.hourlyForecast,
+                           sunrise: weatherVM.sunrise,
+                           sunset: weatherVM.sunset)
+            }
+            .padding(.horizontal)
+            .frame(width: geometry.size.width, height: geometry.size.height)
+
+            DailyView(forecast: weather.dailyForecast)
+                .padding(.horizontal)
+            
+            if let attribution = weatherVM.attribution {
+                AttributionView(attribution: attribution) {
+                    weatherVM.url = attribution.legalPageURL
+                    weatherVM.isPresentingSafariView = true
+                }
+                    .padding()
+            }
+        }
+    }
+}
+*/
