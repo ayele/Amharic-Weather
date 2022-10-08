@@ -10,6 +10,9 @@ import WeatherKit
 
 struct GridView: View {
     let currentWeather: CurrentWeather
+    let precipitation: Double?
+    let sunrise: Date?
+    let sunset: Date?
     
     var uvIndex: String {
         return "\(currentWeather.uvIndex.value)"
@@ -39,12 +42,24 @@ struct GridView: View {
         Grid(horizontalSpacing: 10, verticalSpacing: 10) {
             GridRow {
                 SquareView(category: "UV Index", value: uvIndex)
-                SquareView(category: "Sunrise", value: "5:45 AM")
+                
+                if let sunset {
+                    SquareView(
+                        category: "Sunset",
+                        value: sunset.formatted(date: .omitted, time: .shortened)
+                    )
+                }
             }
             
             GridRow {
                 SquareView(category: "Wind", value: wind)
-                SquareView(category: "Precipitation", value: "0\"")
+                
+                if let precipitation {
+                    SquareView(
+                        category: "Precipitation",
+                        value: precipitation.formatted(.percent)
+                    )
+                }
             }
             
             GridRow {
@@ -63,9 +78,20 @@ struct GridView: View {
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            GridView(currentWeather: Weather.preview.currentWeather)
+            GridView(
+                currentWeather: Weather.preview.currentWeather,
+                precipitation: 0.34,
+                sunrise: Date(),
+                sunset: Date()
+            )
                 .previewDisplayName("Light")
-            GridView(currentWeather: Weather.preview.currentWeather)
+            
+            GridView(
+                currentWeather: Weather.preview.currentWeather,
+                precipitation: 0.34,
+                sunrise: Date(),
+                sunset: Date()
+            )
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }

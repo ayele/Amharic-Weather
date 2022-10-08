@@ -54,7 +54,12 @@ struct WeatherView: View {
                                 DailyView(forecast: weather.dailyForecast)
                                     .padding(.horizontal)
                                 
-                                GridView(currentWeather: weather.currentWeather)
+                                GridView(
+                                    currentWeather: weather.currentWeather,
+                                    precipitation: weather.dailyForecast.first?.precipitationChance,
+                                    sunrise: weatherVM.sunrise,
+                                    sunset: weatherVM.sunset
+                                )
                                     .padding(.horizontal)
                                 
                                 if let attribution = weatherVM.attribution {
