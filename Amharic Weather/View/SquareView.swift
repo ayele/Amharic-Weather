@@ -24,9 +24,7 @@ struct SquareView: View {
         }
         .padding()
         .frame(height: 185)
-        .overlay {
-            RoundedRectangle(cornerRadius: 15).strokeBorder(.secondary, lineWidth: 1)
-        }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
     }
 }
 

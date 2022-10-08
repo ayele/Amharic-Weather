@@ -47,6 +47,7 @@ struct WeatherView: View {
                                     HourlyView(forecast: weather.hourlyForecast,
                                                sunrise: weatherVM.sunrise,
                                                sunset: weatherVM.sunset)
+
                                 }
                                 .padding(.horizontal)
                                 .frame(width: geometry.size.width, height: geometry.size.height)
@@ -82,8 +83,9 @@ struct WeatherView: View {
                         .foregroundColor(.secondary)
                         .padding(30)
                     }
+                    .colorScheme(.dark)
                 }
-                .background(Color("SmokeyWhite"))
+                .background(Color("Sky").gradient)
                 
             } else {
                 if weatherVM.isLoading {

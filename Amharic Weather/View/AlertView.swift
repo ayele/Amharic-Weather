@@ -62,7 +62,7 @@ struct AlertView: View {
             }
         }
         .padding()
-        .overlay { RoundedRectangle(cornerRadius: 15).strokeBorder(.secondary, lineWidth: 1) }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
     }
 }
 

@@ -29,8 +29,9 @@ struct HourlyView: View {
                         Text(hourWeather.date.isNow ? "Now".localize(.date) : hourWeather.date.timeOfDay)
                             .font(.system(size: 14))
                         VStack {
-                            Image(systemName: hourWeather.symbolName)
+                            Image(systemName: hourWeather.symbolName + ".fill")
                                 .font(.title3)
+                                .symbolRenderingMode(.multicolor)
                             // Only show precip. chance if >= 30%
                             if hourWeather.precipitationChance >= 0.3 {
                                 // Don't show precip. chance for current hour
@@ -63,7 +64,7 @@ struct HourlyView: View {
             }
         }
         .padding()
-        .overlay { RoundedRectangle(cornerRadius: 15).strokeBorder(.secondary, lineWidth: 1) }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
     }
 }
 

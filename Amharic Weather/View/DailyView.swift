@@ -20,8 +20,11 @@ struct DailyView: View {
                             .frame(width: 80, alignment: .leading)
                         Spacer()
                         VStack {
-                            Image(systemName: dayWeather.symbolName)
+                            // Checks for existense of filled version of the symbol
+                            // because some symbols such as "wind" aren't filled.
+                            Image(systemName: "\(dayWeather.symbolName)\(fillSymbol(dayWeather.symbolName) ? ".fill" : "")")
                                 .font(.title3)
+                                .symbolRenderingMode(.multicolor)
                             if dayWeather.precipitationChance >= 0.3 {
                                 Text((round(dayWeather.precipitationChance * 10) / 10.0).formatted(.percent))
                                     .font(.caption2)
@@ -52,7 +55,13 @@ struct DailyView: View {
             }
         }
         .padding()
-        .overlay { RoundedRectangle(cornerRadius: 15).strokeBorder(.secondary, lineWidth: 1) }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
+    }
+    
+    // returns whether a symbol has a fill version or not
+    private func fillSymbol(_ symbol: String) -> Bool {
+        let image = UIImage(systemName: "\(symbol).fill")
+        return image == nil ? false : true
     }
 }
 
