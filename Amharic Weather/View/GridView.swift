@@ -39,7 +39,7 @@ struct GridView: View {
     }
        
     var body: some View {
-        Grid(horizontalSpacing: 10, verticalSpacing: 10) {
+        Grid(horizontalSpacing: 15, verticalSpacing: 15) {
             GridRow {
                 SquareView(category: "UV Index", value: uvIndex)
                 
