@@ -48,14 +48,14 @@
 		3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3A0FAC6E28D68374004C79A4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		3A53881228B96A5D00D9A5B5 /* Ayer Tena.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ayer Tena.entitlements"; sourceTree = "<group>"; };
+		3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amharic Weather.entitlements"; sourceTree = "<group>"; };
 		3A66B36828BA7F6200FA76DA /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		3A66B36A28BA7F7200FA76DA /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 		3A66B36C28BA7F7D00FA76DA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
 		3A66B36E28BA98CF00FA76DA /* AttributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionView.swift; sourceTree = "<group>"; };
 		3A66B37028BAA4BC00FA76DA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		3A7EA6AF28BC1AE40029F97D /* LocalizableDates.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableDates.strings; sourceTree = "<group>"; };
-		3A857AD828B140E300F343FE /* Ayer Tena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ayer Tena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A857AD828B140E300F343FE /* Amharic Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amharic Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A857ADB28B140E300F343FE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3A857ADD28B140E300F343FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A857ADF28B140E500F343FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		3ACD498628EF5D00009B577A /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		3ACD498828EF5F85009B577A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteView.swift; sourceTree = "<group>"; };
-		3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ayer-Tena-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3AE48BBB28BED08B00E0DD7D /* Amharic-Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amharic-Weather-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 		3A857ACF28B140E300F343FE = {
 			isa = PBXGroup;
 			children = (
-				3A857ADA28B140E300F343FE /* Ayer Tena */,
+				3A857ADA28B140E300F343FE /* Amharic Weather */,
 				3A857AD928B140E300F343FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,12 +105,12 @@
 		3A857AD928B140E300F343FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A857AD828B140E300F343FE /* Ayer Tena.app */,
+				3A857AD828B140E300F343FE /* Amharic Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A857ADA28B140E300F343FE /* Ayer Tena */ = {
+		3A857ADA28B140E300F343FE /* Amharic Weather */ = {
 			isa = PBXGroup;
 			children = (
 				3A857ADB28B140E300F343FE /* App.swift */,
@@ -120,12 +120,12 @@
 				3A857AFD28B2B62900F343FE /* Location */,
 				3AC8C62528B4312B00E38843 /* Extensions */,
 				3AE48BBD28BED0AB00E0DD7D /* Localization */,
-				3AE48BBB28BED08B00E0DD7D /* Ayer-Tena-Info.plist */,
-				3A53881228B96A5D00D9A5B5 /* Ayer Tena.entitlements */,
+				3AE48BBB28BED08B00E0DD7D /* Amharic-Weather-Info.plist */,
+				3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
 				3A857AE128B140E500F343FE /* Preview Content */,
 			);
-			path = "Ayer Tena";
+			path = "Amharic Weather";
 			sourceTree = "<group>";
 		};
 		3A857AE128B140E500F343FE /* Preview Content */ = {
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A857AD728B140E300F343FE /* Ayer Tena */ = {
+		3A857AD728B140E300F343FE /* Amharic Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A857AE628B140E500F343FE /* Build configuration list for PBXNativeTarget "Ayer Tena" */;
+			buildConfigurationList = 3A857AE628B140E500F343FE /* Build configuration list for PBXNativeTarget "Amharic Weather" */;
 			buildPhases = (
 				3A857AD428B140E300F343FE /* Sources */,
 				3A857AD528B140E300F343FE /* Frameworks */,
@@ -212,9 +212,9 @@
 			);
 			dependencies = (
 			);
-			name = "Ayer Tena";
+			name = "Amharic Weather";
 			productName = "Ayer Tena";
-			productReference = 3A857AD828B140E300F343FE /* Ayer Tena.app */;
+			productReference = 3A857AD828B140E300F343FE /* Amharic Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A857AD328B140E300F343FE /* Build configuration list for PBXProject "Ayer Tena" */;
+			buildConfigurationList = 3A857AD328B140E300F343FE /* Build configuration list for PBXProject "Amharic Weather" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A857AD728B140E300F343FE /* Ayer Tena */,
+				3A857AD728B140E300F343FE /* Amharic Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -422,15 +422,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Ayer Tena/Ayer Tena.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Amharic Weather/Amharic Weather.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ayer Tena/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Amharic Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = E9EMJG84C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Ayer-Tena-Info.plist";
+				INFOPLIST_FILE = "Amharic-Weather-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show weather in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fantastk.Ayer-Tena";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fantastk.Amharic-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -457,15 +457,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Ayer Tena/Ayer Tena.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Amharic Weather/Amharic Weather.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ayer Tena/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Amharic Weather/Preview Content\"";
 				DEVELOPMENT_TEAM = E9EMJG84C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Ayer-Tena-Info.plist";
+				INFOPLIST_FILE = "Amharic-Weather-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show weather in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fantastk.Ayer-Tena";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Fantastk.Amharic-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -490,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A857AD328B140E300F343FE /* Build configuration list for PBXProject "Ayer Tena" */ = {
+		3A857AD328B140E300F343FE /* Build configuration list for PBXProject "Amharic Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A857AE428B140E500F343FE /* Debug */,
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A857AE628B140E500F343FE /* Build configuration list for PBXNativeTarget "Ayer Tena" */ = {
+		3A857AE628B140E500F343FE /* Build configuration list for PBXNativeTarget "Amharic Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A857AE728B140E500F343FE /* Debug */,
