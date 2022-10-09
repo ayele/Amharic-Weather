@@ -98,9 +98,10 @@ struct SunEventView: View {
         VStack(spacing: 0) {
             Text(date.exactTimeOfDay)
                 .font(.system(size: 14))
-            Image(systemName: type == .sunrise ? "sunrise" : "sunset")
+            Image(systemName: "\(type == .sunrise ? "sunrise" : "sunset").fill")
                 .font(.title3)
                 .frame(height: 50)
+                .symbolRenderingMode(.multicolor)
             Text(type == .sunrise ? "Sunrise" : "Sunset")
                 .font(.system(size: 20))
         }
