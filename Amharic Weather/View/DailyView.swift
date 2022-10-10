@@ -54,8 +54,6 @@ struct DailyView: View {
                 }
             }
         }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
     }
     
     // returns whether a symbol has a fill version or not

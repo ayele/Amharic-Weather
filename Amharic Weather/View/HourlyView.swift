@@ -63,8 +63,6 @@ struct HourlyView: View {
                 }
             }
         }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 15))
     }
 }
 

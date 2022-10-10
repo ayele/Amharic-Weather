@@ -44,16 +44,23 @@ struct WeatherView: View {
                                         MinuteView(forecast: minuteForecast)
                                     }
                                     
-                                    HourlyView(forecast: weather.hourlyForecast,
-                                               sunrise: weatherVM.sunrise,
-                                               sunset: weatherVM.sunset)
-
+                                    CardView {
+                                        Label("የየሰዓቱ ትንበያ", systemImage: "clock")
+                                    } content: {
+                                        HourlyView(forecast: weather.hourlyForecast,
+                                                   sunrise: weatherVM.sunrise,
+                                                   sunset: weatherVM.sunset)
+                                    }
                                 }
                                 .padding(.horizontal)
                                 .frame(width: geometry.size.width, height: geometry.size.height)
-
-                                DailyView(forecast: weather.dailyForecast)
-                                    .padding(.horizontal)
+                                
+                                CardView {
+                                    Label("የ 10 ቀን ትንበያ", systemImage: "calendar")
+                                } content: {
+                                    DailyView(forecast: weather.dailyForecast)
+                                }
+                                .padding(.horizontal)
                                 
                                 GridView(
                                     currentWeather: weather.currentWeather,
