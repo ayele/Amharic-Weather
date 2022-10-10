@@ -29,7 +29,7 @@ struct HourlyView: View {
                         Text(hourWeather.date.isNow ? "Now".localize(.date) : hourWeather.date.timeOfDay)
                             .font(.system(size: 14))
                         VStack {
-                            Image(systemName: hourWeather.symbolName + ".fill")
+                            Image(systemName: "\(hourWeather.symbolName)\(hourWeather.symbolName.hasFill() ? ".fill" : "")")
                                 .font(.title3)
                                 .symbolRenderingMode(.multicolor)
                             // Only show precip. chance if >= 30%

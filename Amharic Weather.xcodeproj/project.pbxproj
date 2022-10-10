@@ -18,6 +18,7 @@
 		3A5E9FE728F1F17E00247A07 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE628F1F17E00247A07 /* SquareView.swift */; };
 		3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE828F1F31C00247A07 /* GridView.swift */; };
 		3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA01E28F4A82500247A07 /* CardView.swift */; };
+		3A5EA02128F4C89400247A07 /* String+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA02028F4C89400247A07 /* String+Fill.swift */; };
 		3A66B36928BA7F6200FA76DA /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36828BA7F6200FA76DA /* CurrentView.swift */; };
 		3A66B36B28BA7F7200FA76DA /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36A28BA7F7200FA76DA /* HourlyView.swift */; };
 		3A66B36D28BA7F7D00FA76DA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36C28BA7F7D00FA76DA /* DailyView.swift */; };
@@ -55,6 +56,7 @@
 		3A5E9FE628F1F17E00247A07 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		3A5E9FE828F1F31C00247A07 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		3A5EA01E28F4A82500247A07 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3A5EA02028F4C89400247A07 /* String+Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Fill.swift"; sourceTree = "<group>"; };
 		3A66B36828BA7F6200FA76DA /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		3A66B36A28BA7F7200FA76DA /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 		3A66B36C28BA7F7D00FA76DA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				3AC8C62828B43CD900E38843 /* Date+Formatted.swift */,
 				3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */,
 				3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */,
+				3A5EA02028F4C89400247A07 /* String+Fill.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				3A66B36B28BA7F7200FA76DA /* HourlyView.swift in Sources */,
 				3A939E2D28D9590800C4E41B /* TempGradient.swift in Sources */,
 				3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */,
+				3A5EA02128F4C89400247A07 /* String+Fill.swift in Sources */,
 				3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,
 				3ACD498728EF5D00009B577A /* MailView.swift in Sources */,

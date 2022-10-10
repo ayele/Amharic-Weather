@@ -22,7 +22,7 @@ struct DailyView: View {
                         VStack {
                             // Checks for existense of filled version of the symbol
                             // because some symbols such as "wind" aren't filled.
-                            Image(systemName: "\(dayWeather.symbolName)\(fillSymbol(dayWeather.symbolName) ? ".fill" : "")")
+                            Image(systemName: "\(dayWeather.symbolName)\(dayWeather.symbolName.hasFill() ? ".fill" : "")")
                                 .font(.title3)
                                 .symbolRenderingMode(.multicolor)
                             if dayWeather.precipitationChance >= 0.3 {
@@ -54,12 +54,6 @@ struct DailyView: View {
                 }
             }
         }
-    }
-    
-    // returns whether a symbol has a fill version or not
-    private func fillSymbol(_ symbol: String) -> Bool {
-        let image = UIImage(systemName: "\(symbol).fill")
-        return image == nil ? false : true
     }
 }
 
