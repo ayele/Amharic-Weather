@@ -31,6 +31,7 @@ struct ErrorView: View {
             VStack(spacing: 2) {
                 Text(error.errorDescription ?? "")
                     .font(.title2).bold()
+                    .foregroundColor(.white)
                 Text("\(error.failureReason ?? "") \(error.recoverySuggestion ?? "")")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
@@ -38,11 +39,20 @@ struct ErrorView: View {
             }
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("Sky").gradient)
     }
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(error: WeatherError.permissionDenied)
+        Group {
+            ErrorView(error: WeatherError.permissionDenied)
+                .previewDisplayName("Light")
+            ErrorView(error: WeatherError.permissionDenied)
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
