@@ -24,6 +24,7 @@ struct WelcomeView: View {
                 Text("ለአከባቢዎ አየር ሁኔታ ሎኬሽኖን ሼር ያድርጉ")
                     .font(.callout)
             }
+            .foregroundColor(.white)
             .multilineTextAlignment(.center)
             .padding()
             
@@ -32,15 +33,15 @@ struct WelcomeView: View {
             } label: {
                 Label("ሼር", systemImage: "location")
                     .frame(width: 100, height: 40)
-                    .foregroundColor(.white)
-                    .background(.blue)
+                    .foregroundColor(.blue)
+                    .background(.white)
                     .cornerRadius(30)
             }
             .buttonStyle(.plain)
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("SmokeyWhite"))
+        .background(Color("Sky").gradient)
     }
 }
 
