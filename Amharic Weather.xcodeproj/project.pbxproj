@@ -17,6 +17,7 @@
 		3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */; };
 		3A5E9FE728F1F17E00247A07 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE628F1F17E00247A07 /* SquareView.swift */; };
 		3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE828F1F31C00247A07 /* GridView.swift */; };
+		3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA01E28F4A82500247A07 /* CardView.swift */; };
 		3A66B36928BA7F6200FA76DA /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36828BA7F6200FA76DA /* CurrentView.swift */; };
 		3A66B36B28BA7F7200FA76DA /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36A28BA7F7200FA76DA /* HourlyView.swift */; };
 		3A66B36D28BA7F7D00FA76DA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66B36C28BA7F7D00FA76DA /* DailyView.swift */; };
@@ -53,6 +54,7 @@
 		3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amharic Weather.entitlements"; sourceTree = "<group>"; };
 		3A5E9FE628F1F17E00247A07 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		3A5E9FE828F1F31C00247A07 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		3A5EA01E28F4A82500247A07 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3A66B36828BA7F6200FA76DA /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		3A66B36A28BA7F7200FA76DA /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 		3A66B36C28BA7F7D00FA76DA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
 				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
 				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
+				3A5EA01E28F4A82500247A07 /* CardView.swift */,
 				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
 				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
 				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACD498328EF4D98009B577A /* SettingsView.swift in Sources */,
+				3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */,
 				3A66B36D28BA7F7D00FA76DA /* DailyView.swift in Sources */,
 				3ACD498528EF5655009B577A /* AboutView.swift in Sources */,
 				3A0AB4AE28BD8D8E00014F9E /* AlertView.swift in Sources */,
