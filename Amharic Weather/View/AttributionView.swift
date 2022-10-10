@@ -32,6 +32,8 @@ struct AttributionView: View {
                 onTap()
             } label: {
                 Text("Other data sources")
+                    .foregroundColor(.secondary)
+                    .underline()
             }
         }
         .font(.footnote)
