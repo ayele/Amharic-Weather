@@ -10,13 +10,21 @@ import SwiftUI
 struct LoadingView: View {
     var body: some View {
         ProgressView()
-            .progressViewStyle(CircularProgressViewStyle(tint: .secondary))
+            .progressViewStyle(CircularProgressViewStyle(tint: .white))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("Sky").gradient)
     }
 }
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView()
+        Group {
+            LoadingView()
+                .previewDisplayName("Light")
+            LoadingView()
+                .preferredColorScheme(.dark)
+                .previewDisplayName("Dark")
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
