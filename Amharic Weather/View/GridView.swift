@@ -48,11 +48,13 @@ struct GridView: View {
                         .frame(height: 120)
                 }
 
-                if let sunset {
-                    SquareView(
-                        category: "Sunset",
-                        value: sunset.formatted(date: .omitted, time: .shortened)
-                    )
+                if let sunset, let sunrise {
+                    CardView {
+                        Label("Sunset", systemImage: "sunset.fill")
+                    } content: {
+                        SunView(sunrise: sunrise, sunset: sunset)
+                            .frame(height: 120)
+                    }
                 }
             }
             
