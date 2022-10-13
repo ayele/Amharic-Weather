@@ -59,24 +59,58 @@ struct GridView: View {
             }
             
             GridRow {
-                SquareView(category: "Wind", value: wind)
+                CardView {
+                    Label("Wind", systemImage: "wind")
+                } content: {
+                    WindView(wind: currentWeather.wind)
+                        .frame(height: 120)
+                }
                 
                 if let precipitation {
-                    SquareView(
-                        category: "Precipitation",
-                        value: precipitation.formatted(.percent)
-                    )
+                    CardView {
+                        Label("Precipitation", systemImage: "drop.fill")
+                    } content: {
+                        Text("\(precipitation.formatted(.percent))")
+                            .font(.largeTitle).fontWeight(.semibold)
+                            .frame(height: 120)
+                    }
                 }
             }
             
             GridRow {
-                SquareView(category: "Feels Like", value: apparentTemperature)
-                SquareView(category: "Humidity", value: humidity)
+                CardView {
+                    Label("Feels Like", systemImage: "thermometer.medium")
+                } content: {
+                    Text(apparentTemperature)
+                        .font(.largeTitle).fontWeight(.semibold)
+                        .frame(height: 120)
+                }
+                
+                CardView {
+                    Label("Humidity", systemImage: "humidity.fill")
+                } content: {
+                    Text(humidity)
+                        .font(.largeTitle).fontWeight(.semibold)
+                        .frame(height: 120)
+                }
             }
             
             GridRow {
-                SquareView(category: "Visibility", value: visibility)
-                SquareView(category: "Pressure", value: pressure)
+                CardView {
+                    Label("Visibility", systemImage: "eye.fill")
+                } content: {
+                    Text(visibility)
+                        .font(.largeTitle).fontWeight(.semibold)
+                        .frame(height: 120)
+                }
+                
+                CardView {
+                    Label("Pressure", systemImage: "gauge")
+                } content: {
+                    Text(pressure)
+                        .font(.largeTitle).fontWeight(.semibold)
+                        .frame(height: 120)
+                }
             }
         }
     }
