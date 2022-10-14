@@ -12,12 +12,7 @@ struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
 
     var body: some View {
-        VStack {
-            Image("Logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100)
-                
+        VStack {    
             VStack(spacing: 10) {
                 Text("እንኳን ደህና መጡ")
                     .font(.largeTitle)
