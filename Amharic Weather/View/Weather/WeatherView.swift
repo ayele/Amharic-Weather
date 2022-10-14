@@ -84,7 +84,7 @@ struct WeatherView: View {
                     }
                     .colorScheme(.dark)
                 }
-                .background(Color("Sky").gradient)
+                .background(LinearGradient.sky)
                 
             } else {
                 if weatherVM.isLoading {

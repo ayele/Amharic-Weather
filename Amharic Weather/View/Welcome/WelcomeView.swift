@@ -12,7 +12,7 @@ struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
 
     var body: some View {
-        VStack {    
+        VStack {
             VStack(spacing: 10) {
                 Text("እንኳን ደህና መጡ")
                     .font(.largeTitle)
@@ -36,7 +36,7 @@ struct WelcomeView: View {
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("Sky").gradient)
+        .background(LinearGradient.sky)
     }
 }
 

@@ -40,7 +40,7 @@ struct ErrorView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("Sky").gradient)
+        .background(LinearGradient.sky)
     }
 }
 

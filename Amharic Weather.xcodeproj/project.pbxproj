@@ -16,6 +16,7 @@
 		3A0FAC6F28D68374004C79A4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FAC6E28D68374004C79A4 /* NetworkError.swift */; };
 		3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */; };
 		3A22245628F9D59300751E76 /* HelveticaNeue-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */; };
+		3A22245D28FA261200751E76 /* LinearGradient+Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */; };
 		3A5E9FE728F1F17E00247A07 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE628F1F17E00247A07 /* SquareView.swift */; };
 		3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE828F1F31C00247A07 /* GridView.swift */; };
 		3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA01E28F4A82500247A07 /* CardView.swift */; };
@@ -54,6 +55,7 @@
 		3A0FAC6E28D68374004C79A4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Thin.otf"; sourceTree = "<group>"; };
+		3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Sky.swift"; sourceTree = "<group>"; };
 		3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amharic Weather.entitlements"; sourceTree = "<group>"; };
 		3A5E9FE628F1F17E00247A07 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		3A5E9FE828F1F31C00247A07 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */,
 				3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */,
 				3A5EA02028F4C89400247A07 /* String+Fill.swift */,
+				3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				3A0FAC6D28D657BB004C79A4 /* ErrorView.swift in Sources */,
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
+				3A22245D28FA261200751E76 /* LinearGradient+Sky.swift in Sources */,
 				3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */,
 				3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,
