@@ -112,6 +112,52 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		3A22245828F9DFB500751E76 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				3A857AF228B2B26D00F343FE /* WeatherView.swift */,
+				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
+				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
+				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
+				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
+				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
+				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
+				3A5E9FE828F1F31C00247A07 /* GridView.swift */,
+				3A939E2C28D9590800C4E41B /* TempGradient.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		3A22245928F9DFC500751E76 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3A857AF028B2B1FF00F343FE /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		3A22245A28F9DFF300751E76 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EA01E28F4A82500247A07 /* CardView.swift */,
+				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
+				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
+				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
+				3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3A22245B28F9E00000751E76 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3ACD498228EF4D98009B577A /* SettingsView.swift */,
+				3ACD498628EF5D00009B577A /* MailView.swift */,
+				3ACD498428EF5655009B577A /* AboutView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		3A857ACF28B140E300F343FE = {
 			isa = PBXGroup;
 			children = (
@@ -160,24 +206,10 @@
 			isa = PBXGroup;
 			children = (
 				3A857ADD28B140E300F343FE /* ContentView.swift */,
-				3A857AF028B2B1FF00F343FE /* WelcomeView.swift */,
-				3A857AF228B2B26D00F343FE /* WeatherView.swift */,
-				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
-				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
-				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
-				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
-				3A5EA01E28F4A82500247A07 /* CardView.swift */,
-				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
-				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
-				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
-				3A5E9FE828F1F31C00247A07 /* GridView.swift */,
-				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
-				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
-				3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */,
-				3A939E2C28D9590800C4E41B /* TempGradient.swift */,
-				3ACD498228EF4D98009B577A /* SettingsView.swift */,
-				3ACD498628EF5D00009B577A /* MailView.swift */,
-				3ACD498428EF5655009B577A /* AboutView.swift */,
+				3A22245928F9DFC500751E76 /* Welcome */,
+				3A22245828F9DFB500751E76 /* Weather */,
+				3A22245A28F9DFF300751E76 /* Helper */,
+				3A22245B28F9E00000751E76 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
