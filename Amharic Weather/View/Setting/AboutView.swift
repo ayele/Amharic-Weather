@@ -15,10 +15,10 @@ struct AboutView: View {
                     .resizable()
                     .scaledToFit()
                 
-                Text("Amharic Weather is a weather app in አማርኛ. It was created by an independant software developer. Currently the app is only avialble in the US and on iOS only (Android maybe in the future). I came up with the idea when I was looking for a project to improve my programming skills. \n\nThe app gets its data from Apple Weather Service so the accuracy is identical to the native Apple Weather app")
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
                     .font(.callout)
             }
-            
+            /*
             Button {
                 
             } label: {
@@ -32,6 +32,7 @@ struct AboutView: View {
                 }
             }
             .buttonStyle(.plain)
+             */
             
             Spacer()
         }
