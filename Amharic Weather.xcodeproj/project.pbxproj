@@ -15,6 +15,7 @@
 		3A0FAC6D28D657BB004C79A4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */; };
 		3A0FAC6F28D68374004C79A4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FAC6E28D68374004C79A4 /* NetworkError.swift */; };
 		3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */; };
+		3A22245628F9D59300751E76 /* HelveticaNeue-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */; };
 		3A5E9FE728F1F17E00247A07 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE628F1F17E00247A07 /* SquareView.swift */; };
 		3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE828F1F31C00247A07 /* GridView.swift */; };
 		3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA01E28F4A82500247A07 /* CardView.swift */; };
@@ -52,6 +53,7 @@
 		3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3A0FAC6E28D68374004C79A4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Thin.otf"; sourceTree = "<group>"; };
 		3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amharic Weather.entitlements"; sourceTree = "<group>"; };
 		3A5E9FE628F1F17E00247A07 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		3A5E9FE828F1F31C00247A07 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3A22245728F9D71A00751E76 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		3A857ACF28B140E300F343FE = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 				3A857AFD28B2B62900F343FE /* Location */,
 				3AC8C62528B4312B00E38843 /* Extensions */,
 				3AE48BBD28BED0AB00E0DD7D /* Localization */,
+				3A22245728F9D71A00751E76 /* Font */,
 				3AE48BBB28BED08B00E0DD7D /* Amharic-Weather-Info.plist */,
 				3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0C9BBD28DA571100D9F754 /* LocalizableConditions.strings in Resources */,
+				3A22245628F9D59300751E76 /* HelveticaNeue-Thin.otf in Resources */,
 				3A0AB4AA28BD3AC900014F9E /* weather.json in Resources */,
 				3A0C9BBF28DA574D00D9F754 /* LocalizableCities.strings in Resources */,
 				3A857AE328B140E500F343FE /* Preview Assets.xcassets in Resources */,
