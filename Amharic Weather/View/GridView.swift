@@ -73,6 +73,7 @@ struct GridView: View {
                         Text("\(precipitation.formatted(.percent))")
                             .font(.largeTitle).fontWeight(.semibold)
                             .frame(height: 120)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
             }
@@ -84,6 +85,7 @@ struct GridView: View {
                     Text(apparentTemperature)
                         .font(.largeTitle).fontWeight(.semibold)
                         .frame(height: 120)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 CardView {
@@ -92,6 +94,7 @@ struct GridView: View {
                     Text(humidity)
                         .font(.largeTitle).fontWeight(.semibold)
                         .frame(height: 120)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             
@@ -102,6 +105,7 @@ struct GridView: View {
                     Text(visibility)
                         .font(.largeTitle).fontWeight(.semibold)
                         .frame(height: 120)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 CardView {
