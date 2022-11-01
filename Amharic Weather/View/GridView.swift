@@ -60,7 +60,7 @@ struct GridView: View {
             
             GridRow {
                 CardView {
-                    Label("Wind", systemImage: "wind")
+                    Label("ነፋስ", systemImage: "wind")
                 } content: {
                     WindView(wind: currentWeather.wind)
                         .frame(height: 120)
@@ -68,7 +68,7 @@ struct GridView: View {
                 
                 if let precipitation {
                     CardView {
-                        Label("Precipitation", systemImage: "drop.fill")
+                        Label("ዝናብ", systemImage: "drop.fill")
                     } content: {
                         Text("\(precipitation.formatted(.percent))")
                             .font(.largeTitle).fontWeight(.semibold)
@@ -79,7 +79,7 @@ struct GridView: View {
             
             GridRow {
                 CardView {
-                    Label("Feels Like", systemImage: "thermometer.medium")
+                    Label("የሚሰማው ሙቀት", systemImage: "thermometer.medium")
                 } content: {
                     Text(apparentTemperature)
                         .font(.largeTitle).fontWeight(.semibold)
@@ -87,7 +87,7 @@ struct GridView: View {
                 }
                 
                 CardView {
-                    Label("Humidity", systemImage: "humidity.fill")
+                    Label("እርጥበት", systemImage: "humidity.fill")
                 } content: {
                     Text(humidity)
                         .font(.largeTitle).fontWeight(.semibold)
@@ -97,7 +97,7 @@ struct GridView: View {
             
             GridRow {
                 CardView {
-                    Label("Visibility", systemImage: "eye.fill")
+                    Label("ታይነት", systemImage: "eye.fill")
                 } content: {
                     Text(visibility)
                         .font(.largeTitle).fontWeight(.semibold)
@@ -105,7 +105,7 @@ struct GridView: View {
                 }
                 
                 CardView {
-                    Label("Pressure", systemImage: "gauge")
+                    Label("ግፊት", systemImage: "gauge")
                 } content: {
                     Text(pressure)
                         .font(.largeTitle).fontWeight(.semibold)
