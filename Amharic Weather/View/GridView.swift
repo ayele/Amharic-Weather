@@ -42,7 +42,7 @@ struct GridView: View {
         Grid(horizontalSpacing: 15, verticalSpacing: 15) {
             GridRow {
                 CardView {
-                    Label("UV Index", systemImage: "sun.max.fill")
+                    Label("የዩቪ መረጃ ጠቋሚ", systemImage: "sun.max.fill")
                 } content: {
                     UVIndexView(uvIndex: currentWeather.uvIndex)
                         .frame(height: 120)

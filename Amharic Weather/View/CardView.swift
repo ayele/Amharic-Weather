@@ -10,17 +10,17 @@ import SwiftUI
 struct CardView<Title: View, Content: View>: View {
     var title: Title
     var content: Content
-    
+
     init(@ViewBuilder title: @escaping () -> Title, @ViewBuilder content: @escaping () -> Content){
         self.title = title()
         self.content = content()
     }
-    
+        
     var body: some View {
         VStack(spacing: 0){
             title
                 .foregroundColor(.secondary)
-                .font(.system(size: 13))
+                .font(.system(size: 10))
                 .lineLimit(1)
                 .frame(height: 38)
                 .frame(maxWidth: .infinity, alignment: .leading)
