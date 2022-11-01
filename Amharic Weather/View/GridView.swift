@@ -50,7 +50,7 @@ struct GridView: View {
 
                 if let sunset, let sunrise {
                     CardView {
-                        Label("Sunset", systemImage: "sunset.fill")
+                        Label("ፀሐይ", systemImage: "sun.and.horizon.fill")
                     } content: {
                         SunView(sunrise: sunrise, sunset: sunset)
                             .frame(height: 120)
