@@ -20,7 +20,7 @@ struct CardView<Title: View, Content: View>: View {
         VStack(spacing: 0){
             title
                 .foregroundColor(.secondary)
-                .font(.system(size: 10))
+                .font(.system(size: 12))
                 .lineLimit(1)
                 .frame(height: 38)
                 .frame(maxWidth: .infinity, alignment: .leading)
