@@ -21,18 +21,18 @@ struct SunView: View {
                         Image(systemName: "sunrise.fill")
                             .symbolRenderingMode(.multicolor)
                         Text(sunrise.formatted(date: .omitted, time: .shortened))
-                            .font(.subheadline)
+                            .font(.caption)
                     }
-                    .offset(x: -29, y: -5)
+                    .offset(x: -24, y: -7)
                 }
                 .overlay(alignment: .bottomTrailing) {
                     VStack(spacing: 3) {
                         Image(systemName: "sunset.fill")
                             .symbolRenderingMode(.multicolor)
                         Text(sunset.formatted(date: .omitted, time: .shortened))
-                            .font(.subheadline)
+                            .font(.caption)
                     }
-                    .offset(x: 29, y: -5)
+                    .offset(x: 24, y: -7)
                 }
         }
     }

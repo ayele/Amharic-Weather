@@ -14,14 +14,6 @@ struct GridView: View {
     let sunrise: Date?
     let sunset: Date?
     
-    var uvIndex: String {
-        return "\(currentWeather.uvIndex.value)"
-    }
-    
-    var wind: String {
-        return "\(currentWeather.wind.speed.converted(to: .milesPerHour).value.formatted(.number.precision(.fractionLength(0)))) mph"
-    }
-    
     var apparentTemperature: String {
         return "\(currentWeather.apparentTemperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°"
     }
@@ -32,10 +24,6 @@ struct GridView: View {
     
     var visibility: String {
         return "\(currentWeather.visibility.formatted())"
-    }
-    
-    var pressure: String {
-        return "\(currentWeather.pressure.converted(to: .inchesOfMercury).value.formatted(.number.precision(.fractionLength(0)))) inHg"
     }
        
     var body: some View {
