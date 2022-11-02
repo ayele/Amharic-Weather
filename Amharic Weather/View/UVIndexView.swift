@@ -17,9 +17,8 @@ struct UVIndexView: View {
                 .font(.title)
                 .fontWeight(.semibold)
             Text("\(uvIndex.category.description.localize(.condition))")
-                .font(.title3)
-                        
             UVBar(value: uvIndex.value)
+                .padding(.vertical)
         }
     }
 }
