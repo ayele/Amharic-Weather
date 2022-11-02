@@ -64,10 +64,16 @@ struct GridView: View {
                     CardView {
                         Label("ዝናብ", systemImage: "drop.fill")
                     } content: {
-                        Text("\(precipitation.formatted(.percent))")
-                            .font(.largeTitle).fontWeight(.semibold)
-                            .frame(height: 120)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                        VStack(alignment: .leading) {
+                            Text("\(precipitation.formatted(.percent))")
+                                .font(.largeTitle).fontWeight(.semibold)
+                                
+                            Spacer()
+                            Text("የዛሬ የዝናብ ዕድል \(precipitation.formatted(.percent)) ነዉ")
+                                .font(.caption)
+                        }
+                        .frame(height: 120)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
             }
