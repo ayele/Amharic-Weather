@@ -38,6 +38,7 @@
 		3AB0BD4928F61AB8001D1142 /* UVBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0BD4828F61AB8001D1142 /* UVBar.swift */; };
 		3AB0BD4B28F75A26001D1142 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0BD4A28F75A26001D1142 /* SunView.swift */; };
 		3AB0BD4D28F77FC8001D1142 /* WindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0BD4C28F77FC8001D1142 /* WindView.swift */; };
+		3AB461482911ACE2000E9E05 /* PressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB461472911ACE2000E9E05 /* PressureView.swift */; };
 		3AC8C62928B43CD900E38843 /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8C62828B43CD900E38843 /* Date+Formatted.swift */; };
 		3ACD498328EF4D98009B577A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD498228EF4D98009B577A /* SettingsView.swift */; };
 		3ACD498528EF5655009B577A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD498428EF5655009B577A /* AboutView.swift */; };
@@ -81,6 +82,7 @@
 		3AB0BD4828F61AB8001D1142 /* UVBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVBar.swift; sourceTree = "<group>"; };
 		3AB0BD4A28F75A26001D1142 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
 		3AB0BD4C28F77FC8001D1142 /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
+		3AB461472911ACE2000E9E05 /* PressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureView.swift; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		3ACD498228EF4D98009B577A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3ACD498428EF5655009B577A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				3AB0BD4828F61AB8001D1142 /* UVBar.swift */,
 				3AB0BD4A28F75A26001D1142 /* SunView.swift */,
 				3AB0BD4C28F77FC8001D1142 /* WindView.swift */,
+				3AB461472911ACE2000E9E05 /* PressureView.swift */,
 				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
 				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
 				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
@@ -316,6 +319,7 @@
 				3A939E2D28D9590800C4E41B /* TempGradient.swift in Sources */,
 				3A66B37128BAA4BC00FA76DA /* SafariView.swift in Sources */,
 				3A5EA02128F4C89400247A07 /* String+Fill.swift in Sources */,
+				3AB461482911ACE2000E9E05 /* PressureView.swift in Sources */,
 				3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */,
 				3AB0BD4D28F77FC8001D1142 /* WindView.swift in Sources */,
 				3A857AF328B2B26D00F343FE /* WeatherView.swift in Sources */,

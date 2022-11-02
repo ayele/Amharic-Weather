@@ -111,8 +111,7 @@ struct GridView: View {
                 CardView {
                     Label("ግፊት", systemImage: "gauge")
                 } content: {
-                    Text(pressure)
-                        .font(.largeTitle).fontWeight(.semibold)
+                    PressureView(pressure: currentWeather.pressure)
                         .frame(height: 120)
                 }
             }
