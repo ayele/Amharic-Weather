@@ -65,8 +65,8 @@ struct WeatherView: View {
                                 GridView(
                                     currentWeather: weather.currentWeather,
                                     precipitation: weather.dailyForecast.first?.precipitationChance,
-                                    sunrise: weatherVM.sunrise,
-                                    sunset: weatherVM.sunset
+                                    sunrise: weather.dailyForecast.first?.sun.sunrise,
+                                    sunset: weather.dailyForecast.first?.sun.sunset
                                 )
                                     .padding(.horizontal)
                                 

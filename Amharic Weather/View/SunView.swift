@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct SunView: View {
+    let currentTime: Date
     let sunrise: Date
     let sunset: Date
+    
+    var sunAngle: Angle? {
+        if isToday(sunrise) && isToday(sunset) {
+            let diffComponents = Calendar.current.dateComponents([.minute], from: sunrise, to: sunset)
+            let totalMinutes = diffComponents.minute
+            let currentComponents = Calendar.current.dateComponents([.minute], from: sunrise, to: currentTime)
+            let currentMinutes = currentComponents.minute
+            
+            if let totalMinutes, let currentMinutes {
+                let angle = Angle(degrees: Double(currentMinutes) / Double(totalMinutes) * 180)
+                return angle
+            }
+        }
+        return nil
+    }
     
     var body: some View {
         VStack {
             Arc()
+                .stroke(lineWidth: 5)
                 .foregroundColor(.secondary)
                 .frame(width: 100, height: 100)
+                .overlay {
+                    Dot(angle: sunAngle ?? Angle(degrees: 0))
+                        .foregroundColor(.yellow)
+                }
                 .overlay(alignment: .bottomLeading) {
                     VStack(spacing: 3) {
                         Image(systemName: "sunrise.fill")
@@ -36,14 +57,18 @@ struct SunView: View {
                 }
         }
     }
+    
+    private func isToday(_ date: Date) -> Bool {
+        return Calendar.current.isDateInToday(date)
+    }
 }
 
 struct SunView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SunView(sunrise: Date(), sunset: Date())
+            SunView(currentTime: Date(), sunrise: Date(), sunset: Date())
                 .previewDisplayName("Light")
-            SunView(sunrise: Date(), sunset: Date())
+            SunView(currentTime: Date(), sunrise: Date(), sunset: Date())
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }
@@ -64,6 +89,30 @@ struct Arc : Shape {
                  endAngle: .degrees(180),
                  clockwise: true)
 
-        return p.strokedPath(.init(lineWidth: 5))
+        return p
+    }
+}
+
+struct Dot : Shape {
+    let angle: Angle
+    
+    func path(in rect: CGRect) -> Path {
+        let radius = min(rect.width, rect.height) / 2
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        let modifiedAngle = -angle - Angle(degrees: 90)
+        let position = CGPoint(
+            x: center.x + radius * CGFloat(sin(modifiedAngle.radians)),
+            y: center.y + radius * CGFloat(cos(modifiedAngle.radians))
+        )
+        
+        var p = Path()
+        
+        p.addArc(center: position,
+                 radius: 5,
+                 startAngle: .degrees(0),
+                 endAngle: .degrees(360),
+                 clockwise: true)
+
+        return p
     }
 }

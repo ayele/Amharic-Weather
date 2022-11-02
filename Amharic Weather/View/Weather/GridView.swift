@@ -40,7 +40,9 @@ struct GridView: View {
                     CardView {
                         Label("ፀሐይ", systemImage: "sun.and.horizon.fill")
                     } content: {
-                        SunView(sunrise: sunrise, sunset: sunset)
+                        SunView(currentTime: currentWeather.date,
+                                sunrise: sunrise,
+                                sunset: sunset)
                             .frame(height: 120)
                     }
                 }
