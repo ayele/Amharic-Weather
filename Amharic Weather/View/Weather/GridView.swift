@@ -114,10 +114,20 @@ struct GridView: View {
                 CardView {
                     Label("ታይነት", systemImage: "eye.fill")
                 } content: {
-                    Text(visibility)
-                        .font(.largeTitle).fontWeight(.semibold)
-                        .frame(height: 120)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack(alignment: .leading) {
+                        Text(visibility)
+                            .font(.largeTitle).fontWeight(.semibold)
+                        Spacer()
+                        if currentWeather.visibility > Measurement(value: 8, unit: .miles) {
+                            Text("በአሁኑ ሰዓት አየሩ እጅግ በጣም ግልጽ ነዉ")
+                                .font(.caption)
+                        } else {
+                            Text("በአሁኑ ሰዓት አየሩ በጣም ግልጽ አይደለም")
+                                .font(.caption)
+                        }
+                    }
+                    .frame(height: 120)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 CardView {
