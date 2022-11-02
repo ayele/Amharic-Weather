@@ -6,7 +6,7 @@
     },
     "currentWeather": {
         "apparentTemperature": {
-            "value": 31.43,
+            "value": 28.43,
             "unit": {
                 "converter": {
                     "constant": 273.15,

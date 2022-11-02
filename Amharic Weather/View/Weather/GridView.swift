@@ -76,10 +76,23 @@ struct GridView: View {
                 CardView {
                     Label("የሚሰማው ሙቀት", systemImage: "thermometer.medium")
                 } content: {
-                    Text(apparentTemperature)
-                        .font(.largeTitle).fontWeight(.semibold)
-                        .frame(height: 120)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack(alignment: .leading) {
+                        Text(apparentTemperature)
+                            .font(.largeTitle).fontWeight(.semibold)
+                        Spacer()
+                        if currentWeather.apparentTemperature > currentWeather.temperature {
+                            Text("በ እርጥበት ምክንያት አየሩ ሞቅ ብሎ ይሰማል")
+                                .font(.caption)
+                        } else if currentWeather.apparentTemperature < currentWeather.temperature {
+                            Text("በ ነፋስ ምክንያት አየሩ ቀዝቀዝ ብሎ ይሰማል")
+                                .font(.caption)
+                        } else {
+                            Text("የሚሰማዉ ሙቀትና የተለካዉ ሙቀት አንድ ናቸው")
+                                .font(.caption)
+                        }
+                    }
+                    .frame(height: 120)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 
                 CardView {
