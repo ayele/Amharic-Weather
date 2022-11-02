@@ -22,6 +22,10 @@ struct GridView: View {
         return "\(currentWeather.humidity.formatted(.percent))"
     }
     
+    var dewPoint: String {
+        return "\(currentWeather.dewPoint.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°"
+    }
+    
     var visibility: String {
         return "\(currentWeather.visibility.formatted())"
     }
@@ -81,10 +85,15 @@ struct GridView: View {
                 CardView {
                     Label("እርጥበት", systemImage: "humidity.fill")
                 } content: {
-                    Text(humidity)
-                        .font(.largeTitle).fontWeight(.semibold)
-                        .frame(height: 120)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    VStack(alignment: .leading) {
+                        Text(humidity)
+                            .font(.largeTitle).fontWeight(.semibold)
+                        Spacer()
+                        Text("በአሁኑ ሰዓት የጤዛ ነጥብ \(dewPoint) ነዉ")
+                            .font(.caption)
+                    }
+                    .frame(height: 120)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             
