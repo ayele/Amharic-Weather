@@ -15,6 +15,8 @@
 		3A0FAC6D28D657BB004C79A4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */; };
 		3A0FAC6F28D68374004C79A4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0FAC6E28D68374004C79A4 /* NetworkError.swift */; };
 		3A1F684328B6B2B50069F8AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */; };
+		3A22245628F9D59300751E76 /* HelveticaNeue-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */; };
+		3A22245D28FA261200751E76 /* LinearGradient+Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */; };
 		3A5E9FE728F1F17E00247A07 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE628F1F17E00247A07 /* SquareView.swift */; };
 		3A5E9FE928F1F31C00247A07 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E9FE828F1F31C00247A07 /* GridView.swift */; };
 		3A5EA01F28F4A82500247A07 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EA01E28F4A82500247A07 /* CardView.swift */; };
@@ -57,6 +59,8 @@
 		3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3A0FAC6E28D68374004C79A4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A1F684228B6B2B50069F8AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue-Thin.otf"; sourceTree = "<group>"; };
+		3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Sky.swift"; sourceTree = "<group>"; };
 		3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amharic Weather.entitlements"; sourceTree = "<group>"; };
 		3A5E9FE628F1F17E00247A07 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		3A5E9FE828F1F31C00247A07 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,60 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3A22245728F9D71A00751E76 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3A22245528F9D59200751E76 /* HelveticaNeue-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3A22245828F9DFB500751E76 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				3A857AF228B2B26D00F343FE /* WeatherView.swift */,
+				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
+				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
+				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
+				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
+				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
+				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
+				3A5E9FE828F1F31C00247A07 /* GridView.swift */,
+				3A939E2C28D9590800C4E41B /* TempGradient.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		3A22245928F9DFC500751E76 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3A857AF028B2B1FF00F343FE /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		3A22245A28F9DFF300751E76 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3A5EA01E28F4A82500247A07 /* CardView.swift */,
+				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
+				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
+				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
+				3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3A22245B28F9E00000751E76 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3ACD498228EF4D98009B577A /* SettingsView.swift */,
+				3ACD498628EF5D00009B577A /* MailView.swift */,
+				3ACD498428EF5655009B577A /* AboutView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		3A857ACF28B140E300F343FE = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +196,7 @@
 				3A857AFD28B2B62900F343FE /* Location */,
 				3AC8C62528B4312B00E38843 /* Extensions */,
 				3AE48BBD28BED0AB00E0DD7D /* Localization */,
+				3A22245728F9D71A00751E76 /* Font */,
 				3AE48BBB28BED08B00E0DD7D /* Amharic-Weather-Info.plist */,
 				3A53881228B96A5D00D9A5B5 /* Amharic Weather.entitlements */,
 				3A857ADF28B140E500F343FE /* Assets.xcassets */,
@@ -159,29 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				3A857ADD28B140E300F343FE /* ContentView.swift */,
-				3A857AF028B2B1FF00F343FE /* WelcomeView.swift */,
-				3A857AF228B2B26D00F343FE /* WeatherView.swift */,
-				3A66B36828BA7F6200FA76DA /* CurrentView.swift */,
-				3AE48BB928BEAC8300E0DD7D /* MinuteView.swift */,
-				3A66B36A28BA7F7200FA76DA /* HourlyView.swift */,
-				3A66B36C28BA7F7D00FA76DA /* DailyView.swift */,
-				3A5EA01E28F4A82500247A07 /* CardView.swift */,
-				3AB0BD4628F60707001D1142 /* UVIndexView.swift */,
-				3AB0BD4828F61AB8001D1142 /* UVBar.swift */,
-				3AB0BD4A28F75A26001D1142 /* SunView.swift */,
-				3AB0BD4C28F77FC8001D1142 /* WindView.swift */,
-				3AB461472911ACE2000E9E05 /* PressureView.swift */,
-				3A0AB4AD28BD8D8E00014F9E /* AlertView.swift */,
-				3A66B36E28BA98CF00FA76DA /* AttributionView.swift */,
-				3A5E9FE628F1F17E00247A07 /* SquareView.swift */,
-				3A5E9FE828F1F31C00247A07 /* GridView.swift */,
-				3A857B0328B2C87D00F343FE /* LoadingView.swift */,
-				3A66B37028BAA4BC00FA76DA /* SafariView.swift */,
-				3A0FAC6C28D657BB004C79A4 /* ErrorView.swift */,
-				3A939E2C28D9590800C4E41B /* TempGradient.swift */,
-				3ACD498228EF4D98009B577A /* SettingsView.swift */,
-				3ACD498628EF5D00009B577A /* MailView.swift */,
-				3ACD498428EF5655009B577A /* AboutView.swift */,
+				3A22245928F9DFC500751E76 /* Welcome */,
+				3A22245828F9DFB500751E76 /* Weather */,
+				3A22245A28F9DFF300751E76 /* Helper */,
+				3A22245B28F9E00000751E76 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +250,7 @@
 				3A0AB4AB28BD577600014F9E /* Weather+Sample.swift */,
 				3AE48BBE28BED9F200E0DD7D /* String+Localize.swift */,
 				3A5EA02028F4C89400247A07 /* String+Fill.swift */,
+				3A22245C28FA261200751E76 /* LinearGradient+Sky.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0C9BBD28DA571100D9F754 /* LocalizableConditions.strings in Resources */,
+				3A22245628F9D59300751E76 /* HelveticaNeue-Thin.otf in Resources */,
 				3A0AB4AA28BD3AC900014F9E /* weather.json in Resources */,
 				3A0C9BBF28DA574D00D9F754 /* LocalizableCities.strings in Resources */,
 				3A857AE328B140E500F343FE /* Preview Assets.xcassets in Resources */,
@@ -308,6 +350,7 @@
 				3AB0BD4728F60707001D1142 /* UVIndexView.swift in Sources */,
 				3A857ADE28B140E300F343FE /* ContentView.swift in Sources */,
 				3A857AF128B2B1FF00F343FE /* WelcomeView.swift in Sources */,
+				3A22245D28FA261200751E76 /* LinearGradient+Sky.swift in Sources */,
 				3AE48BBF28BED9F200E0DD7D /* String+Localize.swift in Sources */,
 				3A66B36F28BA98CF00FA76DA /* AttributionView.swift in Sources */,
 				3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */,
@@ -467,6 +510,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Amharic-Weather-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show weather in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -502,6 +546,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Amharic-Weather-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show weather in your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

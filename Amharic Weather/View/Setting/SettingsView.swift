@@ -25,6 +25,7 @@ struct SettingsView: View {
                     message: Text("This is the app I use to get my daily weather info IN AMHARIC.")) {
                     Label("Share with friends", systemImage: "square.and.arrow.up")
                 }
+                    .disabled(true)
                 
                 if let url = settingsVM.twitterURL {
                     Link(destination: url) {

@@ -25,7 +25,7 @@ extension Date {
     
     var exactTimeOfDay: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:ma"
+        dateFormatter.dateFormat = "h:mma"
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.string(from: self)
     }

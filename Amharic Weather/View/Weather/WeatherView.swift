@@ -62,14 +62,6 @@ struct WeatherView: View {
                                 }
                                 .padding(.horizontal)
                                 
-                                GridView(
-                                    currentWeather: weather.currentWeather,
-                                    precipitation: weather.dailyForecast.first?.precipitationChance,
-                                    sunrise: weatherVM.sunrise,
-                                    sunset: weatherVM.sunset
-                                )
-                                    .padding(.horizontal)
-                                
                                 if let attribution = weatherVM.attribution {
                                     AttributionView(attribution: attribution) {
                                         weatherVM.url = attribution.legalPageURL
@@ -92,7 +84,7 @@ struct WeatherView: View {
                     }
                     .colorScheme(.dark)
                 }
-                .background(Color("Sky").gradient)
+                .background(LinearGradient.sky)
                 
             } else {
                 if weatherVM.isLoading {

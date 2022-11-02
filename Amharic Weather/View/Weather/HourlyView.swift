@@ -100,8 +100,8 @@ struct SunEventView: View {
                 .font(.title3)
                 .frame(height: 50)
                 .symbolRenderingMode(.multicolor)
-            Text(type == .sunrise ? "Sunrise" : "Sunset")
-                .font(.system(size: 20))
+            Text("ፀሐይ")
+                .font(.system(size: 16))
         }
     }
 }

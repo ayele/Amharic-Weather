@@ -13,11 +13,6 @@ struct WelcomeView: View {
 
     var body: some View {
         VStack {
-            Image("Logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100)
-                
             VStack(spacing: 10) {
                 Text("እንኳን ደህና መጡ")
                     .font(.largeTitle)
@@ -41,7 +36,7 @@ struct WelcomeView: View {
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("Sky").gradient)
+        .background(LinearGradient.sky)
     }
 }
 

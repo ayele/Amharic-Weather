@@ -23,7 +23,7 @@ struct CurrentView: View {
             Text(city.localize(.city))
                 .font(.largeTitle)
             Text("\(currentWeather.temperature.converted(to: .fahrenheit).value.formatted(.number.precision(.fractionLength(0))))°")
-                .font(.system(size: 100))
+                .font(.custom("HelveticaNeue-Thin", size: 100))
                 .offset(x: belowZero ? -5 : 15)
             
             VStack(spacing: 5) {
