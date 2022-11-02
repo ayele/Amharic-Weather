@@ -262,7 +262,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -356,7 +376,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -450,7 +490,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -544,7 +604,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -638,7 +718,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -732,7 +832,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -826,7 +946,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -920,7 +1060,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -1014,7 +1174,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -1108,7 +1288,27 @@
                       "symbol": "mm"
                     }
                 },
+                "wholeDayRainfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
                 "snowfallAmount": {
+                    "value": 0,
+                    "unit": {
+                      "converter": {
+                        "constant": 0,
+                        "coefficient": 0.001
+                      },
+                      "symbol": "mm"
+                    }
+                },
+                "wholeDaySnowfallAmount": {
                     "value": 0,
                     "unit": {
                       "converter": {
@@ -5694,6 +5894,7 @@
     "weatherAlerts": [
         {
             "date": 1724967000,
+            "issuedDate": 1724967000,
             "expirationDate": 1724967000,
             "description": "Flash Flood Watch",
             "importance": "low",
@@ -5712,6 +5913,7 @@
         },
         {
             "date": 1724967000,
+            "issuedDate": 1724967000,
             "expirationDate": 1724967000,
             "description": "Severe Thunderstorm Warning",
             "importance": "high",
