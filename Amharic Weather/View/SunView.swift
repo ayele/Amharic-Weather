@@ -12,7 +12,7 @@ struct SunView: View {
     let sunrise: Date
     let sunset: Date
     
-    var sunAngle: Angle? {
+    var sunPosition: Angle? {
         if isToday(sunrise) && isToday(sunset) {
             let diffComponents = Calendar.current.dateComponents([.minute], from: sunrise, to: sunset)
             let totalMinutes = diffComponents.minute
@@ -34,8 +34,8 @@ struct SunView: View {
                 .foregroundColor(.secondary)
                 .frame(width: 100, height: 100)
                 .overlay {
-                    Dot(angle: sunAngle ?? Angle(degrees: 0))
-                        .foregroundColor(.yellow)
+                    Dot(angle: sunPosition ?? Angle(degrees: 0))
+                        .foregroundColor(isDayLight() ? .yellow : .clear)
                 }
                 .overlay(alignment: .bottomLeading) {
                     VStack(spacing: 3) {
@@ -60,6 +60,13 @@ struct SunView: View {
     
     private func isToday(_ date: Date) -> Bool {
         return Calendar.current.isDateInToday(date)
+    }
+    
+    private func isDayLight() -> Bool {
+        if let sunPosition {
+            return sunPosition >= .degrees(0) && sunPosition <= .degrees(180)
+        }
+        return false
     }
 }
 
