@@ -21,7 +21,7 @@ struct WindView: View {
                 VStack {
                     Rectangle()
                         .fill(.primary)
-                        .opacity(tick % 10 == 0 ? 1 : 0.4)
+                        .opacity(tick % 30 == 0 ? 1 : 0.4)
                         .frame(width: 1, height: 8)
                     Spacer()
                 }
@@ -31,7 +31,38 @@ struct WindView: View {
             
             Arrow()
                 .foregroundStyle(.white)
-                .rotationEffect(Angle(degrees: wind.direction.value))
+                .overlay(alignment: .bottom) {
+                    Circle()
+                        .stroke(lineWidth: 2)
+                        .frame(width: 8)
+                        .foregroundStyle(.white)
+
+                }
+                .rotationEffect(Angle(degrees: wind.direction.value - 180))
+        }
+        .overlay(alignment: .top) {
+            Text("ሰ")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .padding(.top, 8)
+        }
+        .overlay(alignment: .bottom) {
+            Text("ደ")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .padding(.bottom, 8)
+        }
+        .overlay(alignment: .leading) {
+            Text("ምስ")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .padding(.leading, 30)
+        }
+        .overlay(alignment: .trailing) {
+            Text("ምዕ")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .padding(.trailing, 30)
         }
         .overlay(alignment: .center) {
             GeometryReader { geometry in
@@ -45,31 +76,10 @@ struct WindView: View {
                         .font(.caption)
                 }
                 .foregroundColor(.white)
-                .frame(width: width / 2, height: height / 2)
-                .background(
-                    Circle()
-                        .foregroundStyle(.blue)
-                )
-                .offset(x: width / 2 - width / 4, y: height / 2 - height / 4)
+                .frame(width: width / 2.5, height: height / 2.5)
+                .background(.ultraThinMaterial, in: Circle())
+                .offset(x: width / 2.5 - width / 10, y: height / 2.5 - height / 10)
             }
-        }
-        .overlay(alignment: .top) {
-            Text("N")
-                .padding(.top, 8)
-        }
-        .overlay(alignment: .bottom) {
-            Text("S")
-                .padding(.bottom, 8)
-        }
-        .overlay(alignment: .leading) {
-            GeometryReader { geometry in
-                Text("E")
-                    .offset(x: 8, y: geometry.size.height / 2)
-            }
-        }
-        .overlay(alignment: .trailing) {
-            Text("W")
-                .padding(.trailing, 11)
         }
     }
 }
@@ -77,7 +87,7 @@ struct WindView: View {
 struct WindView_Previews: PreviewProvider {
     static var previews: some View {
         WindView(wind: Weather.preview.currentWeather.wind)
-            .previewLayout(.fixed(width: 300, height: 300))
+            .previewLayout(.fixed(width: 120, height: 120))
     }
 }
 
@@ -87,15 +97,16 @@ struct Arrow : Shape {
         
         let width = rect.width
         let height = rect.height
+        let radius = height - height * 0.97
         
         p.addLines( [
-            CGPoint(x: width * 0.492, y: height),
+            CGPoint(x: width * 0.492, y: height - radius * 2),
             CGPoint(x: width * 0.492, y: height * 0.11),
             CGPoint(x: width * 0.45, y: height * 0.13),
             CGPoint(x: width * 0.5, y: height * 0),
             CGPoint(x: width * 0.55, y: height * 0.13),
             CGPoint(x: width * 0.508, y: height * 0.11),
-            CGPoint(x: width * 0.508, y: height)
+            CGPoint(x: width * 0.508, y: height - radius * 2)
         ])
         
         p.closeSubpath()
