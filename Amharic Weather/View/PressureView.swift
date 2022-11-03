@@ -15,13 +15,25 @@ struct PressureView: View {
         return pressure.converted(to: .inchesOfMercury).value.formatted(.number.precision(.fractionLength(2)))
     }
     
+    var scaledPressure: Int {
+        let pressure = pressure.converted(to: .inchesOfMercury).value
+        let pressureRange = 32 - 29
+        let displayRange = 48 - 0
+        let scaledPressure = (((pressure - 29) * Double(displayRange)) / Double(pressureRange) + 0)
+        
+        return Int(scaledPressure)
+    }
+    
     var body: some View {
         ZStack {
             ForEach(0..<49) { tick in
                 VStack {
                     Rectangle()
-                        .fill(.primary)
-                        .frame(width: 1, height: 12)
+                        .fill(tick == scaledPressure ? .white : .primary)
+                        .cornerRadius(tick == scaledPressure ? 2 : 0)
+                        .frame(width: tick == scaledPressure ? 4 : 1, height: tick == scaledPressure ? 20 : 12)
+                        .offset(y: tick == scaledPressure ? -4 : 0)
+                        
                     Spacer()
                 }
                 .rotationEffect(Angle.degrees(Double(tick + 40) / 48 * 270))
@@ -31,8 +43,9 @@ struct PressureView: View {
         .overlay(alignment: .center) {
             VStack {
                 Text(inchesOfMercury)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                 Text("inHg")
+                    .font(.caption)
             }
         }
         .overlay(alignment: .bottom) {
@@ -41,7 +54,7 @@ struct PressureView: View {
                 Spacer()
                 Text("ከፍ")
             }
-            .font(.subheadline)
+            .font(.caption)
             .padding(.horizontal, 40)
         }
     }
