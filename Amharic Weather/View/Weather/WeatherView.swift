@@ -38,11 +38,13 @@ struct WeatherView: View {
                                                 weatherVM.isPresentingSafariView = true
                                             }
                                     }
-
+                                    
+                                    /*
                                     if let minuteForecast = weather.minuteForecast,
                                        weather.availability.minuteAvailability == .available {
                                         MinuteView(forecast: minuteForecast)
                                     }
+                                     */
                                     
                                     CardView {
                                         Label("የየሰዓቱ ትንበያ", systemImage: "clock")
