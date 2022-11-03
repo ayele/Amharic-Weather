@@ -87,11 +87,6 @@
 		3AAD61102912B2B6003C6067 /* PressureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PressureView.swift; path = "Amharic Weather/View/PressureView.swift"; sourceTree = SOURCE_ROOT; };
 		3AAD61112912B2B6003C6067 /* UVIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UVIndexView.swift; path = "Amharic Weather/View/UVIndexView.swift"; sourceTree = SOURCE_ROOT; };
 		3AAD61172912B3A1003C6067 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
-		3AB0BD4628F60707001D1142 /* UVIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVIndexView.swift; sourceTree = "<group>"; };
-		3AB0BD4828F61AB8001D1142 /* UVBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVBar.swift; sourceTree = "<group>"; };
-		3AB0BD4A28F75A26001D1142 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
-		3AB0BD4C28F77FC8001D1142 /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
-		3AB461472911ACE2000E9E05 /* PressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureView.swift; sourceTree = "<group>"; };
 		3AC8C62828B43CD900E38843 /* Date+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
 		3ACD498228EF4D98009B577A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3ACD498428EF5655009B577A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -185,7 +180,6 @@
 			children = (
 				3A857ADA28B140E300F343FE /* Amharic Weather */,
 				3A857AD928B140E300F343FE /* Products */,
-				3AAD610C2912B154003C6067 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,18 +246,6 @@
 				3ACD498828EF5F85009B577A /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		3AAD610C2912B154003C6067 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				3AB0BD4828F61AB8001D1142 /* UVBar.swift */,
-				3AB0BD4628F60707001D1142 /* UVIndexView.swift */,
-				3AB0BD4A28F75A26001D1142 /* SunView.swift */,
-				3AB461472911ACE2000E9E05 /* PressureView.swift */,
-				3AB0BD4C28F77FC8001D1142 /* WindView.swift */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		3AC8C62528B4312B00E38843 /* Extensions */ = {
