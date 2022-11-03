@@ -75,9 +75,12 @@ struct WindView: View {
                     Text("mph")
                         .font(.caption)
                 }
-                .foregroundColor(.white)
+                .foregroundStyle(.black)
                 .frame(width: width / 2.5, height: height / 2.5)
-                .background(.ultraThinMaterial, in: Circle())
+                .background(
+                    Circle()
+                        .foregroundStyle(.white)
+                )
                 .offset(x: width / 2.5 - width / 10, y: height / 2.5 - height / 10)
             }
         }
