@@ -10,7 +10,7 @@ import CoreLocation
 import WeatherKit
 
 struct WeatherView: View {
-    @ObservedObject var weatherVM: WeatherViewModel
+    @EnvironmentObject var weatherVM: WeatherViewModel
     @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
@@ -108,14 +108,11 @@ struct WeatherView: View {
                 }
             }
         }
-        .task {
-            await weatherVM.getWeather()
-        }
         .onChange(of: scenePhase) { phase in
             if phase == .active {
-                Task {
-                    await weatherVM.getWeather()
-                }
+                print("scene phase change to active...")
+                
+                weatherVM.refresh()
             }
         }
         .fullScreenCover(isPresented: $weatherVM.isPresentingSafariView) {
@@ -139,17 +136,15 @@ struct WeatherView: View {
 }
 
 struct WeatherView_Previews: PreviewProvider {
+    static let weatherVM = WeatherViewModel(weather: Weather.preview, city: "Middleton")
+    
     static var previews: some View {
         Group {
-            WeatherView(weatherVM: WeatherViewModel(location: CLLocation(),
-                                                    service: WeatherService(),
-                                                    weather: Weather.preview,
-                                                    city: "ሚድልተን"))
+            WeatherView()
+                .environmentObject(weatherVM)
                 .previewDisplayName("Light")
-            WeatherView(weatherVM: WeatherViewModel(location: CLLocation(),
-                                                    service: WeatherService(),
-                                                    weather: Weather.preview,
-                                                    city: "ሚድልተን"))
+            WeatherView()
+                .environmentObject(weatherVM)
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
         }
