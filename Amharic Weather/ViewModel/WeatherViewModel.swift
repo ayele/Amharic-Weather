@@ -10,26 +10,46 @@ import CoreLocation
 import WeatherKit
 
 @MainActor
-class WeatherViewModel: ObservableObject {
+class WeatherViewModel: NSObject, ObservableObject {
     @Published private(set) var weather: Weather?
     @Published private(set) var city: String?
     @Published private(set) var attribution: WeatherAttribution?
+    
     @Published var isPresentingSafariView = false
     @Published var isPresentingSettingsView = false 
     @Published private(set) var isLoading = false
     @Published var isShowingAlert = false
+    
     @Published private(set) var error: LocalizedError?
     
+    @Published private(set) var location: CLLocation?
+
+    private let locationManager = CLLocationManager()
+    private let service = WeatherService()
     var url: URL?
     
-    private let service: WeatherService
-    private let location: CLLocation
+    override init() {
+        super.init()
+        locationManager.delegate = self
+    }
     
-    init(location: CLLocation, service: WeatherService, weather: Weather? = nil, city: String? = nil) {
-        self.location = location
-        self.service = service
+    init(weather: Weather? = nil, city: String? = nil) {
         self.weather = weather
         self.city = city
+    }
+    
+    func refresh() {
+        print("refreshing...")
+        requestLocation()
+    }
+    
+    func requestAuthorization() {
+        locationManager.requestWhenInUseAuthorization()
+    }
+    
+    private func requestLocation() {
+        isLoading = true
+        locationManager.requestLocation()
     }
     
     // The date of the sunrise in the next 24 hrs
@@ -85,7 +105,8 @@ class WeatherViewModel: ObservableObject {
     }
     
     // MARK:- Service
-    func getWeather() async {
+    func getWeather(forLocation location: CLLocation) async {
+        print("Getting weather...")
         isLoading = true
         
         do {
@@ -105,6 +126,48 @@ class WeatherViewModel: ObservableObject {
             print("Error getting weather: \(e.localizedDescription)")
         }
         
+        isLoading = false
+    }
+}
+
+extension WeatherViewModel: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        print("Location manager did change authorization")
+
+        switch manager.authorizationStatus {
+          case .restricted, .denied:
+            print("Authrization restricted or denied")
+             break
+          case .authorizedWhenInUse:
+            print("When in use authorized. Requesting location...")
+            requestLocation()
+             break
+          case .authorizedAlways:
+            print("Always authorized.")
+             break
+          case .notDetermined:
+            print("Authorization status not determined.")
+             break
+        @unknown default:
+            break
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("Location updated")
+        
+        guard let thisLocation = locations.first else { return }
+        location = thisLocation
+        isLoading = false
+        
+        Task {
+            await getWeather(forLocation: thisLocation)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error getting location", error)
         isLoading = false
     }
 }
