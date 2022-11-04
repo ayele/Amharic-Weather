@@ -9,7 +9,7 @@ import SwiftUI
 import CoreLocationUI
 
 struct WelcomeView: View {
-    @EnvironmentObject var locationManager: LocationManager
+    @EnvironmentObject var weatherVM: WeatherViewModel
 
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct WelcomeView: View {
             .padding()
             
             Button {
-                locationManager.requestAuthorization()
+                weatherVM.requestAuthorization()
             } label: {
                 Label("ሼር", systemImage: "location")
                     .frame(width: 100, height: 40)
