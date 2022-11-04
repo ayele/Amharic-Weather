@@ -7,7 +7,6 @@
 */
 
 // Weather conditions
-
 "Clear" = "የጠራ ሰማይ";
 "Cloudy" = "ደመናማ";
 "Haze" = "ጭጋጋማ";
@@ -42,3 +41,10 @@
 "Sun Showers" = "ፀሐይ እያለ ዝናብ";
 "Thunderstorm" = "ነጎድጓድ";
 "Wintry Mix" = "በረዷማ ዝናብ";
+
+// UV Index
+"Low" = "ዝቅተኛ";
+"Moderate" = "መጠነኛ";
+"High" = "ከፍተኛ";
+"Very High" = "በጣም ከፍተኛ";
+"Extreme" = "ጽንፈኛ";

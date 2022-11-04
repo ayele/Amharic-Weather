@@ -64,6 +64,14 @@ struct WeatherView: View {
                                 }
                                 .padding(.horizontal)
                                 
+                                GridView(
+                                    currentWeather: weather.currentWeather,
+                                    precipitation: weather.dailyForecast.first?.precipitationChance,
+                                    sunrise: weather.dailyForecast.first?.sun.sunrise,
+                                    sunset: weather.dailyForecast.first?.sun.sunset
+                                )
+                                    .padding(.horizontal)
+                                
                                 if let attribution = weatherVM.attribution {
                                     AttributionView(attribution: attribution) {
                                         weatherVM.url = attribution.legalPageURL
