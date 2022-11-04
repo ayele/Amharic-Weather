@@ -10,26 +10,19 @@ import CoreLocation
 import WeatherKit
 
 struct ContentView: View {
-    @StateObject var locationManager = LocationManager()
+    @StateObject var weatherVM = WeatherViewModel()
 
     var body: some View {
         Group {
-            if let location = locationManager.location {
-                WeatherView(
-                    weatherVM: WeatherViewModel(
-                        location: CLLocation(
-                            latitude: location.latitude,
-                            longitude: location.longitude),
-                        service: WeatherService()
-                    )
-                )
-                
+            if weatherVM.location != nil {
+                WeatherView()
+                    .environmentObject(weatherVM)
             } else {
-                if locationManager.isLoading {
+                if weatherVM.isLoading {
                     LoadingView()
                 } else {
                     WelcomeView()
-                        .environmentObject(locationManager)
+                        .environmentObject(weatherVM)
                 }
             }
         }
