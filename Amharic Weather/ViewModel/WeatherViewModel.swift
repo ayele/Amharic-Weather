@@ -159,7 +159,6 @@ extension WeatherViewModel: CLLocationManagerDelegate {
         
         guard let thisLocation = locations.first else { return }
         location = thisLocation
-        isLoading = false
         
         Task {
             await getWeather(forLocation: thisLocation)
