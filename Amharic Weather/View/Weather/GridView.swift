@@ -27,7 +27,7 @@ struct GridView: View {
     }
     
     var visibility: String {
-        return "\(currentWeather.visibility.formatted())"
+        return "\(currentWeather.visibility.converted(to: .miles).value.formatted(.number.precision(.fractionLength(0)))) mi"
     }
        
     var body: some View {
@@ -107,7 +107,7 @@ struct GridView: View {
                         Text(humidity)
                             .font(.largeTitle).fontWeight(.semibold)
                         Spacer()
-                        Text("በአሁኑ ሰዓት የጤዛ ነጥብ \(dewPoint) ነዉ")
+                        Text("በአሁኑ ግዜ የጤዛ ነጥብ \(dewPoint) ነዉ")
                             .font(.caption)
                     }
                     .frame(height: 120)
@@ -124,10 +124,7 @@ struct GridView: View {
                             .font(.largeTitle).fontWeight(.semibold)
                         Spacer()
                         if currentWeather.visibility > Measurement(value: 8, unit: .miles) {
-                            Text("በአሁኑ ሰዓት አየሩ እጅግ በጣም ግልጽ ነዉ")
-                                .font(.caption)
-                        } else {
-                            Text("በአሁኑ ሰዓት አየሩ በጣም ግልጽ አይደለም")
+                            Text("በአሁኑ ግዜ አየሩ እጅግ በጣም ግልጽ ነዉ")
                                 .font(.caption)
                         }
                     }
