@@ -35,6 +35,7 @@
 		3A857AF928B2B5E500F343FE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857AF828B2B5E500F343FE /* LocationManager.swift */; };
 		3A857B0428B2C87D00F343FE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A857B0328B2C87D00F343FE /* LoadingView.swift */; };
 		3A939E2D28D9590800C4E41B /* TempGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A939E2C28D9590800C4E41B /* TempGradient.swift */; };
+		3AA23AB829170DE700ADAE24 /* LocalizableCounties.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA23AB729170DE700ADAE24 /* LocalizableCounties.strings */; };
 		3AAD61122912B2B6003C6067 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD610D2912B2B6003C6067 /* SunView.swift */; };
 		3AAD61132912B2B6003C6067 /* WindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD610E2912B2B6003C6067 /* WindView.swift */; };
 		3AAD61142912B2B6003C6067 /* UVBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAD610F2912B2B6003C6067 /* UVBar.swift */; };
@@ -81,6 +82,7 @@
 		3A857AF828B2B5E500F343FE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		3A857B0328B2C87D00F343FE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3A939E2C28D9590800C4E41B /* TempGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempGradient.swift; sourceTree = "<group>"; };
+		3AA23AB729170DE700ADAE24 /* LocalizableCounties.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableCounties.strings; sourceTree = "<group>"; };
 		3AAD610D2912B2B6003C6067 /* SunView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SunView.swift; path = "Amharic Weather/View/SunView.swift"; sourceTree = SOURCE_ROOT; };
 		3AAD610E2912B2B6003C6067 /* WindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindView.swift; path = "Amharic Weather/View/WindView.swift"; sourceTree = SOURCE_ROOT; };
 		3AAD610F2912B2B6003C6067 /* UVBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UVBar.swift; path = "Amharic Weather/View/UVBar.swift"; sourceTree = SOURCE_ROOT; };
@@ -265,6 +267,7 @@
 			children = (
 				3A7EA6AF28BC1AE40029F97D /* LocalizableDates.strings */,
 				3A0C9BBE28DA574D00D9F754 /* LocalizableCities.strings */,
+				3AA23AB729170DE700ADAE24 /* LocalizableCounties.strings */,
 				3A0C9BBC28DA571100D9F754 /* LocalizableConditions.strings */,
 			);
 			path = Localization;
@@ -335,6 +338,7 @@
 				3A857AE328B140E500F343FE /* Preview Assets.xcassets in Resources */,
 				3A7EA6B028BC1AE40029F97D /* LocalizableDates.strings in Resources */,
 				3A857AE028B140E500F343FE /* Assets.xcassets in Resources */,
+				3AA23AB829170DE700ADAE24 /* LocalizableCounties.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
