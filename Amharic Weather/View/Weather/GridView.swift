@@ -65,11 +65,10 @@ struct GridView: View {
                         Label("ዝናብ", systemImage: "drop.fill")
                     } content: {
                         VStack(alignment: .leading) {
-                            Text("\(precipitation.formatted(.percent))")
+                            Text((round(precipitation * 10) / 10.0).formatted(.percent))
                                 .font(.largeTitle).fontWeight(.semibold)
-                                
                             Spacer()
-                            Text("የዛሬ የዝናብ ዕድል \(precipitation.formatted(.percent)) ነዉ")
+                            Text("የዛሬ የዝናብ ዕድል \((round(precipitation * 10) / 10.0).formatted(.percent)) ነዉ")
                                 .font(.caption)
                         }
                         .frame(height: 120)
