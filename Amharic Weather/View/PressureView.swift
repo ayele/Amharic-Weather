@@ -16,10 +16,14 @@ struct PressureView: View {
     }
     
     var scaledPressure: Int {
+        let pressureLow = 28.0
+        let pressureHigh = 31.5
+        let scaleLow = 0.0
+        let scaleHigh = 48.0
         let pressure = pressure.converted(to: .inchesOfMercury).value
-        let pressureRange = 32 - 29
-        let displayRange = 48 - 0
-        let scaledPressure = (((pressure - 29) * Double(displayRange)) / Double(pressureRange) + 0)
+        let pressureRange = pressureHigh - pressureLow
+        let scaleRange = scaleHigh - scaleLow
+        let scaledPressure = (((pressure - pressureLow) * scaleRange) / pressureRange + scaleLow)
         
         return Int(scaledPressure)
     }
