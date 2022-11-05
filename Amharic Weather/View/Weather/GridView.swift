@@ -66,7 +66,8 @@ struct GridView: View {
                     } content: {
                         VStack(alignment: .leading) {
                             Text((round(precipitation * 10) / 10.0).formatted(.percent))
-                                .font(.largeTitle).fontWeight(.semibold)
+                                .font(.custom("HelveticaNeue-Thin", size: 35))
+                                .fontWeight(.regular)
                             Spacer()
                             Text("የዛሬ የዝናብ ዕድል \((round(precipitation * 10) / 10.0).formatted(.percent)) ነዉ")
                                 .font(.caption)
@@ -83,7 +84,8 @@ struct GridView: View {
                 } content: {
                     VStack(alignment: .leading) {
                         Text(apparentTemperature)
-                            .font(.largeTitle).fontWeight(.semibold)
+                            .font(.custom("HelveticaNeue-Thin", size: 35))
+                            .fontWeight(.regular)
                         Spacer()
                         if currentWeather.apparentTemperature > currentWeather.temperature {
                             Text("በ እርጥበት ምክንያት አየሩ ሞቅ ብሎ ይሰማል")
@@ -105,7 +107,8 @@ struct GridView: View {
                 } content: {
                     VStack(alignment: .leading) {
                         Text(humidity)
-                            .font(.largeTitle).fontWeight(.semibold)
+                            .font(.custom("HelveticaNeue-Thin", size: 35))
+                            .fontWeight(.regular)
                         Spacer()
                         Text("በአሁኑ ግዜ የጤዛ ነጥብ \(dewPoint) ነዉ")
                             .font(.caption)
@@ -121,7 +124,8 @@ struct GridView: View {
                 } content: {
                     VStack(alignment: .leading) {
                         Text(visibility)
-                            .font(.largeTitle).fontWeight(.semibold)
+                            .font(.custom("HelveticaNeue-Thin", size: 35))
+                            .fontWeight(.regular)
                         Spacer()
                         if currentWeather.visibility > Measurement(value: 8, unit: .miles) {
                             Text("በአሁኑ ግዜ አየሩ እጅግ በጣም ግልጽ ነዉ")

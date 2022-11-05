@@ -14,8 +14,8 @@ struct UVIndexView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("\(uvIndex.value)")
-                .font(.title)
-                .fontWeight(.semibold)
+                .font(.custom("HelveticaNeue-Thin", size: 35))
+                .fontWeight(.regular)
             Text("\(uvIndex.category.description.localize(.condition))")
             UVBar(value: uvIndex.value)
                 .padding(.vertical)
