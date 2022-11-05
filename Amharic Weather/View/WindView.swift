@@ -27,18 +27,17 @@ struct WindView: View {
                 }
                 .rotationEffect(Angle.degrees(Double(tick) / 120 * 360))
             }
-            Color.clear
             
-            Arrow()
-                .foregroundStyle(.white)
-                .overlay(alignment: .bottom) {
-                    Circle()
-                        .stroke(lineWidth: 2)
-                        .frame(width: 8)
-                        .foregroundStyle(.white)
+            VStack {
+                Arrow()
+                    .fill(.orange)
+                    .frame(width: 10, height: 24)
+                    .offset(y: -8)
+                Spacer()
+            }
+            .rotationEffect(Angle(degrees: wind.direction.value))
 
-                }
-                .rotationEffect(Angle(degrees: wind.direction.value - 180))
+            Color.clear
         }
         .overlay(alignment: .top) {
             Text("ሰ")
@@ -65,24 +64,13 @@ struct WindView: View {
                 .padding(.trailing, 30)
         }
         .overlay(alignment: .center) {
-            GeometryReader { geometry in
-                let width = geometry.size.width
-                let height = geometry.size.height
-
-                VStack(spacing: -3) {
-                    Text(speed)
-                        .fontWeight(.bold)
-                    Text("mph")
-                        .font(.caption)
-                }
-                .foregroundStyle(.black)
-                .frame(width: width / 2.5, height: height / 2.5)
-                .background(
-                    Circle()
-                        .foregroundStyle(.white)
-                )
-                .offset(x: width / 2.5 - width / 10, y: height / 2.5 - height / 10)
+            VStack(spacing: -3) {
+                Text(speed)
+                    .fontWeight(.bold)
+                Text("mph")
+                    .font(.caption)
             }
+            .foregroundStyle(.white)
         }
     }
 }
@@ -100,16 +88,11 @@ struct Arrow : Shape {
         
         let width = rect.width
         let height = rect.height
-        let radius = height - height * 0.97
         
         p.addLines( [
-            CGPoint(x: width * 0.492, y: height - radius * 2),
-            CGPoint(x: width * 0.492, y: height * 0.11),
-            CGPoint(x: width * 0.45, y: height * 0.13),
-            CGPoint(x: width * 0.5, y: height * 0),
-            CGPoint(x: width * 0.55, y: height * 0.13),
-            CGPoint(x: width * 0.508, y: height * 0.11),
-            CGPoint(x: width * 0.508, y: height - radius * 2)
+            CGPoint(x: width * 0.5, y: height),
+            CGPoint(x: 0, y: 0),
+            CGPoint(x: width, y: 0),
         ])
         
         p.closeSubpath()
