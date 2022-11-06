@@ -29,12 +29,10 @@ struct WeatherView: View {
                                                 city: weatherVM.city ?? "--")
                                         
                                     Spacer()
-                                    if let alerts = weather.weatherAlerts,
-                                        !alerts.isEmpty,
-                                        weather.availability.alertAvailability == .available {
-                                        AlertView(alerts: alerts)
+                                    if !weatherVM.weatherAlerts().isEmpty {
+                                        AlertView(alerts: weatherVM.weatherAlerts())
                                             .onTapGesture {
-                                                weatherVM.url = alerts.first?.detailsURL
+                                                weatherVM.url = weatherVM.weatherAlerts().first?.detailsURL
                                                 weatherVM.isPresentingSafariView = true
                                             }
                                     }
