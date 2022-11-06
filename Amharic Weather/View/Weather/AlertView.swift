@@ -15,20 +15,20 @@ struct AlertView: View {
         // Concatenate all unique summaries into a string
         var summaries = Set<String>()
         for alert in alerts {
-            summaries.insert(alert.summary)
+            summaries.insert(alert.summary.localize(.weather))
         }
         
-        return summaries.joined(separator: ", ")
+        return summaries.joined(separator: "፣ ")
     }
     
     var sources: String {
         // Concatenate all unique sources into a string
         var sources = Set<String>()
         for alert in alerts {
-            sources.insert(alert.source)
+            sources.insert(alert.source.localize(.weather))
         }
         
-        return sources.joined(separator: ", ")
+        return sources.joined(separator: "፣ ")
     }
     
     var regions: String {
@@ -36,18 +36,18 @@ struct AlertView: View {
         var regions = Set<String>()
         for alert in alerts {
             if let region = alert.region {
-                regions.insert(region)
+                regions.insert(region.localize(.city))
             }
         }
         
-        return regions.joined(separator: ", ")
+        return regions.joined(separator: "፣ ")
     }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top) {
                 Image(systemName: "exclamationmark.triangle.fill")
-                Text("Severe Weather")
+                Text("ከባድ የአየር ሁኔታ")
                 Spacer()
             }
             .font(.title3)
