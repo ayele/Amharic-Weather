@@ -18,7 +18,7 @@ struct AlertView: View {
             summaries.insert(alert.summary.localize(.weather))
         }
         
-        return summaries.joined(separator: "፣ ")
+        return summaries.joined(separator: " ፣ ")
     }
     
     var sources: String {
@@ -50,14 +50,14 @@ struct AlertView: View {
                 Text("ከባድ የአየር ሁኔታ")
                 Spacer()
             }
-            .font(.title3)
+            .font(.system(size: 18))
             .fontWeight(.bold)
             
             VStack(alignment: .leading, spacing: 5) {
                 Text("\(summaries). (\(sources))")
-                    .font(.subheadline)
+                    .font(.system(size: 12))
                 Text("\(sources) • \(regions)")
-                    .font(.footnote)
+                    .font(.system(size: 10))
                     .foregroundColor(.secondary)
             }
         }
