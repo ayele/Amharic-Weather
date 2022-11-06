@@ -52,6 +52,22 @@ class WeatherViewModel: NSObject, ObservableObject {
         locationManager.requestLocation()
     }
     
+    // Filters all avialble alerts and returns
+    // ones that are severe or higher
+    func weatherAlerts() -> [WeatherAlert] {
+        var severeAlerts: Array<WeatherAlert> = []
+        
+        if let weather, let alerts = weather.weatherAlerts,
+            !alerts.isEmpty,
+           weather.availability.alertAvailability == .available {
+            
+            severeAlerts = alerts.filter { alert in
+                alert.severity == .severe || alert.severity == .extreme
+            }
+        }
+        return severeAlerts
+    }
+    
     // The date of the sunrise in the next 24 hrs
     // There's only one sunrise in 24 hrs
     var sunrise: Date? {
