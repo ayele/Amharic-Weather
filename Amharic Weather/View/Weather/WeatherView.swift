@@ -29,6 +29,7 @@ struct WeatherView: View {
                                                 city: weatherVM.city ?? "--")
                                         
                                     Spacer()
+                                    /*
                                     if !weatherVM.weatherAlerts().isEmpty {
                                         AlertView(alerts: weatherVM.weatherAlerts())
                                             .onTapGesture {
@@ -36,6 +37,7 @@ struct WeatherView: View {
                                                 weatherVM.isPresentingSafariView = true
                                             }
                                     }
+                                     */
                                     
                                     /*
                                     if let minuteForecast = weather.minuteForecast,
