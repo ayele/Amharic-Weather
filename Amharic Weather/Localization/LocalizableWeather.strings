@@ -48,3 +48,54 @@
 "High" = "ከፍተኛ";
 "Very High" = "በጣም ከፍተኛ";
 "Extreme" = "ጽንፈኛ";
+
+// Severe weather alert sources
+"National Weather Service" = "ናሽናል ዌዘር ሰርቭስ";
+"Environment and Climate Change Canada" = "";
+"Servicio Metereológico Nacional" = "";
+"EUMETNET - Meteoalarm" = "";
+
+// Severe weather alerts
+"Hazardous Weather Outlook" = "";
+"Winter Storm Watch" = "";
+"Blizzard Warning" = "";
+"Winter Storm Warning" = "";
+"Ice Storm Warning" = "";
+"Winter Weather Advisory" = "";
+"Freeze Watch" = "";
+"Freeze Warning" = "";
+"Frost Advisory" = "";
+"Wind Chill Advisory" = "";
+"Wind Chill Warning" = "";
+"Fire Weather Watch" = "";
+"Red Flag Warning" = "";
+"Dense Fog Advisory" = "";
+"High Wind Watch" = "";
+"High Wind Warning" = "";
+"Wind Advisory" = "";
+"Severe Thunderstorm Watch" = "";
+"Severe Thunderstorm Warning" = "";
+"Tornado Watch" = "";
+"Tornado Warning" = "";
+"Extreme Wind Warning" = "";
+"Small Craft Advisory" = "";
+"Gale Warning" = "";
+"Storm Warning" = "";
+"Hurricane Force Wind Warning" = "";
+"Special Marine Warning" = "";
+"Coastal Flood Watch" = "";
+"Coastal Flood Warning" = "";
+"Coastal Flood Advisory" = "";
+"Flash Flood Watch" = "";
+"Flash Flood Warning" = "";
+"Flood Watch" = "";
+"Flood Warning" = "";
+"River Flood Watch" = "";
+"River Flood Warning" = "";
+"Excessive Heat Watch" = "";
+"Excessive Heat Warning" = "";
+"Heat Advisory" = "";
+"Tropical Storm Watch" = "";
+"Tropical Storm Warning" = "";
+"Hurricane Watch" = "";
+"Hurricane Warning" = "";

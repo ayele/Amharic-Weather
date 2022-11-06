@@ -27,7 +27,7 @@ struct CurrentView: View {
                 .offset(x: belowZero ? -5 : 15)
             
             VStack(spacing: 5) {
-                Text("\(currentWeather.condition.description.localize(.condition))")
+                Text("\(currentWeather.condition.description.localize(.weather))")
                 
                 HStack {
                     if let highTemperature {

@@ -16,7 +16,7 @@ struct UVIndexView: View {
             Text("\(uvIndex.value)")
                 .font(.custom("HelveticaNeue-Thin", size: 35))
                 .fontWeight(.regular)
-            Text("\(uvIndex.category.description.localize(.condition))")
+            Text("\(uvIndex.category.description.localize(.weather))")
             UVBar(value: uvIndex.value)
                 .padding(.vertical)
         }
