@@ -5904,7 +5904,7 @@
                 "longitude": -89.326752,
                 "date": 1724967000
             },
-            "region": "Dane county",
+            "region": "Dane",
             "severity": "severe",
             "weatherSeverity": "severe",
             "summary": "Flash Flood Watch",
@@ -5923,8 +5923,8 @@
                 "longitude": -89.326752,
                 "date": 1724967000
             },
-            "region": "Dane county",
-            "severity": "severe",
+            "region": "Dane",
+            "severity": "extreme",
             "weatherSeverity": "severe",
             "summary": "Severe Thunderstorm Warning",
             "detailsURL": "https://www.weather.gov",

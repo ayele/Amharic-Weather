@@ -62,7 +62,9 @@ class WeatherViewModel: NSObject, ObservableObject {
            weather.availability.alertAvailability == .available {
             
             severeAlerts = alerts.filter { alert in
-                alert.severity == .severe || alert.severity == .extreme
+                alert.severity == .moderate ||
+                alert.severity == .severe ||
+                alert.severity == .extreme
             }
         }
         return severeAlerts
