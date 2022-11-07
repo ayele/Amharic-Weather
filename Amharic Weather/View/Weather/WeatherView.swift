@@ -13,6 +13,8 @@ struct WeatherView: View {
     @EnvironmentObject var weatherVM: WeatherViewModel
     @Environment(\.scenePhase) private var scenePhase
     
+    @State private var rotationAngle = 0.0
+
     var body: some View {
         Group {
             if let weather = weatherVM.weather {
@@ -27,6 +29,21 @@ struct WeatherView: View {
                                                 highTemperature: weather.dailyForecast.first?.highTemperature,
                                                 lowTemperature: weather.dailyForecast.first?.lowTemperature,
                                                 city: weatherVM.city ?? "--")
+                                    .padding(50)
+                                    .overlay {
+                                        if weatherVM.isLoading {
+                                            Circle()
+                                                .stroke(style: StrokeStyle(lineWidth: 10, dash: [60, 5]))
+                                                .foregroundColor(.secondary)
+                                                .opacity(0.2)
+                                                .rotationEffect(Angle(degrees: rotationAngle))
+                                                .onAppear() {
+                                                    withAnimation(.linear(duration: 10).repeatForever(autoreverses: true)) {
+                                                        rotationAngle += 360
+                                                    }
+                                                }
+                                        }
+                                    }
                                         
                                     Spacer()
                                     /*
