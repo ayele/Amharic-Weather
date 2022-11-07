@@ -29,16 +29,16 @@ struct WeatherView: View {
                                                 highTemperature: weather.dailyForecast.first?.highTemperature,
                                                 lowTemperature: weather.dailyForecast.first?.lowTemperature,
                                                 city: weatherVM.city ?? "--")
-                                    .padding(50)
+                                    .padding(45)
                                     .overlay {
                                         if weatherVM.isLoading {
                                             Circle()
-                                                .stroke(style: StrokeStyle(lineWidth: 10, dash: [60, 5]))
+                                                .stroke(style: StrokeStyle(lineWidth: 10, dash: [50,5,15,5]))
                                                 .foregroundColor(.secondary)
                                                 .opacity(0.2)
                                                 .rotationEffect(Angle(degrees: rotationAngle))
                                                 .onAppear() {
-                                                    withAnimation(.linear(duration: 10).repeatForever(autoreverses: true)) {
+                                                    withAnimation(.linear(duration: 10).repeatForever(autoreverses: false)) {
                                                         rotationAngle += 360
                                                     }
                                                 }
