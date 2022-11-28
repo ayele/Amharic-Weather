@@ -99,6 +99,9 @@ struct WeatherView: View {
                             }
                         }
                         
+                        /*
+                         **Menu button temporarily hidden**
+                         
                         Button {
                             weatherVM.isPresentingSettingsView = true
                         } label: {
@@ -108,6 +111,7 @@ struct WeatherView: View {
                         .buttonStyle(.plain)
                         .foregroundColor(.secondary)
                         .padding(30)
+                         */
                     }
                     .colorScheme(.dark)
                 }
